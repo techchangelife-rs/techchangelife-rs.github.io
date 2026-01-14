@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="从宏观视角把握 Vue 3 的源码结构，建立“响应式→运行时→编译器”三大模块的认知地图，为系列深入解析打下基础。"><meta name="keywords" content="Vue3,源码解析,runtime-core,reactivity,compiler-core,vnode"><meta name="author" content="rushneg"><meta name="copyright" content="rushneg"><title>Vue 3 源码解析系列（开篇）：总体架构与模块地图 | 儒生的个人网站</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="/css/custom.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.json","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '8.1.1'
+} </script><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="儒生的个人网站" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text"> 为什么要读源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E9%B8%9F%E7%9E%B0"><span class="toc-number">2.</span> <span class="toc-text"> 总体架构鸟瞰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%9C%B0%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text"> 模块地图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E5%BB%BA%E8%AE%AE"><span class="toc-number">4.</span> <span class="toc-text"> 学习建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E5%88%97%E8%A7%84%E5%88%92%E8%8D%89%E6%A1%88"><span class="toc-number">5.</span> <span class="toc-text"> 系列规划（草案）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%80%E8%A7%88%E5%85%B3%E8%81%94-runtime-core"><span class="toc-number">6.</span> <span class="toc-text"> 附：生命周期一览（关联 runtime-core）</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.svg"></div><div class="author-info__name text-center">rushneg</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">9</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">39</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">5</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/banner.png)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">儒生的个人网站</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">主页</a><a class="site-page" href="/archives">归档</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/categories">分类</a><a class="site-page" href="/categories/tech/">技术</a><a class="site-page" href="/categories/life/">生活</a><a class="site-page" href="/categories/study/">学习</a><a class="site-page" href="/categories/edu/">教育</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a></span></div><div id="post-info"><div id="post-title">Vue 3 源码解析系列（开篇）：总体架构与模块地图</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2026-01-14</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/tech/">技术</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/tech/vue3-source/">Vue3源码解析系列</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="为什么要读源码"><a class="markdownIt-Anchor" href="#为什么要读源码"></a> 为什么要读源码</h2>
+<ul>
+<li>构建“可预测”的心智模型：遇到异常能快速定位</li>
+<li>掌握边界与约束：写出更稳健的组件与库</li>
+<li>形成“可迁移”的能力：不同框架的共性与差异</li>
+</ul>
+<h2 id="总体架构鸟瞰"><a class="markdownIt-Anchor" href="#总体架构鸟瞰"></a> 总体架构鸟瞰</h2>
+<p>Vue 3 的源码可分为三大部分：</p>
+<ul>
+<li>reactivity：基于 Proxy 的响应式系统，包含 <code>effect</code>、<code>ref</code>、<code>reactive</code>、<code>computed</code></li>
+<li>runtime：运行时（核心与 DOM）渲染与更新逻辑，包含 <code>vnode</code>、<code>renderer</code>、<code>scheduler</code></li>
+<li>compiler：编译器，将模板转成渲染函数，包含 <code>parser</code>、<code>transform</code>、<code>codegen</code></li>
+</ul>
+<p>三者协同路径：<br>
+模板 → 编译器生成 render → 运行时根据响应式依赖驱动渲染 → DOM 更新</p>
+<p>架构概览图：</p>
+<p><img src="/img/vue3-arch.svg" alt="Vue3 源码架构总览"></p>
+<h2 id="模块地图"><a class="markdownIt-Anchor" href="#模块地图"></a> 模块地图</h2>
+<ul>
+<li>reactivity
+<ul>
+<li>响应式依赖跟踪：<code>track</code> / <code>trigger</code></li>
+<li>细粒度更新：<code>Effect</code> 调度与优先级</li>
+</ul>
+</li>
+<li>runtime-core
+<ul>
+<li>虚拟节点：<code>VNode</code> 结构与 <code>patch</code> 策略</li>
+<li>组件实例：<code>setup</code>、生命周期与上下文</li>
+<li>调度器：<code>queueJob</code>、<code>flushJobs</code></li>
+</ul>
+</li>
+<li>runtime-dom
+<ul>
+<li>平台适配：DOM 操作与事件系统</li>
+</ul>
+</li>
+<li>compiler-core
+<ul>
+<li>AST：<code>parse</code> 生成抽象语法树</li>
+<li>转换：<code>transform</code> 注入指令与优化标记</li>
+<li>代码生成：<code>codegen</code> 输出渲染函数</li>
+</ul>
+</li>
+</ul>
+<h2 id="学习建议"><a class="markdownIt-Anchor" href="#学习建议"></a> 学习建议</h2>
+<ul>
+<li>自上而下：先建立模块地图，再进入子模块细节</li>
+<li>以问题驱动：从“为什么 update 这么快？”切入到 <code>patch</code> 与 <code>scheduler</code></li>
+<li>读+写结合：用最小示例验证理解，如手写一个 <code>track/trigger</code></li>
+</ul>
+<h2 id="系列规划草案"><a class="markdownIt-Anchor" href="#系列规划草案"></a> 系列规划（草案）</h2>
+<ol>
+<li>reactivity：依赖收集与触发更新的细节</li>
+<li>runtime-core：VNode 与 patch 策略</li>
+<li>scheduler：任务队列与微任务机制</li>
+<li>compiler-core：AST、transform 与优化标记</li>
+<li>runtime-dom：事件与属性更新</li>
+<li>综合案例：从模板到 DOM 的全链路</li>
+</ol>
+<h2 id="附生命周期一览关联-runtime-core"><a class="markdownIt-Anchor" href="#附生命周期一览关联-runtime-core"></a> 附：生命周期一览（关联 runtime-core）</h2>
+<p><img src="/img/vue3-lifecycle.svg" alt="Vue3 生命周期总览"></p>
+<hr>
+<p>下一篇将进入响应式系统：从 <code>track/trigger</code> 出发，理解更新是如何被“最小化”的。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">rushneg</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xinxiaoran.com/2026/01/14/vue3-source-series-opening/">http://xinxiaoran.com/2026/01/14/vue3-source-series-opening/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Vue3/">Vue3</a><a class="post-meta__tags" href="/tags/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/">源码解析</a><a class="post-meta__tags" href="/tags/runtime-core/">runtime-core</a><a class="post-meta__tags" href="/tags/reactivity/">reactivity</a><a class="post-meta__tags" href="/tags/compiler-core/">compiler-core</a><a class="post-meta__tags" href="/tags/vnode/">vnode</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2026/01/14/aicode-frontend-future/"><i class="fa fa-chevron-left">  </i><span>AICode 时代前端何去何从：技能、原理与路径</span></a></div><div class="next-post pull-right"><a href="/2026/01/14/xiaoxue-shuxue-guiyi-guizong/"><span>小学数学应用题技巧讲解①：归一问题与归总问题</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"><div class="post-adv__wrap">
+  <div>欢迎讨论与交流</div>
+</div>
+</div></div></div><footer class="footer-bg" style="background-image: url(/img/banner.png)"><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2026 By rushneg</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text"><div class="footer-ad">
+  <a href="https://xinxiaoran.com" target="_blank" rel="noopener">
+    <img src="/img/ad-banner.svg" alt="赞助推广" style="max-width:100%;height:auto;border-radius:12px">
+  </a>
+</div>
+</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

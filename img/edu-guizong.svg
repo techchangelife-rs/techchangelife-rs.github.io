@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240">
+  <rect width="720" height="240" fill="#f7fbff"/>
+  <rect x="40" y="50" width="120" height="40" rx="6" fill="#49B1F5"/>
+  <text x="50" y="75" font-size="16" fill="#fff">A 组</text>
+  <rect x="200" y="50" width="120" height="40" rx="6" fill="#49B1F5"/>
+  <text x="210" y="75" font-size="16" fill="#fff">B 组</text>
+  <rect x="360" y="50" width="120" height="40" rx="6" fill="#49B1F5"/>
+  <text x="370" y="75" font-size="16" fill="#fff">C 组</text>
+  <path d="M160 70 H200 M320 70 H360" stroke="#1B9EF3" stroke-width="2"/>
+  <rect x="520" y="50" width="120" height="40" rx="6" fill="#FF7242"/>
+  <text x="530" y="75" font-size="16" fill="#fff">总计</text>
+  <text x="100" y="140" font-size="14" fill="#333">归总：把各部分相加求总量，再反推平均/单位量</text>
+</svg>

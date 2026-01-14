@@ -1,0 +1,29 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 向量空间示意图 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- 坐标轴 -->
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#666" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="50" y1="200" x2="50" y2="50" stroke="#666" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 基向量 v1 (鸡向量: 1头 2脚) -->
+  <line x1="50" y1="200" x2="100" y2="150" stroke="blue" stroke-width="3"/>
+  <text x="110" y="145" fill="blue" font-size="12">v1=(1,2)</text>
+  
+  <!-- 基向量 v2 (兔向量: 1头 4脚) -->
+  <line x1="50" y1="200" x2="100" y2="100" stroke="green" stroke-width="3"/>
+  <text x="110" y="95" fill="green" font-size="12">v2=(1,4)</text>
+
+  <!-- 目标向量 V (35头 94脚 - 按比例缩放) -->
+  <line x1="50" y1="200" x2="250" y2="80" stroke="red" stroke-width="2" stroke-dasharray="4"/>
+  <text x="220" y="70" fill="red" font-size="14" font-weight="bold">目标 V=(35, 94)</text>
+
+  <!-- 线性组合说明 -->
+  <text x="200" y="230" text-anchor="middle" font-size="12">V = 23*v1 + 12*v2</text>
+  <text x="360" y="210" font-size="10">头</text>
+  <text x="30" y="45" font-size="10">脚</text>
+</svg>

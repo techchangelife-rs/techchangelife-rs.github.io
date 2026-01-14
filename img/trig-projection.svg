@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <style>
+    .axis{stroke:#1B9EF3;stroke-width:2}
+    .vec{stroke:#FF7242;stroke-width:3}
+    .proj{stroke:#00C4B6;stroke-width:2}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:14px;fill:#333}
+    .dot{fill:#FF7242}
+  </style>
+  <rect width="720" height="480" fill="#f8fbff"/>
+  <g transform="translate(120,360)">
+    <line x1="-40" y1="0" x2="560" y2="0" class="axis"/>
+    <line x1="0" y1="40" x2="0" y2="-400" class="axis"/>
+    <text x="560" y="-10" class="txt">x</text>
+    <text x="-10" y="-400" class="txt">y</text>
+    <g transform="rotate(-30)">
+      <line x1="0" y1="0" x2="340" y2="-0" class="vec"/>
+      <circle cx="340" cy="0" r="5" class="dot"/>
+      <line x1="340" y1="0" x2="340" y2="-200" class="proj"/>
+      <line x1="340" y1="0" x2="120" y2="0" class="proj"/>
+    </g>
+    <text x="200" y="-20" class="txt">邻边 = r · cos θ</text>
+    <text x="360" y="-220" class="txt">对边 = r · sin θ</text>
+    <text x="60" y="-320" class="txt">斜边 = r</text>
+  </g>
+</svg>

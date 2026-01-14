@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .box{rx:8;fill:#49B1F5;opacity:.9}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:16px;fill:#fff}
+    .line{stroke:#1B9EF3;stroke-width:2;marker-end:url(#arrow)}
+    .stage{fill:#00C4B6}
+    .note{font-size:12px;fill:#333}
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1B9EF3"/>
+    </marker>
+  </defs>
+  <rect x="60" y="60" width="160" height="40" class="box"/><text x="80" y="85" class="txt">setup()</text>
+  <rect x="260" y="60" width="200" height="40" class="box stage"/><text x="270" y="85" class="txt">onBeforeMount → onMounted</text>
+  <rect x="500" y="60" width="200" height="40" class="box"/><text x="510" y="85" class="txt">render/patch</text>
+  <rect x="740" y="60" width="160" height="40" class="box stage"/><text x="750" y="85" class="txt">mounted</text>
+  <line x1="220" y1="80" x2="260" y2="80" class="line"/>
+  <line x1="460" y1="80" x2="500" y2="80" class="line"/>
+  <line x1="700" y1="80" x2="740" y2="80" class="line"/>
+
+  <rect x="260" y="160" width="200" height="40" class="box stage"/><text x="270" y="185" class="txt">onBeforeUpdate → onUpdated</text>
+  <rect x="500" y="160" width="200" height="40" class="box"/><text x="510" y="185" class="txt">响应式触发 render</text>
+  <line x1="460" y1="180" x2="500" y2="180" class="line"/>
+
+  <rect x="260" y="260" width="200" height="40" class="box stage"/><text x="270" y="285" class="txt">onBeforeUnmount → onUnmounted</text>
+  <rect x="500" y="260" width="200" height="40" class="box"/><text x="510" y="285" class="txt">释放副作用/事件</text>
+  <line x1="460" y1="280" x2="500" y2="280" class="line"/>
+
+  <text x="60" y="360" class="note">备注：生命周期由响应式驱动，render 最终进入 runtime-core 的 patch 流程更新 DOM。</text>
+</svg>

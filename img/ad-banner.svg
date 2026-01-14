@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+  <defs>
+    <linearGradient id="adg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF7242"/>
+      <stop offset="100%" stop-color="#49B1F5"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="180" rx="12" fill="url(#adg)"/>
+  <text x="40" y="110" font-size="42" fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">赞助推广 · 技术提升 · 学习资源</text>
+</svg>

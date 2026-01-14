@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <style>
+    .axis{stroke:#1B9EF3;stroke-width:2}
+    .circle{stroke:#49B1F5;stroke-width:2;fill:none}
+    .point{fill:#FF7242}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:14px;fill:#333}
+    .line{stroke:#00C4B6;stroke-width:2}
+  </style>
+  <rect width="640" height="640" fill="#f8fbff"/>
+  <g transform="translate(320,320)">
+    <circle r="240" class="circle"/>
+    <line x1="-280" y1="0" x2="280" y2="0" class="axis"/>
+    <line x1="0" y1="-280" x2="0" y2="280" class="axis"/>
+    <text x="250" y="-10" class="txt">x</text>
+    <text x="-10" y="-250" class="txt">y</text>
+    <g id="theta" transform="rotate(35)">
+      <line x1="0" y1="0" x2="240" y2="0" class="line"/>
+      <circle cx="240" cy="0" r="5" class="point"/>
+      <line x1="240" y1="0" x2="240" y2="-180" class="line"/>
+      <line x1="240" y1="0" x2="60" y2="0" class="line"/>
+    </g>
+    <text x="120" y="-10" class="txt">cos θ</text>
+    <text x="-10" y="-180" class="txt">sin θ</text>
+    <text x="30" y="30" class="txt">r=1（单位圆）</text>
+  </g>
+</svg>

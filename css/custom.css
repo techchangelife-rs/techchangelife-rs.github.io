@@ -1,0 +1,73 @@
+/* 基础背景与字体 */
+html, body { height: 100%; }
+body {
+  width: 100%;
+  background-image: url('/img/bg-melody.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #f53008;
+}
+
+/* 顶部横幅高度微调（与 top_img_height 一致） */
+.site-header {
+  min-height: 60vh;
+}
+
+/* 站点标题与副标题 */
+.site-title { font-weight: 700; letter-spacing: 0.5px; }
+.site-subtitle { opacity: 0.85; }
+
+/* 顶部导航样式 */
+.menu a {
+  color: #8e3939;
+}
+.menu a:hover {
+  color: #2862e8;
+}
+
+/* 文章卡片与标题 */
+.post-title { font-weight: 600; }
+.post-card { border-radius: 10px; overflow: hidden; }
+
+/* 页脚对比度提升 */
+.footer { color: #3a3a3a; }
+
+/* 左侧文章目录侧栏固定显示与布局 */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: saturate(1.2) blur(6px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+#sidebar[data-display="false"] {
+  transform: translateX(-100%);
+}
+#sidebar[data-display="true"] {
+  transform: translateX(0);
+}
+#content-outer {
+  margin-left: 280px;
+}
+.sidebar-toc__title {
+  font-weight: 600;
+}
+.sidebar-toc__content a {
+  color: #0f2748;
+}
+.sidebar-toc__content a:hover {
+  color: #1B9EF3;
+}
+
+/* 评论与广告模块样式 */
+.post-adv__wrap {
+  margin: 24px 0;
+}
+.footer-ad {
+  margin-top: 24px;
+}

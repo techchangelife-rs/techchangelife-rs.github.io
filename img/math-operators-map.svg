@@ -1,0 +1,63 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#fcfcfc"/>
+  
+  <!-- 中心节点 -->
+  <rect x="325" y="20" width="150" height="45" rx="10" fill="#212529" stroke="#000"/>
+  <text x="400" y="48" text-anchor="middle" fill="#fff" font-weight="bold" font-size="16">全量数学符号体系</text>
+
+  <!-- 连接线 -->
+  <g stroke="#adb5bd" stroke-width="1.5" fill="none">
+    <path d="M 400 65 L 150 120"/> <!-- 逻辑与基石 -->
+    <path d="M 400 65 L 300 120"/> <!-- 代数与结构 -->
+    <path d="M 400 65 L 450 120"/> <!-- 线性代数与张量 -->
+    <path d="M 400 65 L 650 120"/> <!-- 微积分与分析 -->
+    <path d="M 400 65 L 200 300"/> <!-- 概率与统计 -->
+    <path d="M 400 65 L 600 300"/> <!-- 离散与计算机 -->
+  </g>
+
+  <!-- 分类框 -->
+  <g font-size="13" text-anchor="middle">
+    <!-- 1. 逻辑与基石 -->
+    <rect x="50" y="120" width="180" height="120" rx="8" fill="#e7f5ff" stroke="#228be6"/>
+    <text x="140" y="145" fill="#1864ab" font-weight="bold">逻辑、集合与数系</text>
+    <text x="140" y="175" fill="#495057">∀, ∃, ⇒, ⇔, ⊢</text>
+    <text x="140" y="200" fill="#495057">∈, ∪, ∩, ⊆, ∅</text>
+    <text x="140" y="225" fill="#495057">N, Z, Q, R, C, H</text>
+
+    <!-- 2. 代数与结构 -->
+    <rect x="240" y="120" width="160" height="120" rx="8" fill="#fff4e6" stroke="#fd7e14"/>
+    <text x="320" y="145" fill="#d9480f" font-weight="bold">代数与抽象结构</text>
+    <text x="320" y="175" fill="#495057">∝, ≪, ≫, ≡</text>
+    <text x="320" y="200" fill="#495057">⌊x⌋, ⌈x⌉, n!, binom</text>
+    <text x="320" y="225" fill="#495057">≅, ⊕, ⊗, ⋊</text>
+
+    <!-- 3. 线性代数与张量 -->
+    <rect x="410" y="120" width="180" height="120" rx="8" fill="#f3f0ff" stroke="#7950f2"/>
+    <text x="500" y="145" fill="#5f3dc4" font-weight="bold">线性代数与张量</text>
+    <text x="500" y="175" fill="#495057">A^T, A^H, tr, det</text>
+    <text x="500" y="200" fill="#495057">span, dim, Ker, Im</text>
+    <text x="500" y="225" fill="#495057">T_ij, Γ_ij^k, g_μν</text>
+
+    <!-- 4. 微积分与分析 -->
+    <rect x="600" y="120" width="180" height="120" rx="8" fill="#f8f9fa" stroke="#343a40"/>
+    <text x="690" y="145" fill="#212529" font-weight="bold">微积分、分析与拓扑</text>
+    <text x="690" y="175" fill="#495057">lim, df/dx, ∂f/∂x</text>
+    <text x="690" y="200" fill="#495057">∫, ∬, ∮, ∯</text>
+    <text x="690" y="225" fill="#495057">∇, Δ, ∇·, ∇×</text>
+
+    <!-- 5. 概率与统计 -->
+    <rect x="100" y="300" width="200" height="100" rx="8" fill="#ebfbee" stroke="#40c057"/>
+    <text x="200" y="325" fill="#2b8a3e" font-weight="bold">概率论与统计学</text>
+    <text x="200" y="355" fill="#495057">P(A), E[X], Var(X)</text>
+    <text x="200" y="380" fill="#495057">Cov, X ~ N, iid</text>
+
+    <!-- 6. 离散与计算机 -->
+    <rect x="500" y="300" width="200" height="100" rx="8" fill="#fff5f5" stroke="#fa5252"/>
+    <text x="600" y="325" fill="#c92a2a" font-weight="bold">离散数学与 CS</text>
+    <text x="600" y="355" fill="#495057">a ≡ b (mod n)</text>
+    <text x="600" y="380" fill="#495057">O(n), Ω, Θ, XOR</text>
+  </g>
+
+  <text x="400" y="460" text-anchor="middle" font-size="14" font-style="italic" fill="#868e96">Mathematical Symbols Layered Taxonomy (v2.0 Comprehensive)</text>
+</svg>
