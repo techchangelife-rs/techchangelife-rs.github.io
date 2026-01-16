@@ -1,0 +1,18 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 15 - 8 = 7 -->
+  <text x="130" y="80" font-family="Arial" font-size="30" text-anchor="middle">15</text>
+  <text x="200" y="80" font-family="Arial" font-size="30" text-anchor="middle">-</text>
+  <text x="250" y="80" font-family="Arial" font-size="30" text-anchor="middle">8</text>
+  <text x="310" y="80" font-family="Arial" font-size="30" text-anchor="middle">= 7</text>
+
+  <!-- Splitting 8 into 5 and 3 -->
+  <line x1="250" y1="90" x2="220" y2="130" stroke="#ffc107" stroke-width="2"/>
+  <line x1="250" y1="90" x2="280" y2="130" stroke="#ffc107" stroke-width="2"/>
+  <text x="220" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffc107">5</text>
+  <text x="280" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="#ffc107">3</text>
+
+  <!-- 15 - 5 = 10, then 10 - 3 = 7 -->
+  <path d="M 130 90 Q 175 160 215 155" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="150" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">15-5=10</text>
+  <text x="230" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">10-3=7</text>
+</svg>

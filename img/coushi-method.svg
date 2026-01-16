@@ -1,0 +1,18 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 9 + 6 = 15 -->
+  <text x="150" y="80" font-family="Arial" font-size="30" text-anchor="middle">9</text>
+  <text x="200" y="80" font-family="Arial" font-size="30" text-anchor="middle">+</text>
+  <text x="250" y="80" font-family="Arial" font-size="30" text-anchor="middle">6</text>
+  <text x="310" y="80" font-family="Arial" font-size="30" text-anchor="middle">= 15</text>
+
+  <!-- Splitting 6 into 1 and 5 -->
+  <line x1="250" y1="90" x2="220" y2="130" stroke="#007bff" stroke-width="2"/>
+  <line x1="250" y1="90" x2="280" y2="130" stroke="#007bff" stroke-width="2"/>
+  <text x="220" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="#007bff">1</text>
+  <text x="280" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="#007bff">5</text>
+
+  <!-- Combining 9 and 1 -->
+  <path d="M 150 90 Q 185 170 215 155" fill="none" stroke="#28a745" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="180" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#28a745">9+1=10</text>
+  <text x="250" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#28a745">10+5=15</text>
+</svg>

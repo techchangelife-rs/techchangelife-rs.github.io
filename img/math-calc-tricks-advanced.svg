@@ -1,0 +1,11 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <text x="50%" y="40%" font-family="Arial" font-size="40" text-anchor="middle" fill="#333" font-weight="bold">小学数学速算全攻略</text>
+  <text x="50%" y="60%" font-family="Arial" font-size="24" text-anchor="middle" fill="#666">从基础加减到奥数级简算</text>
+  <circle cx="200" cy="300" r="40" fill="#007bff" opacity="0.2"/>
+  <text x="200" y="310" font-family="Arial" font-size="16" text-anchor="middle" fill="#007bff">十字相乘</text>
+  <circle cx="400" cy="300" r="40" fill="#28a745" opacity="0.2"/>
+  <text x="400" y="310" font-family="Arial" font-size="16" text-anchor="middle" fill="#28a745">蝴蝶法</text>
+  <circle cx="600" cy="300" r="40" fill="#dc3545" opacity="0.2"/>
+  <text x="600" y="310" font-family="Arial" font-size="16" text-anchor="middle" fill="#dc3545">裂项相消</text>
+</svg>
