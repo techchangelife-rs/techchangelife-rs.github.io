@@ -1,0 +1,75 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="1200" fill="#fef9e7" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#7d3c98">三角形高级进阶与竞赛级技巧图解</text>
+  
+  <!-- Section 1: Stewart's Theorem & Medians -->
+  <g transform="translate(50, 80)">
+    <rect width="700" height="240" rx="15" fill="#ffffff" stroke="#8e44ad" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#8e44ad">1. 斯特瓦尔特定理 (Stewart's Theorem)</text>
+    
+    <g transform="translate(100, 60)">
+      <path d="M 0 120 L 300 120 L 200 20 Z" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2" />
+      <line x1="200" y1="20" x2="150" y2="120" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="100" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">m</text>
+      <text x="225" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">n</text>
+      <text x="80" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">b</text>
+      <text x="260" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">c</text>
+      <text x="160" y="70" font-family="Arial, sans-serif" font-size="14" fill="#8e44ad">d</text>
+    </g>
+    
+    <text x="350" y="210" font-family="Times New Roman, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">man + dad = bmb + cnc</text>
+  </g>
+  
+  <!-- Section 2: Ptolemy's & Menelaus' -->
+  <g transform="translate(50, 340)">
+    <rect width="700" height="320" rx="15" fill="#ffffff" stroke="#c0392b" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#c0392b">2. 梅涅劳斯与塞瓦定理 (Menelaus &amp; Ceva)</text>
+    
+    <!-- Menelaus Visual -->
+    <g transform="translate(50, 60)">
+      <path d="M 0 150 L 200 150 L 100 20 Z" fill="#f9ebea" stroke="#c0392b" stroke-width="2" />
+      <line x1="-30" y1="80" x2="250" y2="160" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,2" />
+      <text x="100" y="180" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#c0392b">梅涅劳斯定理：三点共线判定</text>
+    </g>
+    
+    <!-- Ceva Visual -->
+    <g transform="translate(350, 60)">
+      <path d="M 0 150 L 200 150 L 100 20 Z" fill="#f9ebea" stroke="#c0392b" stroke-width="2" />
+      <line x1="100" y1="20" x2="100" y2="150" stroke="#c0392b" stroke-width="1" />
+      <line x1="0" y1="150" x2="160" y2="70" stroke="#c0392b" stroke-width="1" />
+      <line x1="200" y1="150" x2="40" y2="70" stroke="#c0392b" stroke-width="1" />
+      <text x="100" y="180" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#c0392b">塞瓦定理：三线共点判定</text>
+    </g>
+  </g>
+  
+  <!-- Section 3: High School Strategy Map -->
+  <g transform="translate(50, 680)">
+    <rect width="700" height="480" rx="15" fill="#ffffff" stroke="#2e4053" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2e4053">3. 高中解题策略地图 (Strategy Map)</text>
+    
+    <g transform="translate(50, 60)">
+      <rect width="280" height="150" rx="10" fill="#ebedef" />
+      <text x="140" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">已知 SSS / SAS</text>
+      <text x="140" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">→ 优先使用【余弦定理】</text>
+      <text x="140" y="100" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">锁定边长关系</text>
+    </g>
+    
+    <g transform="translate(370, 60)">
+      <rect width="280" height="150" rx="10" fill="#ebedef" />
+      <text x="140" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">已知 ASA / AAS</text>
+      <text x="140" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">→ 优先使用【正弦定理】</text>
+      <text x="140" y="100" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">利用外接圆直径 R</text>
+    </g>
+    
+    <g transform="translate(50, 240)">
+      <rect width="600" height="180" rx="10" fill="#f4f6f7" stroke="#2e4053" stroke-width="1" />
+      <text x="300" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">核心转化思想</text>
+      <text x="50" y="70" font-family="Arial, sans-serif" font-size="14">● 边转角：a = 2R sinA</text>
+      <text x="50" y="100" font-family="Arial, sans-serif" font-size="14">● 角转边：cosA = (b²+c²-a²) / 2bc</text>
+      <text x="50" y="130" font-family="Arial, sans-serif" font-size="14">● 面积转：S = ½bc sinA = p·r = abc/4R</text>
+    </g>
+  </g>
+</svg>

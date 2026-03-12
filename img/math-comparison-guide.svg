@@ -1,0 +1,50 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f9f9f9" rx="10"/>
+  
+  <!-- 长度比较 (铅笔) -->
+  <g transform="translate(30, 30)">
+    <text x="0" y="15" font-family="Arial" font-size="14" fill="#333" font-weight="bold">1. 比长短 (对齐一端)</text>
+    <!-- 铅笔 A -->
+    <rect x="10" y="30" width="180" height="12" fill="#FFC107" rx="2"/>
+    <path d="M 190 30 L 205 36 L 190 42 Z" fill="#333"/>
+    <text x="215" y="40" font-family="Arial" font-size="12" fill="#666">长</text>
+    <!-- 铅笔 B -->
+    <rect x="10" y="55" width="120" height="12" fill="#2196F3" rx="2"/>
+    <path d="M 130 55 L 145 61 L 130 67 Z" fill="#333"/>
+    <text x="155" y="65" font-family="Arial" font-size="12" fill="#666">短</text>
+    <!-- 对齐辅助线 -->
+    <line x1="10" y1="25" x2="10" y2="75" stroke="#D0021B" stroke-width="1" stroke-dasharray="2"/>
+  </g>
+  
+  <!-- 轻重比较 (天平) -->
+  <g transform="translate(250, 40)">
+    <text x="0" y="5" font-family="Arial" font-size="14" fill="#333" font-weight="bold">2. 比轻重 (天平倾斜)</text>
+    <!-- 天平支架 -->
+    <path d="M 50 110 L 70 110 L 60 80 Z" fill="#9E9E9E"/>
+    <!-- 天平横梁 (倾斜) -->
+    <g transform="rotate(15, 60, 80)">
+      <line x1="10" y1="80" x2="110" y2="80" stroke="#5D4037" stroke-width="4"/>
+      <!-- 左侧托盘 (重) -->
+      <circle cx="10" cy="95" r="15" fill="#E91E63"/>
+      <text x="10" y="100" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">重</text>
+      <!-- 右侧托盘 (轻) -->
+      <circle cx="110" cy="65" r="10" fill="#4CAF50"/>
+      <text x="110" y="70" font-family="Arial" font-size="8" fill="#fff" text-anchor="middle">轻</text>
+    </g>
+  </g>
+  
+  <!-- 高矮比较 -->
+  <g transform="translate(30, 110)">
+    <text x="0" y="15" font-family="Arial" font-size="14" fill="#333" font-weight="bold">3. 比高矮 (站在地面)</text>
+    <!-- 地面 -->
+    <line x1="10" y1="75" x2="350" y2="75" stroke="#333" stroke-width="2"/>
+    <!-- 树 A -->
+    <rect x="50" y="25" width="10" height="50" fill="#795548"/>
+    <circle cx="55" cy="20" r="20" fill="#388E3C"/>
+    <text x="55" y="88" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">高</text>
+    <!-- 树 B -->
+    <rect x="120" y="45" width="8" height="30" fill="#795548"/>
+    <circle cx="124" cy="40" r="15" fill="#81C784"/>
+    <text x="124" y="88" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">矮</text>
+  </g>
+</svg>

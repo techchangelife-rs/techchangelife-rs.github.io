@@ -1,0 +1,28 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f9ff" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#0369a1" text-anchor="middle" font-weight="bold">巧求周长：平移魔法</text>
+  
+  <g transform="translate(100, 60)">
+    <!-- L 形图形 -->
+    <path d="M 0 0 L 100 0 L 100 40 L 60 40 L 60 80 L 0 80 Z" fill="#bae6fd" stroke="#0369a1" stroke-width="2"/>
+    
+    <!-- 平移辅助线 -->
+    <path d="M 60 40 L 100 40" stroke="#ef4444" stroke-width="2" stroke-dasharray="4"/>
+    <path d="M 60 40 L 60 80" stroke="#ef4444" stroke-width="2" stroke-dasharray="4"/>
+    
+    <!-- 移动箭头 -->
+    <path d="M 60 60 L 100 60" stroke="#ef4444" stroke-width="1" marker-end="url(#arrow-blue-p)"/>
+    <path d="M 80 40 L 80 0" stroke="#ef4444" stroke-width="1" marker-end="url(#arrow-blue-p)"/>
+    
+    <text x="50" y="-10" font-family="Arial" font-size="12" fill="#0369a1">长</text>
+    <text x="-20" y="40" font-family="Arial" font-size="12" fill="#0369a1">宽</text>
+  </g>
+  
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#0369a1" font-weight="bold">结论：不规则图形周长 = 补全后的长方形周长</text>
+
+  <defs>
+    <marker id="arrow-blue-p" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#ef4444" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#e8f5e9" rx="10"/>
+  
+  <!-- 第一种方案：盈 14 -->
+  <g transform="translate(30, 30)">
+    <text x="0" y="20" font-family="Arial" font-size="14" fill="#333">方案1: 每人8块</text>
+    <rect x="120" y="5" width="160" height="20" fill="#4caf50" rx="5"/>
+    <text x="200" y="20" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">多出 14 块 (盈1)</text>
+  </g>
+  
+  <!-- 第二种方案：盈 2 -->
+  <g transform="translate(30, 70)">
+    <text x="0" y="20" font-family="Arial" font-size="14" fill="#333">方案2: 每人9块</text>
+    <rect x="120" y="5" width="40" height="20" fill="#81c784" rx="5"/>
+    <text x="140" y="20" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">多2</text>
+  </g>
+  
+  <!-- 逻辑连接 -->
+  <path d="M 160 80 L 160 95 L 280 95 L 280 40" fill="none" stroke="#ff9800" stroke-width="2" stroke-dasharray="4"/>
+  <text x="220" y="125" font-family="Arial" font-size="14" fill="#e65100" text-anchor="middle" font-weight="bold">总差额 = 14 - 2 = 12</text>
+  <path d="M 160 80 L 280 80" fill="none" stroke="#e65100" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e65100" />
+    </marker>
+  </defs>
+</svg>

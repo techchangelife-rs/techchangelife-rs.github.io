@@ -1,0 +1,23 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#fffcf0" rx="10"/>
+  
+  <!-- 多出的8个 -->
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">多出的 8 个</text>
+  
+  <g transform="translate(80, 50)">
+    <!-- 第一组 4个 -->
+    <rect x="0" y="0" width="110" height="40" fill="#E3F2FD" stroke="#2196F3" rx="5"/>
+    <text x="55" y="25" font-family="Arial" font-size="14" fill="#1976D2" text-anchor="middle">留在原地 (4)</text>
+    
+    <!-- 第二组 4个 -->
+    <rect x="130" y="0" width="110" height="40" fill="#F1F8E9" stroke="#4CAF50" rx="5"/>
+    <text x="185" y="25" font-family="Arial" font-size="14" fill="#388E3C" text-anchor="middle">移给对方 (4)</text>
+    
+    <!-- 箭头和加号 -->
+    <text x="120" y="25" font-family="Arial" font-size="20" fill="#666" text-anchor="middle">=</text>
+  </g>
+  
+  <!-- 核心结论 -->
+  <rect x="50" y="110" width="300" height="30" fill="#FFF9C4" rx="15"/>
+  <text x="200" y="130" font-family="Arial" font-size="14" fill="#F57F17" text-anchor="middle" font-weight="bold">差距 8 ÷ 2 = 移动 4 个</text>
+</svg>

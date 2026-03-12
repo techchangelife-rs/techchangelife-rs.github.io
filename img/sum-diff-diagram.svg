@@ -1,0 +1,18 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="150" fill="#f9f9f9" rx="10"/>
+  
+  <!-- 大数线段 -->
+  <text x="20" y="45" font-family="Arial" font-size="16" fill="#333">大数:</text>
+  <rect x="70" y="30" width="280" height="20" fill="#4A90E2" rx="5"/>
+  <line x1="280" y1="25" x2="280" y2="55" stroke="#D0021B" stroke-width="2" stroke-dasharray="4"/>
+  <text x="300" y="45" font-family="Arial" font-size="14" fill="#D0021B">差</text>
+  
+  <!-- 小数线段 -->
+  <text x="20" y="95" font-family="Arial" font-size="16" fill="#333">小数:</text>
+  <rect x="70" y="80" width="210" height="20" fill="#50E3C2" rx="5"/>
+  
+  <!-- 和的标注 -->
+  <path d="M 70 120 L 70 130 L 350 130 L 350 120" fill="none" stroke="#666" stroke-width="2"/>
+  <text x="190" y="145" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">和</text>
+</svg>

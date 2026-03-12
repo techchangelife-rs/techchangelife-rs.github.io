@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .text { font-family: 'Kaiti', serif; fill: #333; }
+      .title { font-size: 24px; font-weight: bold; fill: #D93939; }
+      .label { font-size: 16px; fill: #666; }
+      .arrow { stroke: #D93939; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D93939" />
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#FFFDF5" rx="10" ry="10" />
+  
+  <text x="400" y="40" text-anchor="middle" class="title">“年”字甲骨文至楷书演变图谱</text>
+
+  <!-- 甲骨文 -->
+  <g transform="translate(100, 100)">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#D93939" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="50" y="110" text-anchor="middle" class="label">甲骨文 (商)</text>
+    <!-- 模拟甲骨文“秂”：上禾下人 -->
+    <path d="M50 20 L50 50 M30 30 L50 50 L70 30 M50 50 L30 80 M50 50 L70 80" stroke="#333" stroke-width="4" fill="none"/>
+    <text x="50" y="140" text-anchor="middle" font-size="12" fill="#999">象人负禾</text>
+  </g>
+
+  <!-- 箭头 -->
+  <line x1="180" y1="150" x2="220" y2="150" class="arrow" />
+
+  <!-- 金文 -->
+  <g transform="translate(250, 100)">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#D93939" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="50" y="110" text-anchor="middle" class="label">金文 (周)</text>
+    <!-- 模拟金文 -->
+    <path d="M50 20 L50 60 M20 40 L80 40 M50 60 L30 90 M50 60 L70 90" stroke="#333" stroke-width="4" fill="none"/>
+    <text x="50" y="140" text-anchor="middle" font-size="12" fill="#999">禾谷成熟</text>
+  </g>
+
+  <!-- 箭头 -->
+  <line x1="330" y1="150" x2="370" y2="150" class="arrow" />
+
+  <!-- 小篆 -->
+  <g transform="translate(400, 100)">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#D93939" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="50" y="110" text-anchor="middle" class="label">小篆 (秦)</text>
+    <text x="50" y="70" text-anchor="middle" font-size="50" class="text">年</text>
+    <text x="50" y="140" text-anchor="middle" font-size="12" fill="#999">字形定型</text>
+  </g>
+
+  <!-- 箭头 -->
+  <line x1="480" y1="150" x2="520" y2="150" class="arrow" />
+
+  <!-- 楷书 -->
+  <g transform="translate(550, 100)">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#D93939" stroke-width="2"/>
+    <text x="50" y="110" text-anchor="middle" class="label">楷书 (汉-今)</text>
+    <text x="50" y="70" text-anchor="middle" font-size="50" class="text" font-weight="bold">年</text>
+    <text x="50" y="140" text-anchor="middle" font-size="12" fill="#999">常用字体</text>
+  </g>
+
+  <!-- 说明文字 -->
+  <rect x="50" y="250" width="700" height="100" fill="#FFF5F5" rx="5" />
+  <text x="400" y="280" text-anchor="middle" font-size="14" fill="#333">
+    《说文解字》：“年，谷熟也。从禾千声。”
+  </text>
+  <text x="400" y="310" text-anchor="middle" font-size="14" fill="#333">
+    最初本义：五谷成熟。引申义：一年的时间周期（因禾谷一熟为一年）。
+  </text>
+</svg>

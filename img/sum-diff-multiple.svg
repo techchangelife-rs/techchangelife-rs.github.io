@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fdf2f8" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#be185d" font-weight="bold">和差问题与和倍问题图解</text>
+  
+  <!-- Sum-Difference Section -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" font-family="Arial" font-size="18" fill="#333" font-weight="bold">1. 和差问题：和=20，差=4</text>
+    
+    <!-- Large Number Bar -->
+    <rect x="50" y="30" width="120" height="30" fill="#f472b6" />
+    <text x="10" y="50" font-size="14">较大数</text>
+    
+    <!-- Small Number Bar -->
+    <rect x="50" y="70" width="80" height="30" fill="#ec4899" />
+    <text x="10" y="90" font-size="14">较小数</text>
+    
+    <!-- Difference Highlight -->
+    <rect x="130" y="70" width="40" height="30" fill="none" stroke="#be185d" stroke-dasharray="4" />
+    <text x="140" y="115" font-size="12" fill="#be185d" text-anchor="middle">差 = 4</text>
+    
+    <!-- Formula -->
+    <text x="250" y="50" font-family="Arial" font-size="14" fill="#333">(和 + 差) ÷ 2 = 较大数</text>
+    <text x="250" y="80" font-family="Arial" font-size="14" fill="#333">(和 - 差) ÷ 2 = 较小数</text>
+  </g>
+  
+  <!-- Sum-Multiple Section -->
+  <g transform="translate(50, 240)">
+    <text x="0" y="0" font-family="Arial" font-size="18" fill="#333" font-weight="bold">2. 和倍问题：和=20，倍数=3倍</text>
+    
+    <!-- A (1 part) -->
+    <rect x="50" y="30" width="40" height="30" fill="#fb7185" />
+    <text x="10" y="50" font-size="14">小数</text>
+    <text x="70" y="20" font-size="12" text-anchor="middle">1 份</text>
+    
+    <!-- B (3 parts) -->
+    <rect x="50" y="70" width="40" height="30" fill="#f43f5e" />
+    <rect x="90" y="70" width="40" height="30" fill="#f43f5e" stroke="#fff" />
+    <rect x="130" y="70" width="40" height="30" fill="#f43f5e" stroke="#fff" />
+    <text x="10" y="90" font-size="14">大数</text>
+    <text x="110" y="115" font-size="12" text-anchor="middle">3 份</text>
+    
+    <!-- Formula -->
+    <text x="250" y="50" font-family="Arial" font-size="14" fill="#333">和 ÷ (倍数 + 1) = 1 份量(小数)</text>
+    <text x="250" y="80" font-family="Arial" font-size="14" fill="#333">1 份量 × 倍数 = 大数</text>
+  </g>
+</svg>

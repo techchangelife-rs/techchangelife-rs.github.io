@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-size: 24px; font-weight: bold; fill: #D93939; }
+      .text { font-size: 16px; fill: #333; }
+      .year { font-size: 32px; font-weight: bold; fill: #A61B1B; }
+      .label { font-size: 14px; fill: #666; }
+      .arrow { stroke: #D93939; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D93939" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#FFFDF5" />
+  
+  <text x="400" y="40" text-anchor="middle" class="title">春节定名史：从“元旦”到“春节”</text>
+
+  <!-- 1912 -->
+  <g transform="translate(50, 100)">
+    <rect width="200" height="150" rx="10" fill="#E6E6FA" stroke="#9370DB" stroke-width="2"/>
+    <text x="100" y="40" text-anchor="middle" class="year">1912</text>
+    <text x="100" y="70" text-anchor="middle" class="text" font-weight="bold">孙中山改历</text>
+    <text x="100" y="100" text-anchor="middle" class="label">废除旧历 (农历)</text>
+    <text x="100" y="125" text-anchor="middle" class="label">改用阳历 (公历)</text>
+  </g>
+
+  <!-- 箭头 -->
+  <line x1="260" y1="175" x2="290" y2="175" class="arrow" />
+
+  <!-- 1914 -->
+  <g transform="translate(300, 100)">
+    <rect width="200" height="150" rx="10" fill="#FFE4E1" stroke="#D93939" stroke-width="2"/>
+    <text x="100" y="40" text-anchor="middle" class="year">1914</text>
+    <text x="100" y="70" text-anchor="middle" class="text" font-weight="bold">袁世凯定名</text>
+    <text x="100" y="100" text-anchor="middle" class="label">朱启虔提议</text>
+    <text x="100" y="125" text-anchor="middle" class="label" fill="#D93939" font-weight="bold">定农历元旦为“春节”</text>
+  </g>
+
+  <!-- 箭头 -->
+  <line x1="510" y1="175" x2="540" y2="175" class="arrow" />
+
+  <!-- 1949 -->
+  <g transform="translate(550, 100)">
+    <rect width="200" height="150" rx="10" fill="#F0FFF0" stroke="#228B22" stroke-width="2"/>
+    <text x="100" y="40" text-anchor="middle" class="year">1949</text>
+    <text x="100" y="70" text-anchor="middle" class="text" font-weight="bold">新中国确立</text>
+    <text x="100" y="100" text-anchor="middle" class="label">政协会议决议</text>
+    <text x="100" y="125" text-anchor="middle" class="label">公历=元旦 / 农历=春节</text>
+  </g>
+
+  <!-- 说明 -->
+  <text x="400" y="300" text-anchor="middle" font-size="14" fill="#666">
+    注：在此之前，农历正月初一通常被称为“元旦”或“新年”。
+  </text>
+  <text x="400" y="325" text-anchor="middle" font-size="14" fill="#666">
+    1914年定名是为了解决“官方推行公历，民间坚持农历”的二元矛盾。
+  </text>
+</svg>

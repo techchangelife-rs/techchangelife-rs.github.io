@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4D94;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- System Architecture Diagram -->
+  <rect x="50" y="50" width="700" height="500" rx="15" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
+  <text x="400" y="35" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#333">AI 技能扩展系统核心架构 (AI Skill Expansion System Architecture)</text>
+  
+  <!-- Layers -->
+  <!-- Layer 1: Skill Library -->
+  <rect x="100" y="80" width="600" height="100" rx="10" fill="url(#grad1)" opacity="0.1"/>
+  <rect x="110" y="90" width="580" height="80" rx="5" fill="#fff" stroke="#FF4D94" stroke-width="2"/>
+  <text x="400" y="115" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#FF4D94">技能库 (1700+ Core Skills Library)</text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">编程 · 设计 · 分析 · 创作 · 翻译 · 法律 · 医疗 · 金融 ...</text>
+
+  <!-- Layer 2: API Gateway -->
+  <rect x="100" y="200" width="600" height="100" rx="10" fill="#00E5FF" opacity="0.1"/>
+  <rect x="110" y="210" width="580" height="80" rx="5" fill="#fff" stroke="#00E5FF" stroke-width="2"/>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#00E5FF">API 服务集成框架 (API Gateway &amp; Middleware)</text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">RESTful/GraphQL · 服务发现 · 认证 · 限流 · 重试</text>
+
+  <!-- Layer 3: Model Adapters -->
+  <rect x="100" y="320" width="600" height="100" rx="10" fill="#FFD700" opacity="0.1"/>
+  <rect x="110" y="330" width="580" height="80" rx="5" fill="#fff" stroke="#FFD700" stroke-width="2"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#DAA520">多模型切换配置 (Multi-Model Adapters)</text>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">GPT Adapter · Claude Adapter · Gemini Adapter</text>
+
+  <!-- Layer 4: Optimizer & Monitor -->
+  <rect x="100" y="440" width="290" height="80" rx="5" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+  <text x="245" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#4CAF50">成本优化策略 (Cost Optimizer)</text>
+  <text x="245" y="500" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">智能路由 · 请求缓存 · 成本分析</text>
+
+  <rect x="410" y="440" width="290" height="80" rx="5" fill="#fff" stroke="#F44336" stroke-width="2"/>
+  <text x="555" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#F44336">性能调优与监控 (Perf &amp; Monitor)</text>
+  <text x="555" y="500" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">并发管理 · 负载均衡 · 性能告警</text>
+
+  <!-- Connectors -->
+  <line x1="400" y1="170" x2="400" y2="210" stroke="#666" stroke-width="2" marker-start="url(#arrowhead)"/>
+  <line x1="400" y1="290" x2="400" y2="330" stroke="#666" stroke-width="2" marker-start="url(#arrowhead)"/>
+  <line x1="245" y1="410" x2="245" y2="440" stroke="#666" stroke-width="2" marker-start="url(#arrowhead)"/>
+  <line x1="555" y1="410" x2="555" y2="440" stroke="#666" stroke-width="2" marker-start="url(#arrowhead)"/>
+</svg>

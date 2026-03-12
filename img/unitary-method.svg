@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <!-- Background -->
+  <rect width="600" height="350" fill="#f0f9ff" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#0369a1" font-weight="bold">归一问题：先求出一份是多少</text>
+  
+  <!-- Unitary Method Illustration -->
+  <g transform="translate(50, 80)">
+    <!-- Known: 3 items = 15 -->
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#333" font-weight="bold">已知条件：</text>
+    <circle cx="120" cy="20" r="15" fill="#38bdf8" />
+    <circle cx="160" cy="20" r="15" fill="#38bdf8" />
+    <circle cx="200" cy="20" r="15" fill="#38bdf8" />
+    <text x="230" y="25" font-family="Arial" font-size="18">共 15 元</text>
+    
+    <!-- Step 1: Find unit -->
+    <path d="M160,50 L160,100" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <text x="170" y="80" font-family="Arial" font-size="14" fill="#0369a1">除以 3 (归一)</text>
+    
+    <text x="0" y="130" font-family="Arial" font-size="18" fill="#333" font-weight="bold">第一步：求 1 份</text>
+    <circle cx="120" cy="130" r="15" fill="#38bdf8" />
+    <text x="230" y="135" font-family="Arial" font-size="18" fill="#e11d48" font-weight="bold">1 份 = 5 元</text>
+    
+    <!-- Step 2: Find total for 5 items -->
+    <path d="M160,160 L160,210" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <text x="170" y="190" font-family="Arial" font-size="14" fill="#0369a1">乘以 5 (扩缩)</text>
+    
+    <text x="0" y="240" font-family="Arial" font-size="18" fill="#333" font-weight="bold">第二步：求多份</text>
+    <circle cx="120" cy="240" r="15" fill="#38bdf8" />
+    <circle cx="160" cy="240" r="15" fill="#38bdf8" />
+    <circle cx="200" cy="240" r="15" fill="#38bdf8" />
+    <circle cx="240" cy="240" r="15" fill="#38bdf8" />
+    <circle cx="280" cy="240" r="15" fill="#38bdf8" />
+    <text x="310" y="245" font-family="Arial" font-size="18">5 × 5 = 25 元</text>
+  </g>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0ea5e9" />
+    </marker>
+  </defs>
+</svg>

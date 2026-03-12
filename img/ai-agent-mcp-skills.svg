@@ -1,0 +1,69 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="2" dy="4" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="brain-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#fdfcfb" rx="20" />
+  
+  <!-- The Brain: LLM Layer -->
+  <g transform="translate(400, 80)" filter="url(#card-shadow)">
+    <rect x="-150" y="-40" width="300" height="80" rx="15" fill="url(#brain-grad)" />
+    <text y="5" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">LLM (大语言模型)</text>
+    <text y="25" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">核心决策引擎 · 语义理解 · 逻辑推理</text>
+  </g>
+
+  <!-- The Body: Agent Layer -->
+  <g transform="translate(400, 250)" filter="url(#card-shadow)">
+    <rect x="-200" y="-60" width="400" height="120" rx="15" fill="#FF4D94" />
+    <text y="-10" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="white">AI Agent (智能体)</text>
+    <text y="20" font-family="Arial" font-size="14" text-anchor="middle" fill="white">自主规划 (Planning) | 记忆管理 (Memory) | 工具调用 (Action)</text>
+  </g>
+
+  <!-- The Interface: MCP Layer -->
+  <g transform="translate(400, 420)" filter="url(#card-shadow)">
+    <rect x="-180" y="-30" width="360" height="60" rx="30" fill="#00E5FF" />
+    <text y="5" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">MCP (Model Context Protocol)</text>
+    <text y="25" font-family="Arial" font-size="11" text-anchor="middle" fill="#444">标准化工业接口 · 安全沙箱 · 实时上下文</text>
+  </g>
+
+  <!-- The Tools: Skills Layer -->
+  <g transform="translate(150, 530)">
+    <rect x="-60" y="-25" width="120" height="50" rx="10" fill="#00FFC6" opacity="0.8" />
+    <text y="5" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Skills</text>
+  </g>
+  <g transform="translate(400, 530)">
+    <rect x="-60" y="-25" width="120" height="50" rx="10" fill="#00FFC6" opacity="0.8" />
+    <text y="5" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Databases</text>
+  </g>
+  <g transform="translate(650, 530)">
+    <rect x="-60" y="-25" width="120" height="50" rx="10" fill="#00FFC6" opacity="0.8" />
+    <text y="5" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Web APIs</text>
+  </g>
+
+  <!-- Arrows & Flow -->
+  <path d="M400,120 L400,190" stroke="#FFD700" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M400,310 L400,390" stroke="#FF4D94" stroke-width="3" marker-end="url(#arrow)" />
+  
+  <path d="M150,505 L150,450 Q150,420 220,420" stroke="#00E5FF" stroke-width="2" fill="none" />
+  <path d="M400,505 L400,450" stroke="#00E5FF" stroke-width="2" fill="none" />
+  <path d="M650,505 L650,450 Q650,420 580,420" stroke="#00E5FF" stroke-width="2" fill="none" />
+
+  <!-- Descriptions -->
+  <text x="410" y="150" font-family="Arial" font-size="12" fill="#888">提供智力支持</text>
+  <text x="410" y="350" font-family="Arial" font-size="12" fill="#888">标准化指令与反馈</text>
+
+</svg>

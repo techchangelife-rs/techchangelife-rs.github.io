@@ -1,0 +1,31 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f6ffed" rx="10" ry="10"/>
+  
+  <!-- Periodic Circles -->
+  <g transform="translate(40, 60)">
+    <!-- Cycle 1 -->
+    <circle cx="0" cy="0" r="15" fill="#ff4d4f" />
+    <circle cx="40" cy="0" r="15" fill="#ffec3d" />
+    <circle cx="80" cy="0" r="15" fill="#40a9ff" />
+    <rect x="-20" y="-25" width="120" height="50" fill="none" stroke="#333" stroke-dasharray="4,2" rx="5"/>
+    <text x="40" y="45" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">周期 T=3</text>
+  </g>
+  
+  <g transform="translate(180, 60)">
+    <!-- Cycle 2 -->
+    <circle cx="0" cy="0" r="15" fill="#ff4d4f" />
+    <circle cx="40" cy="0" r="15" fill="#ffec3d" />
+    <circle cx="80" cy="0" r="15" fill="#40a9ff" />
+    <text x="110" y="5" font-family="Arial" font-size="20" fill="#333">...</text>
+  </g>
+  
+  <!-- Math Logic -->
+  <rect x="50" y="130" width="300" height="50" fill="#fff" stroke="#d9d9d9" rx="5"/>
+  <text x="200" y="150" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">
+    总数 ÷ 周期 = 组数 …… <tspan fill="#ff4d4f" font-weight="bold">余数</tspan>
+  </text>
+  <text x="200" y="170" font-family="Arial" font-size="12" fill="#8c8c8c" text-anchor="middle">
+    余数决定在周期内的具体位置
+  </text>
+</svg>

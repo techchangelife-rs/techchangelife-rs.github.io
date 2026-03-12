@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f0f7ff" rx="10" ry="10"/>
+  
+  <!-- Labels -->
+  <text x="20" y="60" font-family="Arial" font-size="16" fill="#333">大数 (n份)</text>
+  <text x="20" y="110" font-family="Arial" font-size="16" fill="#333">小数 (1份)</text>
+  
+  <!-- Small Number (1 unit) -->
+  <rect x="120" y="95" width="50" height="20" fill="#f5a623" stroke="#d48806" stroke-width="2"/>
+  <text x="145" y="135" font-family="Arial" font-size="12" fill="#d48806" text-anchor="middle">1份</text>
+  
+  <!-- Large Number (3 units example) -->
+  <rect x="120" y="45" width="50" height="20" fill="#4a90e2" stroke="#2171c7" stroke-width="2"/>
+  <rect x="170" y="45" width="50" height="20" fill="#4a90e2" stroke="#2171c7" stroke-width="2"/>
+  <rect x="220" y="45" width="50" height="20" fill="#4a90e2" stroke="#2171c7" stroke-width="2"/>
+  <text x="195" y="35" font-family="Arial" font-size="12" fill="#2171c7" text-anchor="middle">3份</text>
+  
+  <!-- Sum Bracket -->
+  <path d="M 280 45 L 290 45 L 290 115 L 280 115" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="300" y="85" font-family="Arial" font-size="16" fill="#333" dominant-baseline="middle">总和</text>
+  
+  <!-- Formula -->
+  <text x="200" y="170" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">
+    1份量 = 总和 ÷ (3 + 1)
+  </text>
+</svg>

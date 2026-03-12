@@ -1,0 +1,106 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="1200" fill="#fdfefe" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">三角形“五心”深度图解与性质全览</text>
+  
+  <!-- Centroid (重心) -->
+  <g transform="translate(50, 80)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#e67e22" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#e67e22">1. 重心 (Centroid) —— 物理平衡点</text>
+    
+    <g transform="translate(50, 50)">
+      <path d="M 0 120 L 200 120 L 100 20 Z" fill="#fef5e7" stroke="#e67e22" stroke-width="2" />
+      <line x1="100" y1="20" x2="100" y2="120" stroke="#e67e22" stroke-width="1" stroke-dasharray="2,2" />
+      <line x1="0" y1="120" x2="150" y2="70" stroke="#e67e22" stroke-width="1" stroke-dasharray="2,2" />
+      <line x1="200" y1="120" x2="50" y2="70" stroke="#e67e22" stroke-width="1" stroke-dasharray="2,2" />
+      <circle cx="100" cy="86.6" r="4" fill="#e67e22" />
+      <text x="110" y="85" font-family="Arial, sans-serif" font-size="12" fill="#e67e22">G</text>
+    </g>
+    
+    <g transform="translate(300, 60)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">● 定义：三条中线的交点</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">● 性质：将中线分为 2:1 两段</text>
+      <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">● 物理：均匀材质的几何中心</text>
+      <text x="0" y="95" font-family="Times New Roman, serif" font-size="16" font-style="italic" fill="#e67e22">AG = 2GD</text>
+    </g>
+  </g>
+  
+  <!-- Incenter (内心) -->
+  <g transform="translate(50, 300)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#9b59b6" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#9b59b6">2. 内心 (Incenter) —— 内切之圆</text>
+    
+    <g transform="translate(50, 50)">
+      <path d="M 0 120 L 200 120 L 100 20 Z" fill="#f5eef8" stroke="#9b59b6" stroke-width="2" />
+      <circle cx="100" cy="85.4" r="34.6" fill="none" stroke="#9b59b6" stroke-width="1.5" />
+      <circle cx="100" cy="85.4" r="3" fill="#9b59b6" />
+      <text x="110" y="85" font-family="Arial, sans-serif" font-size="12" fill="#9b59b6">I</text>
+    </g>
+    
+    <g transform="translate(300, 60)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">● 定义：三个角平分线的交点</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">● 性质：到三边距离相等 (= r)</text>
+      <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">● 公式：S = p · r (p为半周长)</text>
+    </g>
+  </g>
+  
+  <!-- Circumcenter (外心) -->
+  <g transform="translate(50, 520)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#3498db" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#3498db">3. 外心 (Circumcenter) —— 外接之圆</text>
+    
+    <g transform="translate(50, 50)">
+      <path d="M 40 100 L 160 100 L 100 40 Z" fill="#ebf5fb" stroke="#3498db" stroke-width="2" />
+      <circle cx="100" cy="90" r="60" fill="none" stroke="#3498db" stroke-width="1" stroke-dasharray="4,2" />
+      <circle cx="100" cy="90" r="3" fill="#3498db" />
+      <text x="110" y="90" font-family="Arial, sans-serif" font-size="12" fill="#3498db">O</text>
+    </g>
+    
+    <g transform="translate(300, 60)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">● 定义：三边垂直平分线的交点</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">● 性质：到三个顶点距离相等 (= R)</text>
+      <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">● 位置：直角三角形在斜边中点</text>
+    </g>
+  </g>
+  
+  <!-- Orthocenter (垂心) -->
+  <g transform="translate(50, 740)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#e74c3c" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#e74c3c">4. 垂心 (Orthocenter) —— 高线之汇</text>
+    
+    <g transform="translate(50, 50)">
+      <path d="M 0 120 L 200 120 L 60 40 Z" fill="#fdedec" stroke="#e74c3c" stroke-width="2" />
+      <line x1="60" y1="40" x2="60" y2="120" stroke="#e74c3c" stroke-width="1" stroke-dasharray="2,2" />
+      <circle cx="60" cy="88" r="3" fill="#e74c3c" />
+      <text x="70" y="90" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">H</text>
+    </g>
+    
+    <g transform="translate(300, 60)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">● 定义：三条高线的交点</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" font-size="14" fill="#333">● 性质：垂三角形与原三角形的联系</text>
+      <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">● 位置：钝角三角形垂心在外部</text>
+    </g>
+  </g>
+  
+  <!-- Euler Line (欧拉线) -->
+  <g transform="translate(50, 960)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#2c3e50" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">5. 欧拉线 (Euler Line) —— 奇迹的共线</text>
+    
+    <g transform="translate(100, 100)">
+      <line x1="0" y1="0" x2="500" y2="0" stroke="#2c3e50" stroke-width="3" stroke-dasharray="8,4" />
+      <circle cx="100" cy="0" r="5" fill="#e74c3c" />
+      <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e74c3c">垂心 H</text>
+      
+      <circle cx="250" cy="0" r="5" fill="#e67e22" />
+      <text x="250" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e67e22">重心 G</text>
+      
+      <circle cx="325" cy="0" r="5" fill="#3498db" />
+      <text x="325" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#3498db">外心 O</text>
+      
+      <text x="250" y="-20" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#2c3e50">HG : GO = 2 : 1</text>
+    </g>
+  </g>
+</svg>

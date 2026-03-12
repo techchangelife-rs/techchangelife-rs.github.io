@@ -1,0 +1,35 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f9f9f9" rx="10" ry="10"/>
+  
+  <!-- Table Grid -->
+  <g transform="translate(100, 40)">
+    <!-- Header Row -->
+    <text x="50" y="-10" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">医生</text>
+    <text x="120" y="-10" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">老师</text>
+    <text x="190" y="-10" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">司机</text>
+    
+    <!-- Left Labels -->
+    <text x="-40" y="30" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">甲</text>
+    <text x="-40" y="70" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">乙</text>
+    <text x="-40" y="110" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">丙</text>
+    
+    <!-- Grid Lines -->
+    <line x1="15" y1="0" x2="225" y2="0" stroke="#ccc" stroke-width="1"/>
+    <line x1="15" y1="40" x2="225" y2="40" stroke="#ccc" stroke-width="1"/>
+    <line x1="15" y1="80" x2="225" y2="80" stroke="#ccc" stroke-width="1"/>
+    <line x1="15" y1="120" x2="225" y2="120" stroke="#ccc" stroke-width="1"/>
+    
+    <line x1="15" y1="0" x2="15" y2="120" stroke="#ccc" stroke-width="1"/>
+    <line x1="85" y1="0" x2="85" y2="120" stroke="#ccc" stroke-width="1"/>
+    <line x1="155" y1="0" x2="155" y2="120" stroke="#ccc" stroke-width="1"/>
+    <line x1="225" y1="0" x2="225" y2="120" stroke="#ccc" stroke-width="1"/>
+    
+    <!-- Logical Markers -->
+    <text x="120" y="30" font-family="Arial" font-size="20" fill="#f5222d" text-anchor="middle">×</text>
+    <text x="120" y="70" font-family="Arial" font-size="20" fill="#f5222d" text-anchor="middle">×</text>
+    <text x="120" y="110" font-family="Arial" font-size="20" fill="#52c41a" text-anchor="middle">✓</text>
+  </g>
+  
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">利用矩阵排除法：打“✓”即确定，打“×”即排除</text>
+</svg>

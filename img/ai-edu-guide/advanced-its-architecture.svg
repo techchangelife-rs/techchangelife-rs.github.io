@@ -1,0 +1,47 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="#333">智能导师系统 (ITS) 进阶架构</text>
+  
+  <!-- Knowledge Base (RAG) -->
+  <g transform="translate(50, 100)">
+    <rect width="200" height="150" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565c0">魔法图书馆 (RAG)</text>
+    <text x="100" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">向量化教材知识</text>
+    <text x="100" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">精准检索 (Similarity Search)</text>
+  </g>
+  
+  <!-- LLM Controller -->
+  <g transform="translate(300, 100)">
+    <rect width="200" height="150" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4a148c">教授大脑 (LLM)</text>
+    <text x="100" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">思维链 (CoT) 推理</text>
+    <text x="100" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">意图识别与情感计算</text>
+  </g>
+  
+  <!-- Interaction & UI -->
+  <g transform="translate(550, 100)">
+    <rect width="200" height="150" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">魔法画板 (UI/UX)</text>
+    <text x="100" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">语音交互/手势识别</text>
+    <text x="100" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">自适应反馈展示</text>
+  </g>
+  
+  <!-- Evaluation Layer -->
+  <g transform="translate(300, 300)">
+    <rect width="200" height="120" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">成绩单 (Evaluation)</text>
+    <text x="100" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">学习进度追踪</text>
+    <text x="100" y="90" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">知识点掌握度热图</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <path d="M 250 175 L 300 175" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 500 175 L 550 175" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 400 250 L 400 300" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

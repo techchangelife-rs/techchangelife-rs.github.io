@@ -1,0 +1,19 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#fff7ed" rx="10"/>
+  <text x="200" y="30" font-family="Courier New, monospace" font-size="18" fill="#9a3412" text-anchor="middle" font-weight="bold">数字谜：消失的数字</text>
+  
+  <g transform="translate(150, 60)">
+    <!-- 竖式 -->
+    <text x="40" y="20" font-family="Courier New, monospace" font-size="24" fill="#333" text-anchor="end">2 <tspan fill="#ea580c">★</tspan></text>
+    <text x="0" y="50" font-family="Courier New, monospace" font-size="24" fill="#333">+</text>
+    <text x="40" y="50" font-family="Courier New, monospace" font-size="24" fill="#333" text-anchor="end"><tspan fill="#c026d3">▲</tspan> 5</text>
+    <line x1="-10" y1="65" x2="50" y2="65" stroke="#333" stroke-width="2"/>
+    <text x="40" y="95" font-family="Courier New, monospace" font-size="24" fill="#333" text-anchor="end">6 8</text>
+    
+    <!-- 标注 -->
+    <text x="70" y="20" font-family="Arial" font-size="12" fill="#ea580c">★ + 5 = 8</text>
+    <text x="70" y="50" font-family="Arial" font-size="12" fill="#c026d3">2 + ▲ = 6</text>
+  </g>
+  
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#9a3412" font-weight="bold">结论：★ = 3, ▲ = 4</text>
+</svg>

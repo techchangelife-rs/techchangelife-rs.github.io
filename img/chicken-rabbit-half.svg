@@ -1,0 +1,20 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 砍足法示意 (脚数减半) -->
+  <rect x="50" y="50" width="300" height="100" rx="10" fill="#f0f0f0" stroke="#ccc"/>
+  <text x="200" y="40" text-anchor="middle" font-weight="bold">砍足法：总脚数减半 (L/2)</text>
+  
+  <g transform="translate(100, 100)">
+    <circle r="20" fill="#FFD700" stroke="#000"/>
+    <line y1="20" y2="40" stroke="#000" stroke-width="2"/>
+    <text y="-25" text-anchor="middle" font-size="12">鸡 (1腿)</text>
+  </g>
+
+  <g transform="translate(300, 100)">
+    <circle r="20" fill="#FF69B4" stroke="#000"/>
+    <line x1="-5" y1="20" x2="-5" y2="40" stroke="#000" stroke-width="2"/>
+    <line x1="5" y1="20" x2="5" y2="40" stroke="#000" stroke-width="2"/>
+    <text y="-25" text-anchor="middle" font-size="12">兔 (2腿)</text>
+  </g>
+
+  <text x="200" y="180" text-anchor="middle" font-size="14" fill="blue">公式：兔 = L/2 - 头</text>
+</svg>

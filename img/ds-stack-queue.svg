@@ -1,0 +1,27 @@
+<svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#f6ffed" rx="10"/>
+  
+  <!-- Stack -->
+  <rect x="50" y="60" width="80" height="120" fill="none" stroke="#52c41a" stroke-width="2"/>
+  <rect x="55" y="150" width="70" height="25" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <rect x="55" y="120" width="70" height="25" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <rect x="55" y="90" width="70" height="25" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <text x="90" y="210" font-family="Arial" font-size="14" fill="#237804" text-anchor="middle">栈 (LIFO)</text>
+  <path d="M 90 40 L 90 70" stroke="#237804" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+  <!-- Queue -->
+  <line x1="220" y1="100" x2="360" y2="100" stroke="#52c41a" stroke-width="2"/>
+  <line x1="220" y1="140" x2="360" y2="140" stroke="#52c41a" stroke-width="2"/>
+  <rect x="230" y="105" width="30" height="30" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <rect x="270" y="105" width="30" height="30" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <rect x="310" y="105" width="30" height="30" fill="#b7eb8f" stroke="#52c41a" rx="3"/>
+  <text x="290" y="210" font-family="Arial" font-size="14" fill="#237804" text-anchor="middle">队列 (FIFO)</text>
+  <path d="M 370 120 L 390 120" stroke="#237804" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M 200 120 L 220 120" stroke="#237804" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#237804" />
+    </marker>
+  </defs>
+</svg>

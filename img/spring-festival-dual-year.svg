@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <style>
+      .calendar-bg { fill: #fff; stroke: #ccc; stroke-width: 1; }
+      .calendar-header-red { fill: #D93939; }
+      .calendar-header-blue { fill: #4682B4; }
+      .date-text { font-size: 48px; font-weight: bold; text-anchor: middle; }
+      .month-text { font-size: 18px; fill: #fff; text-anchor: middle; }
+      .label-text { font-size: 16px; fill: #333; text-anchor: middle; font-weight: bold; }
+      .sub-text { font-size: 12px; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#FFFDF5" />
+
+  <!-- 左侧：公历元旦 -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="150" height="180" rx="5" class="calendar-bg" />
+    <rect x="0" y="0" width="150" height="40" rx="5" class="calendar-header-blue" />
+    <text x="75" y="25" class="month-text">公历 (Gregorian)</text>
+    
+    <text x="75" y="110" class="date-text" fill="#4682B4">1月1日</text>
+    <text x="75" y="150" class="label-text">元旦</text>
+    <text x="75" y="170" class="sub-text">New Year's Day</text>
+  </g>
+
+  <!-- VS -->
+  <text x="300" y="150" font-size="24" fill="#999" text-anchor="middle" font-weight="bold">VS</text>
+
+  <!-- 右侧：农历春节 -->
+  <g transform="translate(350, 50)">
+    <rect x="0" y="0" width="150" height="180" rx="5" class="calendar-bg" />
+    <rect x="0" y="0" width="150" height="40" rx="5" class="calendar-header-red" />
+    <text x="75" y="25" class="month-text">农历 (Lunar)</text>
+    
+    <text x="75" y="110" class="date-text" fill="#D93939">正月初一</text>
+    <text x="75" y="150" class="label-text">春节</text>
+    <text x="75" y="170" class="sub-text">Spring Festival</text>
+  </g>
+
+  <text x="300" y="260" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">中国现代“双年节”体系</text>
+  <text x="300" y="280" font-size="12" fill="#666" text-anchor="middle">既与国际接轨（公元纪年），又传承传统文化（农历纪年）</text>
+</svg>

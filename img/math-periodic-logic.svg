@@ -1,0 +1,28 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#fffbeb" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#92400e" text-anchor="middle" font-weight="bold">周期问题：无限的循环</text>
+  
+  <g transform="translate(30, 60)">
+    <!-- 一个周期 -->
+    <rect x="-5" y="-5" width="100" height="50" fill="none" stroke="#d97706" stroke-dasharray="4" rx="5"/>
+    <text x="45" y="60" font-family="Arial" font-size="12" fill="#d97706" text-anchor="middle">一个周期 (3个)</text>
+    
+    <circle cx="15" cy="20" r="12" fill="#ef4444"/>
+    <circle cx="45" cy="20" r="12" fill="#3b82f6"/>
+    <circle cx="75" cy="20" r="12" fill="#10b981"/>
+    
+    <!-- 第二个周期 -->
+    <circle cx="115" cy="20" r="12" fill="#ef4444"/>
+    <circle cx="145" cy="20" r="12" fill="#3b82f6"/>
+    <circle cx="175" cy="20" r="12" fill="#10b981"/>
+    
+    <!-- 第三个周期 -->
+    <circle cx="215" cy="20" r="12" fill="#ef4444"/>
+    <circle cx="245" cy="20" r="12" fill="#3b82f6"/>
+    <circle cx="275" cy="20" r="12" fill="#10b981"/>
+    
+    <text x="320" y="25" font-family="Arial" font-size="20" fill="#92400e">...</text>
+  </g>
+  
+  <text x="200" y="135" font-family="Arial" font-size="14" fill="#92400e" font-weight="bold">核心秘诀：总数 ÷ 周期长度 = 找余数</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#FFF3E0" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#E65100">AI 的“小小误区”</text>
+  
+  <g transform="translate(100, 100)">
+    <rect width="250" height="200" rx="10" fill="#fff" stroke="#FF9800" stroke-width="2"/>
+    <text x="125" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#E65100">AI 会取代人类吗？</text>
+    <text x="125" y="100" font-size="50" text-anchor="middle">❌</text>
+    <text x="125" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">AI 是工具，它是来</text>
+    <text x="125" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">帮我们变得更强大的！</text>
+  </g>
+  
+  <g transform="translate(450, 100)">
+    <rect width="250" height="200" rx="10" fill="#fff" stroke="#FF9800" stroke-width="2"/>
+    <text x="125" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#E65100">AI 有感情吗？</text>
+    <text x="125" y="100" font-size="50" text-anchor="middle">🤖</text>
+    <text x="125" y="160" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">它只有冷冰冰的代码，</text>
+    <text x="125" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">真正的爱只属于人类。</text>
+  </g>
+</svg>

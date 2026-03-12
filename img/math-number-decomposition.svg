@@ -1,0 +1,31 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0fdfa" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#0f766e" text-anchor="middle" font-weight="bold">数字拆分：积木的拆解</text>
+  
+  <g transform="translate(50, 60)">
+    <!-- 原始数字 5 -->
+    <text x="0" y="25" font-family="Arial" font-size="24" fill="#0d9488" font-weight="bold">5</text>
+    
+    <!-- 分支 -->
+    <path d="M 30 20 L 80 0" stroke="#0d9488" stroke-width="2"/>
+    <path d="M 30 25 L 80 25" stroke="#0d9488" stroke-width="2"/>
+    <path d="M 30 30 L 80 50" stroke="#0d9488" stroke-width="2"/>
+    
+    <!-- 拆分方案 -->
+    <text x="100" y="5" font-family="Arial" font-size="16" fill="#0f766e">1 + 4</text>
+    <text x="100" y="30" font-family="Arial" font-size="16" fill="#0f766e">2 + 3</text>
+    <text x="100" y="55" font-family="Arial" font-size="16" fill="#0f766e">1 + 1 + 3</text>
+    
+    <!-- 图形表示 -->
+    <g transform="translate(200, -10)">
+      <rect x="0" y="0" width="15" height="15" fill="#2dd4bf" rx="2"/>
+      <text x="20" y="12" font-family="Arial" font-size="14" fill="#666">+</text>
+      <rect x="35" y="0" width="15" height="15" fill="#2dd4bf" rx="2"/>
+      <rect x="52" y="0" width="15" height="15" fill="#2dd4bf" rx="2"/>
+      <rect x="69" y="0" width="15" height="15" fill="#2dd4bf" rx="2"/>
+      <rect x="86" y="0" width="15" height="15" fill="#2dd4bf" rx="2"/>
+    </g>
+  </g>
+  
+  <text x="200" y="135" font-family="Arial" font-size="14" fill="#0f766e" font-weight="bold">核心：按顺序排列，不重不漏</text>
+</svg>

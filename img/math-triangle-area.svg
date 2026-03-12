@@ -1,0 +1,78 @@
+<svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="900" fill="#fff9f0" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#d35400">三角形面积计算全体系图解</text>
+  
+  <!-- Section 1: Basic Formula (Height & Base) -->
+  <g transform="translate(50, 80)">
+    <rect width="700" height="240" rx="15" fill="#ffffff" stroke="#e67e22" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#e67e22">1. 基础公式法：底高转换 (Base &amp; Height)</text>
+    
+    <!-- Acute Triangle -->
+    <g transform="translate(50, 50)">
+      <path d="M 0 120 L 150 120 L 80 20 Z" fill="#fdebd0" stroke="#d35400" stroke-width="2" />
+      <line x1="80" y1="20" x2="80" y2="120" stroke="#d35400" stroke-width="1.5" stroke-dasharray="4,2" />
+      <rect x="80" y="110" width="10" height="10" fill="none" stroke="#d35400" stroke-width="1" />
+      <text x="75" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">底 a</text>
+      <text x="95" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">高 h</text>
+    </g>
+    
+    <!-- Obtuse Triangle -->
+    <g transform="translate(350, 50)">
+      <path d="M 0 120 L 100 120 L 150 20 Z" fill="#fdebd0" stroke="#d35400" stroke-width="2" />
+      <line x1="150" y1="20" x2="150" y2="120" stroke="#d35400" stroke-width="1.5" stroke-dasharray="4,2" />
+      <line x1="100" y1="120" x2="150" y2="120" stroke="#d35400" stroke-width="1.5" stroke-dasharray="2,2" />
+      <rect x="150" y="110" width="10" height="10" fill="none" stroke="#d35400" stroke-width="1" />
+      <text x="50" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">底 a</text>
+      <text x="165" y="70" font-family="Arial, sans-serif" font-size="14" fill="#333">高 h</text>
+    </g>
+    
+    <text x="350" y="210" font-family="Times New Roman, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#d35400">S = ½ · a · h</text>
+  </g>
+  
+  <!-- Section 2: Heron's Formula -->
+  <g transform="translate(50, 340)">
+    <rect width="340" height="280" rx="15" fill="#ffffff" stroke="#2980b9" stroke-width="2" />
+    <text x="170" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">2. 海伦公式 (已知三边)</text>
+    
+    <path d="M 50 180 L 290 180 L 120 60 Z" fill="#ebf5fb" stroke="#2980b9" stroke-width="2" />
+    <text x="170" y="200" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">a</text>
+    <text x="70" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">b</text>
+    <text x="220" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">c</text>
+    
+    <text x="170" y="230" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#333">p = (a+b+c)/2</text>
+    <text x="170" y="255" font-family="Times New Roman, serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2980b9">S = √[p(p-a)(p-b)(p-c)]</text>
+  </g>
+  
+  <!-- Section 3: Sine Formula -->
+  <g transform="translate(410, 340)">
+    <rect width="340" height="280" rx="15" fill="#ffffff" stroke="#8e44ad" stroke-width="2" />
+    <text x="170" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#8e44ad">3. 三角函数法 (已知两边一角)</text>
+    
+    <path d="M 50 180 L 290 180 L 170 60 Z" fill="#f4ecf7" stroke="#8e44ad" stroke-width="2" />
+    <text x="170" y="200" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">a</text>
+    <text x="100" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">b</text>
+    <text x="125" y="170" font-family="Arial, sans-serif" font-size="14" fill="#8e44ad">C</text>
+    
+    <text x="170" y="240" font-family="Times New Roman, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#8e44ad">S = ½ ab sin C</text>
+  </g>
+  
+  <!-- Section 4: Special Triangles & Incircle -->
+  <g transform="translate(50, 640)">
+    <rect width="700" height="230" rx="15" fill="#ffffff" stroke="#27ae60" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#27ae60">4. 衍生公式与进阶应用</text>
+    
+    <g transform="translate(50, 50)">
+      <text x="100" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">等边三角形面积：</text>
+      <text x="100" y="50" font-family="Times New Roman, serif" font-size="22" fill="#27ae60">S = (√3/4) a²</text>
+    </g>
+    
+    <g transform="translate(400, 50)">
+      <text x="100" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">内切圆半径公式：</text>
+      <text x="100" y="50" font-family="Times New Roman, serif" font-size="22" fill="#27ae60">S = p · r</text>
+      <text x="100" y="75" font-family="Arial, sans-serif" font-size="12" fill="#666">(p为半周长，r为半径)</text>
+    </g>
+  </g>
+</svg>

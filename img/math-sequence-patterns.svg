@@ -1,0 +1,30 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0f9ff" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#0369a1" text-anchor="middle" font-weight="bold">数列找规律：跳跃的数字</text>
+  
+  <g transform="translate(40, 70)">
+    <!-- 数字 -->
+    <text x="0" y="20" font-family="Arial" font-size="20" fill="#0369a1" font-weight="bold">2</text>
+    <text x="50" y="20" font-family="Arial" font-size="20" fill="#0369a1" font-weight="bold">5</text>
+    <text x="100" y="20" font-family="Arial" font-size="20" fill="#0369a1" font-weight="bold">8</text>
+    <text x="150" y="20" font-family="Arial" font-size="20" fill="#0369a1" font-weight="bold">11</text>
+    <text x="200" y="20" font-family="Arial" font-size="20" fill="#0369a1" font-weight="bold">14</text>
+    <text x="250" y="20" font-family="Arial" font-size="20" fill="#e11d48" font-weight="bold">?</text>
+    
+    <!-- 规律箭头 -->
+    <path d="M 10 35 Q 25 55 40 35" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <text x="25" y="65" font-family="Arial" font-size="12" fill="#0ea5e9" text-anchor="middle">+3</text>
+    
+    <path d="M 60 35 Q 75 55 90 35" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <text x="75" y="65" font-family="Arial" font-size="12" fill="#0ea5e9" text-anchor="middle">+3</text>
+    
+    <path d="M 110 35 Q 125 55 140 35" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <text x="125" y="65" font-family="Arial" font-size="12" fill="#0ea5e9" text-anchor="middle">+3</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0ea5e9" />
+    </marker>
+  </defs>
+</svg>

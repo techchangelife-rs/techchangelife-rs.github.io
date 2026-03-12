@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <style>
+    .axis{stroke:#1B9EF3;stroke-width:2}
+    .circle{stroke:#49B1F5;stroke-width:2;fill:none}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:14px;fill:#333}
+    .lineA{stroke:#00C4B6;stroke-width:2}
+    .lineB{stroke:#FF7242;stroke-width:2}
+  </style>
+  <rect width="720" height="480" fill="#f8fbff"/>
+  <g transform="translate(360,240)">
+    <circle r="180" class="circle"/>
+    <line x1="-220" y1="0" x2="220" y2="0" class="axis"/>
+    <line x1="0" y1="-220" x2="0" y2="220" class="axis"/>
+    <g transform="rotate(30)">
+      <line x1="0" y1="0" x2="180" y2="0" class="lineA"/>
+    </g>
+    <g transform="rotate(65)">
+      <line x1="0" y1="0" x2="180" y2="0" class="lineB"/>
+    </g>
+    <g transform="rotate(95)">
+      <line x1="0" y1="0" x2="180" y2="0" class="lineA"/>
+    </g>
+    <text x="100" y="-10" class="txt">cos(a+b)</text>
+    <text x="-10" y="-120" class="txt">sin(a+b)</text>
+  </g>
+  <text x="60" y="420" class="txt">角度和：sin(a+b)、cos(a+b) 的几何直观（向量旋转叠加）。</text>
+</svg>

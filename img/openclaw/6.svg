@@ -1,0 +1,39 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f0f3f5" rx="10"/>
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">图 7.1: DevSecOps 自动化闭环流程</text>
+
+  <!-- CI/CD Trigger -->
+  <rect x="50" y="100" width="140" height="60" rx="5" fill="#34495e"/>
+  <text x="120" y="135" text-anchor="middle" fill="#fff" font-size="14">代码提交 (Git)</text>
+
+  <!-- OpenClaw Agent -->
+  <circle cx="300" cy="130" r="50" fill="#49B1F5" stroke="#fff" stroke-width="3"/>
+  <text x="300" y="135" text-anchor="middle" fill="#fff" font-weight="bold">OpenClaw</text>
+
+  <!-- Tools -->
+  <rect x="500" y="80" width="120" height="40" rx="5" fill="#95a5a6"/>
+  <text x="560" y="105" text-anchor="middle" fill="#fff" font-size="12">安全扫描 (SAST)</text>
+  <rect x="500" y="140" width="120" height="40" rx="5" fill="#95a5a6"/>
+  <text x="560" y="165" text-anchor="middle" fill="#fff" font-size="12">单元测试 (Jest)</text>
+
+  <!-- Fix & PR -->
+  <rect x="650" y="110" width="120" height="40" rx="5" fill="#2ecc71"/>
+  <text x="710" y="135" text-anchor="middle" fill="#fff" font-size="12">自动修复并提 PR</text>
+
+  <!-- 数据流 -->
+  <path d="M190,130 L250,130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M350,130 L500,100" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M350,130 L500,160" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M620,130 L650,130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <rect x="100" y="250" width="600" height="100" rx="10" fill="#fff" stroke="#eee"/>
+  <text x="120" y="280" font-size="12" fill="#555" font-weight="bold">业务价值：</text>
+  <text x="120" y="305" font-size="11" fill="#666">- 漏洞平均修复时间 (MTTR) 从 48 小时降至 15 分钟。</text>
+  <text x="120" y="325" font-size="11" fill="#666">- 研发工程师减少了 70% 的重复性安全工单处理工作。</text>
+</svg>

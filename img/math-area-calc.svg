@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f6ffed" rx="10" ry="10"/>
+  
+  <!-- Cut and Paste Example -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="60" height="60" fill="#bae7ff" stroke="#0050b3" stroke-width="2"/>
+    <path d="M 0 0 Q 30 30 60 0" fill="#fff" stroke="#0050b3" stroke-width="2"/>
+    <text x="30" y="80" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">原始图形</text>
+  </g>
+  
+  <path d="M 130 80 L 170 80" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <g transform="translate(200, 50)">
+    <rect x="0" y="0" width="60" height="60" fill="#bae7ff" stroke="#0050b3" stroke-width="2"/>
+    <path d="M 0 60 Q 30 90 60 60" fill="#bae7ff" stroke="#0050b3" stroke-width="2"/>
+    <text x="30" y="80" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">割补后(等积)</text>
+  </g>
+  
+  <text x="200" y="170" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">割补法：将不规则阴影拼成规则图形</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>

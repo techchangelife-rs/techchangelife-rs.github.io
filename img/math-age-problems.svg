@@ -1,0 +1,32 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#ecfdf5" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#065f46" text-anchor="middle" font-weight="bold">年龄问题：不变的差距</text>
+  
+  <!-- 今年 -->
+  <g transform="translate(40, 60)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#065f46">今年：</text>
+    <rect x="50" y="-15" width="40" height="20" fill="#6ee7b7" rx="3"/>
+    <text x="70" y="0" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">5岁</text>
+    <rect x="110" y="-15" width="80" height="20" fill="#34d399" rx="3"/>
+    <text x="150" y="0" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">30岁</text>
+    <text x="220" y="0" font-family="Arial" font-size="14" fill="#059669">差：25岁</text>
+  </g>
+  
+  <!-- 5年后 -->
+  <g transform="translate(40, 110)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#065f46">5年后：</text>
+    <rect x="50" y="-15" width="50" height="20" fill="#6ee7b7" rx="3"/>
+    <text x="75" y="0" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">10岁</text>
+    <rect x="110" y="-15" width="90" height="20" fill="#34d399" rx="3"/>
+    <text x="155" y="0" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">35岁</text>
+    <text x="220" y="0" font-family="Arial" font-size="14" fill="#059669" font-weight="bold">差：还是25岁！</text>
+  </g>
+  
+  <path d="M 280 60 L 280 100" stroke="#059669" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrow-green)"/>
+
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#059669" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">思维链 (Chain of Thought, CoT) 内部路径</text>
+  
+  <!-- Steps -->
+  <g transform="translate(50, 120)">
+    <rect width="180" height="100" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1565c0">Step 1: 语义理解</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">提取核心实体与意图</text>
+  </g>
+  
+  <g transform="translate(310, 120)">
+    <rect width="180" height="100" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">Step 2: 逻辑推导</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">基于内部知识进行演化</text>
+  </g>
+  
+  <g transform="translate(570, 120)">
+    <rect width="180" height="100" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#e65100">Step 3: 最终输出</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">生成最符合概率的 Token</text>
+  </g>
+  
+  <!-- System Prompt -->
+  <g transform="translate(250, 300)">
+    <rect width="300" height="60" rx="30" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3"/>
+    <text x="150" y="35" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#4a148c">System Prompt: "请一步步思考..."</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <path d="M 230 170 L 310 170" stroke="#bdbdbd" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 490 170 L 570 170" stroke="#bdbdbd" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 400 300 L 400 220" stroke="#9c27b0" stroke-dasharray="5,5" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

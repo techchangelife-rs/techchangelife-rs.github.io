@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .node{rx:8;fill:#49B1F5}
+    .node2{rx:8;fill:#00C4B6}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:14px;fill:#fff}
+    .line{stroke:#1B9EF3;stroke-width:2}
+    .note{font-size:12px;fill:#333}
+  </style>
+  <rect x="60" y="60" width="200" height="48" class="node"/><text x="70" y="90" class="txt">产品/用户体验</text>
+  <rect x="60" y="130" width="200" height="48" class="node2"/><text x="70" y="160" class="txt">架构/工程化（CI/CD）</text>
+  <rect x="60" y="200" width="200" height="48" class="node"/><text x="70" y="230" class="txt">安全/隐私/合规</text>
+  <rect x="60" y="270" width="200" height="48" class="node2"/><text x="70" y="300" class="txt">性能/可用性/可访问性</text>
+
+  <rect x="300" y="60" width="200" height="48" class="node"/><text x="310" y="90" class="txt">AI API/模型集成</text>
+  <rect x="300" y="130" width="200" height="48" class="node2"/><text x="310" y="160" class="txt">Prompt/工具链</text>
+  <rect x="300" y="200" width="200" height="48" class="node"/><text x="310" y="230" class="txt">Agent/Workflow 编排</text>
+  <rect x="300" y="270" width="200" height="48" class="node2"/><text x="310" y="300" class="txt">评测/Guardrail</text>
+
+  <rect x="540" y="60" width="200" height="48" class="node"/><text x="550" y="90" class="txt">数据/埋点/观测</text>
+  <rect x="540" y="130" width="200" height="48" class="node2"/><text x="550" y="160" class="txt">可视化/报告</text>
+  <rect x="540" y="200" width="200" height="48" class="node"/><text x="550" y="230" class="txt">缓存/边缘/流式</text>
+  <rect x="540" y="270" width="200" height="48" class="node2"/><text x="550" y="300" class="txt">设计系统/组件库</text>
+
+  <rect x="760" y="130" width="140" height="48" class="node"/><text x="770" y="160" class="txt">核心原理</text>
+  <text x="760" y="190" class="note">编译/渲染/状态/网络等</text>
+
+  <line x1="260" y1="84" x2="300" y2="84" class="line"/>
+  <line x1="260" y1="154" x2="300" y2="154" class="line"/>
+  <line x1="260" y1="224" x2="300" y2="224" class="line"/>
+  <line x1="260" y1="294" x2="300" y2="294" class="line"/>
+  <line x1="500" y1="84" x2="540" y2="84" class="line"/>
+  <line x1="500" y1="154" x2="540" y2="154" class="line"/>
+  <line x1="500" y1="224" x2="540" y2="224" class="line"/>
+  <line x1="500" y1="294" x2="540" y2="294" class="line"/>
+  <line x1="740" y1="154" x2="760" y2="154" class="line"/>
+
+  <text x="60" y="360" class="note">技能地图：人机协作（产品/工程/AI/数据）+ 核心原理（保证迁移与可推理）。</text>
+</svg>

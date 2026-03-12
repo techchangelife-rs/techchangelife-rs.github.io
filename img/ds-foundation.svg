@@ -1,0 +1,20 @@
+<svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#f8f9fa" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">数据结构分类</text>
+  
+  <!-- Logical Structure -->
+  <rect x="20" y="60" width="160" height="150" fill="#e7f5ff" stroke="#228be6" stroke-width="2" rx="5"/>
+  <text x="100" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1864ab">逻辑结构</text>
+  <text x="40" y="115" font-family="Arial" font-size="12" fill="#1864ab">• 线性 (数组, 链表)</text>
+  <text x="40" y="140" font-family="Arial" font-size="12" fill="#1864ab">• 树形 (二叉树, 堆)</text>
+  <text x="40" y="165" font-family="Arial" font-size="12" fill="#1864ab">• 图形 (有向图, 无向图)</text>
+  <text x="40" y="190" font-family="Arial" font-size="12" fill="#1864ab">• 集合</text>
+
+  <!-- Physical Structure -->
+  <rect x="220" y="60" width="160" height="150" fill="#fff4e6" stroke="#fd7e14" stroke-width="2" rx="5"/>
+  <text x="300" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#d9480f">物理结构</text>
+  <text x="240" y="115" font-family="Arial" font-size="12" fill="#d9480f">• 顺序存储</text>
+  <text x="240" y="140" font-family="Arial" font-size="12" fill="#d9480f">• 链式存储</text>
+  <text x="240" y="165" font-family="Arial" font-size="12" fill="#d9480f">• 索引存储</text>
+  <text x="240" y="190" font-family="Arial" font-size="12" fill="#d9480f">• 散列存储 (Hash)</text>
+</svg>

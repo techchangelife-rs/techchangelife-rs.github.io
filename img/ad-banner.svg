@@ -1,0 +1,25 @@
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ad-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFC6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="120" fill="url(#ad-grad)" rx="12" />
+  
+  <!-- Patterns -->
+  <circle cx="50" cy="60" r="100" fill="#FFFFFF" opacity="0.1" />
+  <circle cx="750" cy="60" r="80" fill="#FF4D94" opacity="0.1" />
+  
+  <text x="400" y="55" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+    ✨ 多巴胺色系升级！ ✨
+  </text>
+  <text x="400" y="90" font-family="Arial" font-size="16" text-anchor="middle" fill="#FFFFFF" opacity="0.9">
+    充满活力的色彩，开启愉快的阅读之旅
+  </text>
+  
+  <!-- Floating icons -->
+  <g transform="translate(680, 40) rotate(15)">
+    <rect width="30" height="30" fill="#FFD700" rx="5" />
+  </g>
+</svg>

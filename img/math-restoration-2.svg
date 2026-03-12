@@ -1,0 +1,40 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f9f0ff" rx="10" ry="10"/>
+  
+  <!-- Flow Circles -->
+  <circle cx="50" cy="100" r="20" fill="#fff" stroke="#722ed1" stroke-width="2"/>
+  <text x="50" y="105" font-family="Arial" font-size="14" fill="#722ed1" text-anchor="middle">?</text>
+  
+  <circle cx="150" cy="100" r="20" fill="#fff" stroke="#722ed1" stroke-width="2"/>
+  <circle cx="250" cy="100" r="20" fill="#fff" stroke="#722ed1" stroke-width="2"/>
+  
+  <circle cx="350" cy="100" r="20" fill="#722ed1" stroke="#531dab" stroke-width="2"/>
+  <text x="350" y="105" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">结</text>
+  
+  <!-- Forward Arrows -->
+  <path d="M 75 90 L 125 90" stroke="#722ed1" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="100" y="80" font-family="Arial" font-size="12" fill="#722ed1" text-anchor="middle">+A</text>
+  
+  <path d="M 175 90 L 225 90" stroke="#722ed1" stroke-width="2"/>
+  <text x="200" y="80" font-family="Arial" font-size="12" fill="#722ed1" text-anchor="middle">×B</text>
+  
+  <!-- Backward Arrows (Restoration) -->
+  <path d="M 325 110 L 275 110" stroke="#eb2f96" stroke-width="2" marker-end="url(#arrow-back)"/>
+  <text x="300" y="130" font-family="Arial" font-size="12" fill="#eb2f96" text-anchor="middle">÷B</text>
+  
+  <path d="M 225 110 L 175 110" stroke="#eb2f96" stroke-width="2"/>
+  <text x="200" y="130" font-family="Arial" font-size="12" fill="#eb2f96" text-anchor="middle">-A</text>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#722ed1" />
+    </marker>
+    <marker id="arrow-back" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#eb2f96" />
+    </marker>
+  </defs>
+  
+  <text x="200" y="170" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">反向思维：结果 $\rightarrow$ 初始</text>
+</svg>

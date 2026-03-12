@@ -1,0 +1,33 @@
+<svg width="400" height="220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#fffde7" rx="10"/>
+  
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">逻辑推理：连连看</text>
+  
+  <!-- 表格 -->
+  <g transform="translate(50, 50)">
+    <!-- 边框 -->
+    <rect x="0" y="0" width="300" height="120" fill="none" stroke="#666" stroke-width="1"/>
+    <!-- 横线 -->
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#666"/>
+    <line x1="0" y1="80" x2="300" y2="80" stroke="#666"/>
+    <!-- 竖线 -->
+    <line x1="100" y1="0" x2="100" y2="120" stroke="#666"/>
+    <line x1="200" y1="0" x2="200" y2="120" stroke="#666"/>
+    
+    <!-- 文字 -->
+    <text x="50" y="25" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">名字</text>
+    <text x="150" y="25" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">喜欢红色</text>
+    <text x="250" y="25" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">喜欢蓝色</text>
+    
+    <text x="50" y="65" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">小明</text>
+    <text x="50" y="105" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">小红</text>
+    
+    <!-- 标记 -->
+    <text x="150" y="65" font-family="Arial" font-size="20" fill="#F44336" text-anchor="middle">×</text>
+    <text x="250" y="65" font-family="Arial" font-size="20" fill="#4CAF50" text-anchor="middle">√</text>
+    <text x="150" y="105" font-family="Arial" font-size="20" fill="#4CAF50" text-anchor="middle">√</text>
+    <text x="250" y="105" font-family="Arial" font-size="20" fill="#F44336" text-anchor="middle">×</text>
+  </g>
+  
+  <text x="200" y="195" font-family="Arial" font-size="14" fill="#E65100" text-anchor="middle">线索：小明不喜欢红色。结论：小明喜欢蓝色。</text>
+</svg>

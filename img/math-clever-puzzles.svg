@@ -1,0 +1,22 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#fff7ed" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#9a3412" text-anchor="middle" font-weight="bold">智巧趣题：过河挑战</text>
+  
+  <g transform="translate(50, 60)">
+    <!-- 河流 -->
+    <rect x="0" y="20" width="300" height="40" fill="#bae6fd"/>
+    
+    <!-- 岸边 -->
+    <rect x="0" y="0" width="300" height="20" fill="#d97706" opacity="0.3"/>
+    <rect x="0" y="60" width="300" height="20" fill="#d97706" opacity="0.3"/>
+    
+    <!-- 船 -->
+    <rect x="120" y="25" width="60" height="15" fill="#78350f" rx="2"/>
+    
+    <!-- 提示 -->
+    <text x="150" y="100" font-family="Arial" font-size="12" fill="#9a3412" text-anchor="middle">船一次只能载 2 人</text>
+    <text x="150" y="120" font-family="Arial" font-size="12" fill="#9a3412" text-anchor="middle">必须有人划回来</text>
+  </g>
+  
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#9a3412" font-weight="bold">关键：打破常规，寻找隐蔽条件</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#fffbeb" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#92400e" font-weight="bold">鸡兔同笼：假设法的奥秘</text>
+  
+  <!-- Problem Statement -->
+  <text x="50" y="80" font-family="Arial" font-size="18" fill="#333">题目：笼子里有 8 个头，22 只脚。求鸡和兔各几只？</text>
+  
+  <!-- Assumption Step -->
+  <g transform="translate(50, 110)">
+    <text x="0" y="20" font-family="Arial" font-size="16" fill="#b45309" font-weight="bold">第一步：大胆假设</text>
+    <text x="20" y="45" font-family="Arial" font-size="14">假设全是鸡（每只 2 脚）</text>
+    
+    <!-- 8 Chickens -->
+    <g transform="translate(20, 60)">
+      <circle cx="10" cy="10" r="10" fill="#fbbf24" /> <line x1="5" y1="20" x2="5" y2="30" stroke="#333" /> <line x1="15" y1="20" x2="15" y2="30" stroke="#333" />
+      <circle cx="40" cy="10" r="10" fill="#fbbf24" /> <line x1="35" y1="20" x2="35" y2="30" stroke="#333" /> <line x1="45" y1="20" x2="45" y2="30" stroke="#333" />
+      <circle cx="70" cy="10" r="10" fill="#fbbf24" /> <line x1="65" y1="20" x2="65" y2="30" stroke="#333" /> <line x1="75" y1="20" x2="75" y2="30" stroke="#333" />
+      <circle cx="100" cy="10" r="10" fill="#fbbf24" /> <line x1="95" y1="20" x2="95" y2="30" stroke="#333" /> <line x1="105" y1="20" x2="105" y2="30" stroke="#333" />
+      <circle cx="130" cy="10" r="10" fill="#fbbf24" /> <line x1="125" y1="20" x2="125" y2="30" stroke="#333" /> <line x1="135" y1="20" x2="135" y2="30" stroke="#333" />
+      <circle cx="160" cy="10" r="10" fill="#fbbf24" /> <line x1="155" y1="20" x2="155" y2="30" stroke="#333" /> <line x1="165" y1="20" x2="165" y2="30" stroke="#333" />
+      <circle cx="190" cy="10" r="10" fill="#fbbf24" /> <line x1="185" y1="20" x2="185" y2="30" stroke="#333" /> <line x1="195" y1="20" x2="195" y2="30" stroke="#333" />
+      <circle cx="220" cy="10" r="10" fill="#fbbf24" /> <line x1="215" y1="20" x2="215" y2="30" stroke="#333" /> <line x1="225" y1="20" x2="225" y2="30" stroke="#333" />
+    </g>
+    <text x="260" y="80" font-family="Arial" font-size="14">脚数 = 8 × 2 = 16 (少算了!)</text>
+  </g>
+  
+  <!-- Adjustment Step -->
+  <g transform="translate(50, 230)">
+    <text x="0" y="20" font-family="Arial" font-size="16" fill="#b45309" font-weight="bold">第二步：查漏补缺</text>
+    <text x="20" y="45" font-family="Arial" font-size="14">还差 22 - 16 = 6 只脚。每把一只鸡换成兔，增加 2 只脚。</text>
+    
+    <!-- Exchange 3 chickens for rabbits -->
+    <g transform="translate(20, 60)">
+      <!-- Rabbit 1 -->
+      <circle cx="10" cy="10" r="10" fill="#f87171" /> 
+      <line x1="2" y1="20" x2="2" y2="30" stroke="#333" /> <line x1="7" y1="20" x2="7" y2="30" stroke="#333" />
+      <line x1="13" y1="20" x2="13" y2="30" stroke="#333" /> <line x1="18" y1="20" x2="18" y2="30" stroke="#333" />
+      
+      <!-- Rabbit 2 -->
+      <circle cx="40" cy="10" r="10" fill="#f87171" />
+      <line x1="32" y1="20" x2="32" y2="30" stroke="#333" /> <line x1="37" y1="20" x2="37" y2="30" stroke="#333" />
+      <line x1="43" y1="20" x2="43" y2="30" stroke="#333" /> <line x1="48" y1="20" x2="48" y2="30" stroke="#333" />
+
+      <!-- Rabbit 3 -->
+      <circle cx="70" cy="10" r="10" fill="#f87171" />
+      <line x1="62" y1="20" x2="62" y2="30" stroke="#333" /> <line x1="67" y1="20" x2="67" y2="30" stroke="#333" />
+      <line x1="73" y1="20" x2="73" y2="30" stroke="#333" /> <line x1="78" y1="20" x2="78" y2="30" stroke="#333" />
+      
+      <!-- Remaining 5 Chickens -->
+      <circle cx="100" cy="10" r="10" fill="#fbbf24" opacity="0.5" /> <line x1="95" y1="20" x2="95" y2="30" stroke="#333" /> <line x1="105" y1="20" x2="105" y2="30" stroke="#333" />
+      <text x="130" y="20">...</text>
+    </g>
+    <text x="260" y="80" font-family="Arial" font-size="14">兔数 = 6 ÷ 2 = 3 (只)</text>
+  </g>
+  
+  <!-- Formula Box -->
+  <rect x="350" y="280" width="220" height="100" rx="10" fill="#fff" stroke="#92400e" stroke-width="2" />
+  <text x="460" y="310" text-anchor="middle" font-weight="bold" fill="#92400e">核心公式</text>
+  <text x="460" y="340" text-anchor="middle" font-size="12">兔 = (总脚数 - 总头×2) ÷ 2</text>
+  <text x="460" y="365" text-anchor="middle" font-size="12">鸡 = (总头×4 - 总脚数) ÷ 2</text>
+</svg>

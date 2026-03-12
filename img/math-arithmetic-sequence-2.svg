@@ -1,0 +1,23 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#eff6ff" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#1e40af" text-anchor="middle" font-weight="bold">等差数列求和：高斯求和法</text>
+  
+  <g transform="translate(50, 60)">
+    <!-- 第一排 -->
+    <text x="0" y="20" font-family="Arial" font-size="16" fill="#1e40af">1 + 2 + 3 + ... + 10</text>
+    
+    <!-- 倒序排 -->
+    <text x="0" y="50" font-family="Arial" font-size="16" fill="#1e40af">10 + 9 + 8 + ... + 1</text>
+    
+    <!-- 连线 -->
+    <path d="M 10 25 L 10 40" stroke="#ef4444" stroke-width="2"/>
+    <path d="M 30 25 L 30 40" stroke="#ef4444" stroke-width="2"/>
+    <path d="M 140 25 L 140 40" stroke="#ef4444" stroke-width="2"/>
+    
+    <text x="10" y="75" font-family="Arial" font-size="14" fill="#b91c1c" text-anchor="middle">11</text>
+    <text x="30" y="75" font-family="Arial" font-size="14" fill="#b91c1c" text-anchor="middle">11</text>
+    <text x="140" y="75" font-family="Arial" font-size="14" fill="#b91c1c" text-anchor="middle">11</text>
+  </g>
+  
+  <text x="200" y="165" font-family="Arial" font-size="14" fill="#1e3a8a" font-weight="bold">和 = (首项 + 末项) × 项数 ÷ 2</text>
+</svg>

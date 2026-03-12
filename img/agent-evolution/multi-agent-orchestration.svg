@@ -1,0 +1,46 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="#333">多智能体协作 (MAS) 编排架构</text>
+  
+  <!-- Orchestrator -->
+  <g transform="translate(300, 80)">
+    <rect width="200" height="100" rx="15" fill="#e3f2fd" stroke="#2196f3" stroke-width="4"/>
+    <text x="100" y="45" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565c0">Orchestrator</text>
+    <text x="100" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#424242">(总控/项目经理)</text>
+  </g>
+  
+  <!-- Specialized Agents -->
+  <g transform="translate(50, 250)">
+    <rect width="180" height="120" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="3"/>
+    <text x="90" y="40" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">Coding Agent</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注代码编写</text>
+    <text x="90" y="95" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">与重构优化</text>
+  </g>
+  
+  <g transform="translate(310, 250)">
+    <rect width="180" height="120" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="3"/>
+    <text x="90" y="40" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">Testing Agent</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注单元测试</text>
+    <text x="90" y="95" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">与集成验证</text>
+  </g>
+  
+  <g transform="translate(570, 250)">
+    <rect width="180" height="120" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3"/>
+    <text x="90" y="40" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">Review Agent</text>
+    <text x="90" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注安全性</text>
+    <text x="90" y="95" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">与代码质量审查</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <path d="M 300 130 Q 140 130 140 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 180 L 400 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 500 130 Q 660 130 660 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="460" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#666">多 Agent 协同工作，共同完成复杂任务</text>
+</svg>

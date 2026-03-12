@@ -1,0 +1,29 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0fff4" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#276749" text-anchor="middle" font-weight="bold">加减法的逆运算与平衡</text>
+  
+  <!-- 加法变减法 -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="50" height="30" fill="#9ae6b4" rx="5"/>
+    <text x="25" y="20" font-family="Arial" font-size="14" fill="#22543d" text-anchor="middle">A</text>
+    <text x="65" y="22" font-family="Arial" font-size="20" fill="#2f855a" text-anchor="middle">+</text>
+    <rect x="80" y="0" width="50" height="30" fill="#9ae6b4" rx="5"/>
+    <text x="105" y="20" font-family="Arial" font-size="14" fill="#22543d" text-anchor="middle">B</text>
+    <text x="145" y="22" font-family="Arial" font-size="20" fill="#2f855a" text-anchor="middle">=</text>
+    <rect x="160" y="0" width="50" height="30" fill="#68d391" rx="5"/>
+    <text x="185" y="20" font-family="Arial" font-size="14" fill="#1a4731" text-anchor="middle">C</text>
+  </g>
+  
+  <!-- 逆运算 -->
+  <g transform="translate(40, 110)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#2f855a">所以：</text>
+    <text x="60" y="0" font-family="Arial" font-size="16" fill="#c53030" font-weight="bold">C - B = A</text>
+    <text x="150" y="0" font-family="Arial" font-size="16" fill="#c53030" font-weight="bold">C - A = B</text>
+  </g>
+  
+  <!-- 天平示意 -->
+  <path d="M 280 120 L 360 120" stroke="#2f855a" stroke-width="4"/>
+  <path d="M 320 120 L 320 100" stroke="#2f855a" stroke-width="2"/>
+  <circle cx="290" cy="110" r="10" fill="#48bb78"/>
+  <circle cx="350" cy="110" r="10" fill="#48bb78"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#f8fafc" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#1e293b" text-anchor="middle" font-weight="bold">统筹规划：时间的魔术</text>
+  
+  <!-- 串行 -->
+  <g transform="translate(30, 60)">
+    <text x="0" y="15" font-family="Arial" font-size="12" fill="#64748b">普通安排：</text>
+    <rect x="70" y="0" width="100" height="20" fill="#cbd5e1" rx="3"/>
+    <text x="120" y="15" font-family="Arial" font-size="10" fill="#475569" text-anchor="middle">烧水 (10分)</text>
+    <rect x="175" y="0" width="60" height="20" fill="#94a3b8" rx="3"/>
+    <text x="205" y="15" font-family="Arial" font-size="10" fill="#1e293b" text-anchor="middle">扫地 (5分)</text>
+    <text x="250" y="15" font-family="Arial" font-size="12" fill="#e11d48">总: 15分</text>
+  </g>
+  
+  <!-- 并行 -->
+  <g transform="translate(30, 110)">
+    <text x="0" y="15" font-family="Arial" font-size="12" fill="#64748b">聪明安排：</text>
+    <rect x="70" y="0" width="100" height="20" fill="#cbd5e1" rx="3"/>
+    <text x="120" y="15" font-family="Arial" font-size="10" fill="#475569" text-anchor="middle">烧水 (10分)</text>
+    <rect x="70" y="25" width="60" height="20" fill="#94a3b8" rx="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="10" fill="#1e293b" text-anchor="middle">扫地 (5分)</text>
+    <text x="250" y="15" font-family="Arial" font-size="12" fill="#059669" font-weight="bold">总: 10分！</text>
+  </g>
+</svg>

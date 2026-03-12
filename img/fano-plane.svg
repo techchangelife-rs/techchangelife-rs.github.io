@@ -1,0 +1,43 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fano Plane (Octonions Multiplication) -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Triangle -->
+  <path d="M 150 50 L 50 220 L 250 220 Z" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Incircle -->
+  <circle cx="150" cy="163" r="57" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- Medians -->
+  <line x1="150" y1="50" x2="150" y2="220" stroke="#999" stroke-width="1"/>
+  <line x1="50" y1="220" x2="200" y2="135" stroke="#999" stroke-width="1"/>
+  <line x1="250" y1="220" x2="100" y2="135" stroke="#999" stroke-width="1"/>
+
+  <!-- Points (e1-e7) -->
+  <circle cx="150" cy="50" r="15" fill="#fff" stroke="red"/>
+  <text x="150" y="55" text-anchor="middle" font-size="12" font-weight="bold">e1</text>
+
+  <circle cx="50" cy="220" r="15" fill="#fff" stroke="blue"/>
+  <text x="50" y="225" text-anchor="middle" font-size="12" font-weight="bold">e2</text>
+
+  <circle cx="250" cy="220" r="15" fill="#fff" stroke="green"/>
+  <text x="250" y="225" text-anchor="middle" font-size="12" font-weight="bold">e3</text>
+
+  <circle cx="150" cy="220" r="15" fill="#fff" stroke="#666"/>
+  <text x="150" y="225" text-anchor="middle" font-size="12" font-weight="bold">e4</text>
+
+  <circle cx="200" cy="135" r="15" fill="#fff" stroke="#666"/>
+  <text x="200" y="140" text-anchor="middle" font-size="12" font-weight="bold">e5</text>
+
+  <circle cx="100" cy="135" r="15" fill="#fff" stroke="#666"/>
+  <text x="100" y="140" text-anchor="middle" font-size="12" font-weight="bold">e6</text>
+
+  <circle cx="150" cy="163" r="15" fill="#fff" stroke="purple"/>
+  <text x="150" y="168" text-anchor="middle" font-size="12" font-weight="bold">e7</text>
+
+  <text x="150" y="280" text-anchor="middle" font-size="14" font-weight="bold">Fano Plane (八元数乘法图解)</text>
+</svg>

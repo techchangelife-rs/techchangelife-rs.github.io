@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#333" font-weight="bold">巧算乘法：利用分配律 (Distributive Property)</text>
+  
+  <!-- Step 1: Problem -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#e67e22" font-weight="bold">步骤 1: 观察题目</text>
+    <text x="20" y="50" font-family="Courier New" font-size="22" fill="#2c3e50">25 × 104 = ?</text>
+    <rect x="115" y="30" width="50" height="30" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="175" y="50" font-family="Arial" font-size="14" fill="#7f8c8d">104 接近 100</text>
+  </g>
+  
+  <!-- Step 2: Splitting -->
+  <g transform="translate(50, 160)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#e67e22" font-weight="bold">步骤 2: 拆分数字</text>
+    <text x="20" y="50" font-family="Courier New" font-size="22" fill="#2c3e50">25 × (100 + 4)</text>
+    <path d="M100,60 Q130,90 160,60" fill="none" stroke="#3498db" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M100,60 Q70,90 40,60" fill="none" stroke="#3498db" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+  
+  <!-- Step 3: Distribution -->
+  <g transform="translate(50, 240)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#e67e22" font-weight="bold">步骤 3: 分配计算</text>
+    <text x="20" y="50" font-family="Courier New" font-size="22" fill="#2c3e50">= 25 × 100 + 25 × 4</text>
+    <text x="20" y="80" font-family="Courier New" font-size="22" fill="#2c3e50">= 2500 + 100</text>
+  </g>
+  
+  <!-- Step 4: Final Result -->
+  <g transform="translate(50, 340)">
+    <text x="0" y="0" font-family="Arial" font-size="18" fill="#27ae60" font-weight="bold">结果: 2600</text>
+  </g>
+  
+  <!-- Definition of Arrowhead -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3498db" />
+    </marker>
+  </defs>
+</svg>

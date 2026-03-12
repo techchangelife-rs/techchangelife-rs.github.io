@@ -1,0 +1,32 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#E0F2F1" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#00695C">AI 是如何“学习”的？</text>
+  
+  <!-- Photos -->
+  <g transform="translate(50, 100)">
+    <rect width="100" height="100" fill="#fff" stroke="#9E9E9E" stroke-width="2"/>
+    <text x="50" y="60" font-size="40" text-anchor="middle">🐱</text>
+    <rect x="120" y="0" width="100" height="100" fill="#fff" stroke="#9E9E9E" stroke-width="2"/>
+    <text x="170" y="60" font-size="40" text-anchor="middle">🐱</text>
+    <rect x="60" y="120" width="100" height="100" fill="#fff" stroke="#9E9E9E" stroke-width="2"/>
+    <text x="110" y="180" font-size="40" text-anchor="middle">🐱</text>
+    <text x="135" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#666">成千上万张猫的照片</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 300 200 L 450 200" stroke="#009688" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="375" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#00796B">输入数据</text>
+  
+  <!-- AI Brain -->
+  <g transform="translate(500, 150)">
+    <rect width="200" height="100" rx="10" fill="#B2DFDB" stroke="#00796B" stroke-width="3"/>
+    <text x="100" y="55" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#004D40">AI 学习引擎</text>
+    <text x="100" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#004D40">提取猫的特征(耳朵、胡须...)</text>
+  </g>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#009688"/>
+    </marker>
+  </defs>
+</svg>

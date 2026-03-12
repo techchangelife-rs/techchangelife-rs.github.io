@@ -1,0 +1,45 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">RAG 工作流：从“模糊回忆”到“查字典”</text>
+  
+  <!-- Step 1: User Query -->
+  <g transform="translate(50, 150)">
+    <circle cx="40" cy="40" r="35" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="40" y="45" font-family="Arial" font-size="12" text-anchor="middle">用户提问</text>
+  </g>
+  
+  <!-- Step 2: Retrieval -->
+  <g transform="translate(200, 120)">
+    <rect width="150" height="100" rx="10" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+    <text x="75" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">1. 向量检索</text>
+    <text x="75" y="70" font-family="Arial" font-size="10" text-anchor="middle">在知识库中寻找</text>
+    <text x="75" y="85" font-family="Arial" font-size="10" text-anchor="middle">最相关的教材片段</text>
+  </g>
+  
+  <!-- Step 3: Augmentation -->
+  <g transform="translate(400, 120)">
+    <rect width="150" height="100" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="75" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">2. 提示词增强</text>
+    <text x="75" y="70" font-family="Arial" font-size="10" text-anchor="middle">将检索到的内容</text>
+    <text x="75" y="85" font-family="Arial" font-size="10" text-anchor="middle">塞进给 AI 的指令中</text>
+  </g>
+  
+  <!-- Step 4: Generation -->
+  <g transform="translate(600, 120)">
+    <rect width="150" height="100" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+    <text x="75" y="40" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">3. 最终生成</text>
+    <text x="75" y="70" font-family="Arial" font-size="10" text-anchor="middle">基于事实证据</text>
+    <text x="75" y="85" font-family="Arial" font-size="10" text-anchor="middle">给出精准回答</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <path d="M 125 190 L 200 170" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 350 170 L 400 170" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 550 170 L 600 170" stroke="#bdbdbd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

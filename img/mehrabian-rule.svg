@@ -1,0 +1,26 @@
+<svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#f0f2f5" rx="12"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">梅拉宾法则 (7-38-55定律)</text>
+  
+  <!-- Pie Chart Circles -->
+  <!-- 55% Visual (Blue) -->
+  <path d="M 200 130 L 200 50 A 80 80 0 1 1 123.9 154.7 Z" fill="#1890ff" stroke="#fff" stroke-width="2"/>
+  <!-- 38% Tone (Orange) -->
+  <path d="M 200 130 L 123.9 154.7 A 80 80 0 0 1 190 50.6 Z" fill="#fa8c16" stroke="#fff" stroke-width="2"/>
+  <!-- 7% Words (Green) -->
+  <path d="M 200 130 L 190 50.6 A 80 80 0 0 1 200 50 Z" fill="#52c41a" stroke="#fff" stroke-width="2"/>
+
+  <!-- Legend -->
+  <g transform="translate(260, 70)">
+    <rect width="12" height="12" fill="#52c41a" rx="2"/>
+    <text x="20" y="11" font-family="Arial" font-size="14" fill="#595959">言语内容 (7%)</text>
+    
+    <rect y="30" width="12" height="12" fill="#fa8c16" rx="2"/>
+    <text x="20" y="41" font-family="Arial" font-size="14" fill="#595959">语气语调 (38%)</text>
+    
+    <rect y="60" width="12" height="12" fill="#1890ff" rx="2"/>
+    <text x="20" y="71" font-family="Arial" font-size="14" fill="#595959">视觉形象 (55%)</text>
+  </g>
+
+  <text x="200" y="225" font-family="Arial" font-size="12" fill="#8c8c8c" text-anchor="middle">沟通中情感信息的传递比例</text>
+</svg>

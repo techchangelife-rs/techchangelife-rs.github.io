@@ -1,0 +1,30 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0fdfa" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#0f766e" text-anchor="middle" font-weight="bold">几何图形全家族</text>
+  
+  <!-- 三角形 -->
+  <g transform="translate(30, 60)">
+    <path d="M 30 0 L 0 50 L 60 50 Z" fill="#2dd4bf" stroke="#0f766e" stroke-width="2"/>
+    <text x="30" y="70" font-family="Arial" font-size="12" fill="#0f766e" text-anchor="middle">三角形</text>
+  </g>
+  
+  <!-- 正方形 -->
+  <g transform="translate(120, 60)">
+    <rect x="0" y="0" width="50" height="50" fill="#2dd4bf" stroke="#0f766e" stroke-width="2"/>
+    <text x="25" y="70" font-family="Arial" font-size="12" fill="#0f766e" text-anchor="middle">正方形</text>
+  </g>
+  
+  <!-- 长方形 -->
+  <g transform="translate(200, 60)">
+    <rect x="0" y="10" width="70" height="40" fill="#2dd4bf" stroke="#0f766e" stroke-width="2"/>
+    <text x="35" y="70" font-family="Arial" font-size="12" fill="#0f766e" text-anchor="middle">长方形</text>
+  </g>
+  
+  <!-- 圆形 -->
+  <g transform="translate(300, 60)">
+    <circle cx="30" cy="25" r="25" fill="#2dd4bf" stroke="#0f766e" stroke-width="2"/>
+    <text x="30" y="70" font-family="Arial" font-size="12" fill="#0f766e" text-anchor="middle">圆形</text>
+  </g>
+  
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#0f766e" text-anchor="middle">核心：看边的数量和角的特征</text>
+</svg>

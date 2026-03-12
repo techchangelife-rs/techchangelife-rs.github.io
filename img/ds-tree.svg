@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#e6f7ff" rx="10"/>
+  
+  <!-- Root -->
+  <circle cx="200" cy="40" r="15" fill="#1890ff" stroke="#0050b3" stroke-width="2"/>
+  <text x="200" y="45" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">10</text>
+  
+  <!-- Level 1 -->
+  <line x1="185" y1="50" x2="145" y2="80" stroke="#0050b3" stroke-width="1.5"/>
+  <circle cx="130" cy="90" r="15" fill="#69c0ff" stroke="#0050b3" stroke-width="2"/>
+  <text x="130" y="95" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">5</text>
+  
+  <line x1="215" y1="50" x2="255" y2="80" stroke="#0050b3" stroke-width="1.5"/>
+  <circle cx="270" cy="90" r="15" fill="#69c0ff" stroke="#0050b3" stroke-width="2"/>
+  <text x="270" y="95" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">15</text>
+  
+  <!-- Level 2 -->
+  <line x1="115" y1="100" x2="85" y2="130" stroke="#0050b3" stroke-width="1.5"/>
+  <circle cx="70" cy="140" r="15" fill="#91d5ff" stroke="#0050b3" stroke-width="2"/>
+  <text x="70" y="145" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">3</text>
+  
+  <line x1="145" y1="100" x2="175" y2="130" stroke="#0050b3" stroke-width="1.5"/>
+  <circle cx="190" cy="140" r="15" fill="#91d5ff" stroke="#0050b3" stroke-width="2"/>
+  <text x="190" y="145" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">8</text>
+  
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#003a8c" text-anchor="middle">二叉树 (Binary Tree)</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#fff9db" rx="10"/>
+  
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#5c940d" text-anchor="middle" font-weight="bold">图形折叠：折出的对称美</text>
+  
+  <!-- 折叠前 -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="100" height="80" fill="#fab005" opacity="0.4" stroke="#f08c00"/>
+    <line x1="50" y1="0" x2="50" y2="80" stroke="#c92a2a" stroke-width="2" stroke-dasharray="4"/>
+    <text x="50" y="100" font-family="Arial" font-size="12" fill="#868e96" text-anchor="middle">1. 沿中线对折</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 160 100 L 200 100" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- 折叠后 -->
+  <g transform="translate(240, 60)">
+    <!-- 底层 -->
+    <rect x="0" y="0" width="50" height="80" fill="#fab005" opacity="0.2" stroke="#f08c00"/>
+    <!-- 翻折层 -->
+    <rect x="0" y="0" width="50" height="80" fill="#fab005" stroke="#f08c00">
+      <animateTransform attributeName="transform" type="skewY" from="0" to="10" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="25" y="100" font-family="Arial" font-size="12" fill="#868e96" text-anchor="middle">2. 重合的部分完全相等</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#adb5bd" />
+    </marker>
+  </defs>
+</svg>

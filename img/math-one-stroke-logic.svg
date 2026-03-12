@@ -1,0 +1,40 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#fefce8" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#854d0e" text-anchor="middle" font-weight="bold">一笔画：奇点与偶点的秘密</text>
+  
+  <g transform="translate(50, 60)">
+    <!-- 田字格 (不可一笔画) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="60" height="60" fill="none" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="30" y1="0" x2="30" y2="60" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#ca8a04" stroke-width="2"/>
+      <!-- 奇点标注 -->
+      <circle cx="30" cy="0" r="4" fill="#ef4444"/>
+      <circle cx="30" cy="60" r="4" fill="#ef4444"/>
+      <circle cx="0" cy="30" r="4" fill="#ef4444"/>
+      <circle cx="60" cy="30" r="4" fill="#ef4444"/>
+      <circle cx="30" cy="30" r="4" fill="#ca8a04"/> <!-- 偶点 -->
+      <text x="30" y="80" font-family="Arial" font-size="12" fill="#854d0e" text-anchor="middle">田字：4个奇点(×)</text>
+    </g>
+    
+    <!-- 串行 -->
+    <g transform="translate(150, 0)">
+      <rect x="0" y="20" width="60" height="40" fill="none" stroke="#ca8a04" stroke-width="2"/>
+      <path d="M 0 20 L 30 0 L 60 20 Z" fill="none" stroke="#ca8a04" stroke-width="2"/>
+      <!-- 全部是偶点 -->
+      <text x="30" y="80" font-family="Arial" font-size="12" fill="#854d0e" text-anchor="middle">小屋：0个奇点(√)</text>
+    </g>
+    
+    <!-- 信封 -->
+    <g transform="translate(280, 0)">
+      <rect x="0" y="20" width="60" height="40" fill="none" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="0" y1="20" x2="60" y2="60" stroke="#ca8a04" stroke-width="2"/>
+      <line x1="60" y1="20" x2="0" y2="60" stroke="#ca8a04" stroke-width="2"/>
+      <circle cx="0" cy="60" r="4" fill="#ef4444"/>
+      <circle cx="60" cy="60" r="4" fill="#ef4444"/>
+      <text x="30" y="80" font-family="Arial" font-size="12" fill="#854d0e" text-anchor="middle">信封：2个奇点(√)</text>
+    </g>
+  </g>
+  
+  <text x="200" y="165" font-family="Arial" font-size="14" fill="#ca8a04" font-weight="bold">规律：奇点数为 0 或 2 时，可以一笔画</text>
+</svg>

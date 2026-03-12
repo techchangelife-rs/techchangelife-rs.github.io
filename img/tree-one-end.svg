@@ -1,0 +1,28 @@
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#f1f8e9" rx="10"/>
+  <line x1="50" y1="80" x2="350" y2="80" stroke="#8d6e63" stroke-width="4"/>
+  
+  <!-- 树 -->
+  <g transform="translate(50, 40)">
+    <path d="M0 0 L10 30 L-10 30 Z" fill="#2e7d32"/>
+    <rect x="-2" y="30" width="4" height="10" fill="#5d4037"/>
+  </g>
+  <g transform="translate(150, 40)">
+    <path d="M0 0 L10 30 L-10 30 Z" fill="#2e7d32"/>
+    <rect x="-2" y="30" width="4" height="10" fill="#5d4037"/>
+  </g>
+  <g transform="translate(250, 40)">
+    <path d="M0 0 L10 30 L-10 30 Z" fill="#2e7d32"/>
+    <rect x="-2" y="30" width="4" height="10" fill="#5d4037"/>
+  </g>
+  <!-- 最后一棵不种 -->
+  <circle cx="350" cy="70" r="10" fill="none" stroke="#d32f2f" stroke-dasharray="3" stroke-width="2"/>
+  
+  <!-- 间隔标注 -->
+  <path d="M 50 90 L 50 100 L 150 100 L 150 90" fill="none" stroke="#fb8c00" stroke-width="2"/>
+  <path d="M 150 90 L 150 100 L 250 100 L 250 90" fill="none" stroke="#fb8c00" stroke-width="2"/>
+  <path d="M 250 90 L 250 100 L 350 100 L 350 90" fill="none" stroke="#fb8c00" stroke-width="2"/>
+  
+  <text x="200" y="20" font-family="Arial" font-size="14" fill="#1b5e20" text-anchor="middle" font-weight="bold">只种一端：树 = 间隔</text>
+  <text x="200" y="115" font-family="Arial" font-size="12" fill="#e65100" text-anchor="middle">3个间隔，3棵树</text>
+</svg>

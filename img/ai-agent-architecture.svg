@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="15" ry="15" />
+  
+  <!-- Outer Boundary (Agent System) -->
+  <rect x="50" y="50" width="700" height="400" rx="20" fill="none" stroke="#6c757d" stroke-width="2" stroke-dasharray="10,5" />
+  <text x="400" y="35" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">AI Agent 核心架构系统图</text>
+  
+  <!-- Brain (LLM) -->
+  <rect x="300" y="150" width="200" height="150" rx="15" fill="#e7f3ff" stroke="#007bff" stroke-width="3" />
+  <text x="400" y="190" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#007bff">大脑 (Brain)</text>
+  <text x="400" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">大语言模型 (LLM)</text>
+  <text x="400" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#777">推理、指令遵循、决策</text>
+  
+  <!-- Planning Module -->
+  <rect x="100" y="100" width="160" height="100" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+  <text x="180" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff9800">规划 (Planning)</text>
+  <text x="180" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">CoT / ToT</text>
+  <text x="180" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">反思与自我批评</text>
+  
+  <!-- Memory Module -->
+  <rect x="540" y="100" width="160" height="100" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="620" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#4caf50">记忆 (Memory)</text>
+  <text x="620" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">短期：上下文窗口</text>
+  <text x="620" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">长期：RAG / 向量库</text>
+  
+  <!-- Tools / Action Module -->
+  <rect x="300" y="350" width="200" height="80" rx="10" fill="#fce4ec" stroke="#e91e63" stroke-width="2" />
+  <text x="400" y="380" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#e91e63">行动 (Action/Tools)</text>
+  <text x="400" y="405" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">API 调用、搜索、执行代码</text>
+  
+  <!-- Environment -->
+  <rect x="50" y="460" width="700" height="30" rx="5" fill="#eee" />
+  <text x="400" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">外部环境 (Environment: 网络、数据库、操作系统)</text>
+  
+  <!-- Connections -->
+  <!-- Brain to Planning -->
+  <path d="M 300 180 L 260 160" stroke="#007bff" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <!-- Brain to Memory -->
+  <path d="M 500 180 L 540 160" stroke="#007bff" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <!-- Brain to Action -->
+  <path d="M 400 300 L 400 350" stroke="#007bff" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <!-- Action to Environment -->
+  <path d="M 400 430 L 400 460" stroke="#e91e63" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  <!-- Environment back to Brain (Observation) -->
+  <path d="M 70 460 Q 30 250 300 225" stroke="#666" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)" />
+  <text x="70" y="240" font-family="Arial" font-size="12" fill="#666" transform="rotate(-90 70 240)">感知反馈 (Observation)</text>
+  
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#666" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f6ffed" rx="10" ry="10"/>
+  
+  <!-- Chicken Representative -->
+  <circle cx="80" cy="70" r="25" fill="#ffd666" stroke="#d48806" stroke-width="2"/>
+  <text x="80" y="75" font-family="Arial" font-size="12" fill="#d48806" text-anchor="middle">鸡 (2足)</text>
+  <line x1="70" y1="95" x2="70" y2="120" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="95" x2="90" y2="120" stroke="#333" stroke-width="2"/>
+  
+  <!-- Rabbit Representative -->
+  <circle cx="200" cy="70" r="25" fill="#ff7875" stroke="#a8071a" stroke-width="2"/>
+  <text x="200" y="75" font-family="Arial" font-size="12" fill="#a8071a" text-anchor="middle">兔 (4足)</text>
+  <line x1="185" y1="95" x2="185" y2="120" stroke="#333" stroke-width="2"/>
+  <line x1="195" y1="95" x2="195" y2="120" stroke="#333" stroke-width="2"/>
+  <line x1="205" y1="95" x2="205" y2="120" stroke="#d0021b" stroke-width="2" stroke-dasharray="2,2"/>
+  <line x1="215" y1="95" x2="215" y2="120" stroke="#d0021b" stroke-width="2" stroke-dasharray="2,2"/>
+  
+  <!-- Logic Text -->
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">假设全是鸡，少了的脚就是兔子的</text>
+  <text x="200" y="185" font-family="Arial" font-size="14" fill="#d0021b" text-anchor="middle" font-weight="bold">
+    兔数 = (总足数 - 总头数×2) ÷ (4 - 2)
+  </text>
+</svg>

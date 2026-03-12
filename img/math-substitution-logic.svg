@@ -1,0 +1,27 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#fdf4ff" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#701a75" text-anchor="middle" font-weight="bold">等量代换：天平的平衡</text>
+  
+  <g transform="translate(50, 60)">
+    <!-- 天平 1 -->
+    <line x1="0" y1="40" x2="120" y2="40" stroke="#701a75" stroke-width="2"/>
+    <circle cx="60" cy="40" r="3" fill="#701a75"/>
+    <text x="30" y="30" font-family="Arial" font-size="14" fill="#d946ef">🍎</text>
+    <text x="60" y="35" font-family="Arial" font-size="14" fill="#701a75" text-anchor="middle">=</text>
+    <text x="80" y="30" font-family="Arial" font-size="14" fill="#f59e0b">🍊🍊</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" fill="#701a75" text-anchor="middle">1个苹果=2个橘子</text>
+  </g>
+  
+  <g transform="translate(230, 60)">
+    <!-- 天平 2 -->
+    <line x1="0" y1="40" x2="120" y2="40" stroke="#701a75" stroke-width="2"/>
+    <circle cx="60" cy="40" r="3" fill="#701a75"/>
+    <text x="30" y="30" font-family="Arial" font-size="14" fill="#f59e0b">🍊</text>
+    <text x="60" y="35" font-family="Arial" font-size="14" fill="#701a75" text-anchor="middle">=</text>
+    <text x="80" y="30" font-family="Arial" font-size="14" fill="#10b981">🍇🍇🍇</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" fill="#701a75" text-anchor="middle">1个橘子=3颗葡萄</text>
+  </g>
+  
+  <path d="M 120 120 L 280 120" stroke="#701a75" stroke-width="2" stroke-dasharray="4"/>
+  <text x="200" y="150" font-family="Arial" font-size="16" fill="#701a75" text-anchor="middle" font-weight="bold">所以：1个苹果 = 6颗葡萄</text>
+</svg>

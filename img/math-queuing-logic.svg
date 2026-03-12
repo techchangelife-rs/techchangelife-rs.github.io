@@ -1,0 +1,29 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#fff5f5" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#9b2c2c" text-anchor="middle" font-weight="bold">排队问题：我是第几个？</text>
+  
+  <g transform="translate(50, 70)">
+    <!-- 队伍 -->
+    <circle cx="0" cy="0" r="10" fill="#feb2b2"/>
+    <circle cx="30" cy="0" r="10" fill="#feb2b2"/>
+    <circle cx="60" cy="0" r="10" fill="#feb2b2"/>
+    <circle cx="90" cy="0" r="10" fill="#e53e3e"/> <!-- 我 -->
+    <circle cx="120" cy="0" r="10" fill="#feb2b2"/>
+    <circle cx="150" cy="0" r="10" fill="#feb2b2"/>
+    
+    <!-- 标注 -->
+    <path d="M 0 25 L 90 25" stroke="#9b2c2c" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <text x="45" y="45" font-family="Arial" font-size="12" fill="#9b2c2c" text-anchor="middle">前面有 3 人 (第 4)</text>
+    
+    <path d="M 150 25 L 90 25" stroke="#9b2c2c" stroke-width="2" marker-end="url(#arrow-red)"/>
+    <text x="120" y="45" font-family="Arial" font-size="12" fill="#9b2c2c" text-anchor="middle">后面有 2 人</text>
+  </g>
+  
+  <text x="200" y="130" font-family="Arial" font-size="16" fill="#c53030" font-weight="bold">总人数 = 3 + 1 + 2 = 6</text>
+
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9b2c2c" />
+    </marker>
+  </defs>
+</svg>

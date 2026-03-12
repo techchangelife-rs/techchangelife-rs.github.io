@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f9f0ff" rx="10"/>
+  
+  <!-- DP Table -->
+  <text x="200" y="40" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#722ed1">DP Table (状态存储)</text>
+  
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="60" height="40" fill="#efdbff" stroke="#722ed1" />
+    <text x="30" y="25" font-family="Arial" font-size="14" text-anchor="middle">dp[0]</text>
+    
+    <rect x="60" y="0" width="60" height="40" fill="#efdbff" stroke="#722ed1" />
+    <text x="90" y="25" font-family="Arial" font-size="14" text-anchor="middle">dp[1]</text>
+    
+    <rect x="120" y="0" width="60" height="40" fill="#d3adf7" stroke="#722ed1" />
+    <text x="150" y="25" font-family="Arial" font-size="14" text-anchor="middle">dp[2]</text>
+    
+    <rect x="180" y="0" width="60" height="40" fill="#b37feb" stroke="#722ed1" />
+    <text x="210" y="25" font-family="Arial" font-size="14" text-anchor="middle">dp[3]</text>
+  </g>
+  
+  <!-- Relation -->
+  <path d="M 80 120 Q 140 160 200 120" stroke="#722ed1" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <text x="140" y="170" font-family="Arial" font-size="12" fill="#722ed1" text-anchor="middle">状态转移：dp[n] = dp[n-1] + dp[n-2]</text>
+
+  <defs>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#722ed1" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 数系层次结构图 -->
+  <rect x="10" y="10" width="380" height="280" rx="15" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="200" y="35" text-anchor="middle" font-weight="bold" font-size="16">数系包含关系 (Number Systems Hierarchy)</text>
+
+  <!-- O: Octonions -->
+  <ellipse cx="200" cy="160" rx="180" ry="120" fill="#f8f9fa" stroke="#999" stroke-dasharray="5,5"/>
+  <text x="340" y="100" fill="#999" font-size="14">O (八元数)</text>
+
+  <!-- H: Quaternions -->
+  <ellipse cx="180" cy="170" rx="150" ry="100" fill="#e9ecef" stroke="#777"/>
+  <text x="290" y="130" fill="#777" font-size="14">H (四元数)</text>
+
+  <!-- C: Complex -->
+  <ellipse cx="160" cy="180" rx="120" ry="80" fill="#dee2e6" stroke="#555"/>
+  <text x="240" y="160" fill="#555" font-size="14">C (复数)</text>
+
+  <!-- R: Real -->
+  <ellipse cx="140" cy="190" rx="90" ry="60" fill="#ced4da" stroke="#333"/>
+  <text x="190" y="180" fill="#333" font-size="14">R (实数)</text>
+
+  <!-- Q: Rational -->
+  <ellipse cx="120" cy="200" rx="60" ry="40" fill="#adb5bd" stroke="#111"/>
+  <text x="140" y="205" fill="#111" font-size="12">Q (有理数)</text>
+
+  <!-- Z: Integer -->
+  <circle cx="100" cy="210" r="25" fill="#6c757d" stroke="#000"/>
+  <text x="100" y="215" fill="#fff" font-size="12">Z</text>
+
+  <!-- N: Natural -->
+  <circle cx="90" cy="215" r="12" fill="#343a40" stroke="#000"/>
+  <text x="90" y="219" fill="#fff" font-size="10">N</text>
+</svg>

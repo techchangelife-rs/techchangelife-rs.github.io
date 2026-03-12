@@ -1,0 +1,31 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F3E5F5" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#4A148C">未来的 AI 职业：你想做哪一个？</text>
+  
+  <!-- AI Trainer -->
+  <g transform="translate(100, 100)">
+    <rect width="180" height="200" rx="10" fill="#fff" stroke="#9C27B0" stroke-width="2"/>
+    <text x="90" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4A148C">AI 训练师</text>
+    <text x="90" y="90" font-size="40" text-anchor="middle">🎓</text>
+    <text x="90" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">给 AI 找数据</text>
+    <text x="90" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">纠正它的错误</text>
+  </g>
+  
+  <!-- Data Scientist -->
+  <g transform="translate(310, 100)">
+    <rect width="180" height="200" rx="10" fill="#fff" stroke="#9C27B0" stroke-width="2"/>
+    <text x="90" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4A148C">数据科学家</text>
+    <text x="90" y="90" font-size="40" text-anchor="middle">🧪</text>
+    <text x="90" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">研究算法</text>
+    <text x="90" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">寻找规律</text>
+  </g>
+  
+  <!-- Prompt Engineer -->
+  <g transform="translate(520, 100)">
+    <rect width="180" height="200" rx="10" fill="#fff" stroke="#9C27B0" stroke-width="2"/>
+    <text x="90" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4A148C">提示词工程师</text>
+    <text x="90" y="90" font-size="40" text-anchor="middle">✍️</text>
+    <text x="90" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">编写完美指令</text>
+    <text x="90" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">与 AI 沟通</text>
+  </g>
+</svg>

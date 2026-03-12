@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0fdfa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#0d9488" font-weight="bold">盈亏问题：分配中的差距</text>
+  
+  <!-- Scenario 1: Surplus (盈) -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" font-family="Arial" font-size="18" fill="#333" font-weight="bold">情况 A：每人分 3 个，多出 4 个 (盈)</text>
+    <rect x="0" y="20" width="200" height="40" fill="#99f6e4" stroke="#0d9488" />
+    <text x="100" y="45" text-anchor="middle" font-size="14">已分出的量 (3 × 人数)</text>
+    <rect x="200" y="20" width="60" height="40" fill="#2dd4bf" stroke="#0d9488" />
+    <text x="230" y="45" text-anchor="middle" font-size="14" fill="#fff">盈 4</text>
+  </g>
+  
+  <!-- Scenario 2: Deficit (亏) -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="0" font-family="Arial" font-size="18" fill="#333" font-weight="bold">情况 B：每人分 5 个，缺少 6 个 (亏)</text>
+    <rect x="0" y="20" width="260" height="40" fill="#99f6e4" stroke="#0d9488" stroke-dasharray="5,5" />
+    <text x="130" y="45" text-anchor="middle" font-size="14">需要的总量 (5 × 人数)</text>
+    <rect x="200" y="20" width="60" height="40" fill="#f43f5e" stroke="#e11d48" />
+    <text x="230" y="45" text-anchor="middle" font-size="14" fill="#fff">亏 6</text>
+  </g>
+  
+  <!-- Comparison Logic -->
+  <g transform="translate(50, 280)">
+    <text x="0" y="20" font-family="Arial" font-size="16" fill="#0d9488" font-weight="bold">核心逻辑：</text>
+    <text x="20" y="50" font-family="Arial" font-size="14">每人分得的数量差 = 5 - 3 = 2 (个)</text>
+    <text x="20" y="75" font-family="Arial" font-size="14">总量的差距 = 4 (盈) + 6 (亏) = 10 (个)</text>
+    
+    <!-- Formula Highlight -->
+    <rect x="280" y="30" width="250" height="60" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2" />
+    <text x="405" y="55" text-anchor="middle" font-weight="bold" fill="#0d9488">人数 = 总差额 ÷ 两次分配差</text>
+    <text x="405" y="80" text-anchor="middle" font-size="14">10 ÷ 2 = 5 (人)</text>
+  </g>
+</svg>

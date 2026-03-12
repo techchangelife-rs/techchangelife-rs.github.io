@@ -1,0 +1,30 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#fff7ed" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#9a3412" text-anchor="middle" font-weight="bold">多层规律：差的变化</text>
+  
+  <g transform="translate(40, 70)">
+    <!-- 第一层数字 -->
+    <text x="0" y="20" font-family="Arial" font-size="20" fill="#9a3412" font-weight="bold">1</text>
+    <text x="50" y="20" font-family="Arial" font-size="20" fill="#9a3412" font-weight="bold">2</text>
+    <text x="100" y="20" font-family="Arial" font-size="20" fill="#9a3412" font-weight="bold">4</text>
+    <text x="150" y="20" font-family="Arial" font-size="20" fill="#9a3412" font-weight="bold">7</text>
+    <text x="200" y="20" font-family="Arial" font-size="20" fill="#9a3412" font-weight="bold">11</text>
+    <text x="250" y="20" font-family="Arial" font-size="20" fill="#be123c" font-weight="bold">?</text>
+    
+    <!-- 第一层差 -->
+    <path d="M 10 35 Q 25 50 40 35" fill="none" stroke="#ea580c" stroke-width="2"/>
+    <text x="25" y="60" font-family="Arial" font-size="12" fill="#ea580c" text-anchor="middle">+1</text>
+    
+    <path d="M 60 35 Q 75 50 90 35" fill="none" stroke="#ea580c" stroke-width="2"/>
+    <text x="75" y="60" font-family="Arial" font-size="12" fill="#ea580c" text-anchor="middle">+2</text>
+    
+    <path d="M 110 35 Q 125 50 140 35" fill="none" stroke="#ea580c" stroke-width="2"/>
+    <text x="125" y="60" font-family="Arial" font-size="12" fill="#ea580c" text-anchor="middle">+3</text>
+    
+    <path d="M 160 35 Q 175 50 190 35" fill="none" stroke="#ea580c" stroke-width="2"/>
+    <text x="175" y="60" font-family="Arial" font-size="12" fill="#ea580c" text-anchor="middle">+4</text>
+    
+    <!-- 第二层规律 -->
+    <text x="100" y="100" font-family="Arial" font-size="14" fill="#9a3412" font-weight="bold">规律：加数每次大 1</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Numbers -->
+  <text x="150" y="100" font-family="Arial" font-size="30" text-anchor="middle">2</text>
+  <text x="250" y="100" font-family="Arial" font-size="30" text-anchor="middle">3</text>
+  <text x="150" y="200" font-family="Arial" font-size="30" text-anchor="middle">1</text>
+  <text x="250" y="200" font-family="Arial" font-size="30" text-anchor="middle">4</text>
+  
+  <!-- Multiplication Symbol -->
+  <text x="100" y="150" font-family="Arial" font-size="30" text-anchor="middle">×</text>
+  <line x1="120" y1="220" x2="280" y2="220" stroke="black" stroke-width="2"/>
+
+  <!-- Step 1: Unit digits -->
+  <path d="M 250 110 Q 270 150 250 190" fill="none" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="280" y="155" fill="#dc3545" font-size="12">① 3×4</text>
+
+  <!-- Step 2: Cross -->
+  <line x1="160" y1="110" x2="240" y2="190" stroke="#007bff" stroke-width="2"/>
+  <line x1="240" y1="110" x2="160" y2="190" stroke="#007bff" stroke-width="2"/>
+  <text x="200" y="240" fill="#007bff" font-size="12" text-anchor="middle">② (2×4) + (3×1)</text>
+
+  <!-- Step 3: Tens digits -->
+  <path d="M 150 110 Q 130 150 150 190" fill="none" stroke="#28a745" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="120" y="155" fill="#28a745" font-size="12" text-anchor="end">③ 2×1</text>
+</svg>

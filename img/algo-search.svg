@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#e6fffb" rx="10"/>
+  
+  <!-- Binary Search Illustration -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="20" y="25" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+    
+    <rect x="40" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="60" y="25" font-family="Arial" font-size="14" text-anchor="middle">3</text>
+    
+    <rect x="80" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="100" y="25" font-family="Arial" font-size="14" text-anchor="middle">5</text>
+    
+    <rect x="120" y="0" width="40" height="40" fill="#ffccc7" stroke="#f5222d" stroke-width="2"/>
+    <text x="140" y="25" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7</text>
+    <text x="140" y="-10" font-family="Arial" font-size="10" fill="#f5222d" text-anchor="middle">MID</text>
+    
+    <rect x="160" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="180" y="25" font-family="Arial" font-size="14" text-anchor="middle">9</text>
+    
+    <rect x="200" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="220" y="25" font-family="Arial" font-size="14" text-anchor="middle">12</text>
+    
+    <rect x="240" y="0" width="40" height="40" fill="#b5f5ec" stroke="#13c2c2" />
+    <text x="260" y="25" font-family="Arial" font-size="14" text-anchor="middle">15</text>
+  </g>
+  
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#006d75" text-anchor="middle">二分查找：折半搜索，效率倍增</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#fdfcf0" />
+  
+  <!-- Magic Square Grid -->
+  <g transform="translate(150, 80)">
+    <!-- Vertical Lines -->
+    <line x1="0" y1="0" x2="0" y2="180" stroke="#333" stroke-width="2" />
+    <line x1="60" y1="0" x2="60" y2="180" stroke="#333" stroke-width="2" />
+    <line x1="120" y1="0" x2="120" y2="180" stroke="#333" stroke-width="2" />
+    <line x1="180" y1="0" x2="180" y2="180" stroke="#333" stroke-width="2" />
+    
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="0" x2="180" y2="0" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="60" x2="180" y2="60" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="120" x2="180" y2="120" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="180" x2="180" y2="180" stroke="#333" stroke-width="2" />
+    
+    <!-- Numbers (Example: 1-9 Magic Square) -->
+    <text x="30" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">8</text>
+    <text x="90" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">1</text>
+    <text x="150" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">6</text>
+    
+    <text x="30" y="100" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">3</text>
+    <text x="90" y="100" font-family="Arial" font-size="24" text-anchor="middle" fill="#e74c3c" font-weight="bold">5</text>
+    <text x="150" y="100" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">7</text>
+    
+    <text x="30" y="160" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">4</text>
+    <text x="90" y="160" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">9</text>
+    <text x="150" y="160" font-family="Arial" font-size="24" text-anchor="middle" fill="#2c3e50">2</text>
+  </g>
+  
+  <!-- Sum Indicators -->
+  <path d="M340,110 L380,110" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="390" y="115" font-family="Arial" font-size="16" fill="#7f8c8d">和 = 15</text>
+  
+  <path d="M240,270 L240,310" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="240" y="330" font-family="Arial" font-size="16" fill="#7f8c8d" text-anchor="middle">和 = 15</text>
+
+  <!-- Highlight Box -->
+  <rect x="50" y="280" width="150" height="80" fill="#fff" stroke="#e67e22" stroke-width="2" rx="5" />
+  <text x="125" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">中间数 × 3 = 幻和</text>
+  <text x="125" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#e74c3c" font-weight="bold">5 × 3 = 15</text>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7f8c8d" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,48 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">多 Agent 协作模型 (MAS)</text>
+  
+  <!-- Manager Agent -->
+  <g transform="translate(325, 100)">
+    <rect width="150" height="100" rx="15" fill="#e3f2fd" stroke="#2196f3" stroke-width="4"/>
+    <text x="75" y="45" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565c0">Manager</text>
+    <text x="75" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">任务拆分/资源调度</text>
+  </g>
+  
+  <!-- Coder Agent -->
+  <g transform="translate(50, 300)">
+    <rect width="180" height="120" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">Coder</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注逻辑实现</text>
+    <text x="90" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">编写代码/脚本</text>
+  </g>
+  
+  <!-- Reviewer Agent -->
+  <g transform="translate(310, 300)">
+    <rect width="180" height="120" rx="10" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#f57f17">Reviewer</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注代码质量</text>
+    <text x="90" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">寻找潜在 Bug</text>
+  </g>
+  
+  <!-- Researcher Agent -->
+  <g transform="translate(570, 300)">
+    <rect width="180" height="120" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">Researcher</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">专注信息检索</text>
+    <text x="90" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">搜集外部数据</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <path d="M 325 150 Q 140 150 140 300" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 200 L 400 300" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 475 150 Q 660 150 660 300" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <text x="400" y="480" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#666">“三位一体”协作：任务拆分 -> 并行开发 -> 闭环审查</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

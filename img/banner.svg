@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="banner-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4D94;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#banner-grad)" />
+  
+  <!-- Decorative shapes -->
+  <circle cx="100" cy="100" r="150" fill="#FFFFFF" opacity="0.1" />
+  <rect x="900" y="-50" width="300" height="300" fill="#00FFC6" opacity="0.1" transform="rotate(45 1050 100)" />
+  
+  <!-- Floating dopamine elements -->
+  <circle cx="200" cy="300" r="20" fill="#FF8C00" opacity="0.4" />
+  <circle cx="250" cy="320" r="15" fill="#00FFC6" opacity="0.3" />
+  <circle cx="950" cy="350" r="40" fill="#FFFFFF" opacity="0.15" />
+  
+  <path d="M0,200 Q300,150 600,200 T1200,200" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.1" />
+</svg>

@@ -1,0 +1,31 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f5f5f5" rx="20"/>
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Teachable Machine：零代码训练 AI</text>
+  
+  <!-- Steps -->
+  <g transform="translate(50, 80)">
+    <!-- Gather -->
+    <rect width="200" height="250" rx="10" fill="#fff" stroke="#4285f4" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4285f4">1. 收集图片</text>
+    <text x="50" y="100" font-size="30">🖐️</text>
+    <text x="150" y="100" font-size="30">✊</text>
+    <text x="100" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">分类 A: 布</text>
+    <text x="100" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">分类 B: 石头</text>
+  </g>
+  
+  <!-- Train -->
+  <g transform="translate(300, 150)">
+    <rect width="150" height="100" rx="10" fill="#4285f4" stroke="#1a73e8" stroke-width="2"/>
+    <text x="75" y="55" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">2. 训练</text>
+    <path d="M 20 70 L 130 70" stroke="#fff" stroke-width="4" stroke-dasharray="10,5"/>
+  </g>
+  
+  <!-- Test -->
+  <g transform="translate(500, 80)">
+    <rect width="250" height="250" rx="10" fill="#fff" stroke="#34a853" stroke-width="3"/>
+    <text x="125" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#34a853">3. 导出与测试</text>
+    <rect x="50" y="80" width="150" height="100" fill="#eee" rx="5"/>
+    <text x="125" y="140" font-size="40" text-anchor="middle">🖐️</text>
+    <text x="125" y="220" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#34a853">识别结果：布 (99%)</text>
+  </g>
+</svg>

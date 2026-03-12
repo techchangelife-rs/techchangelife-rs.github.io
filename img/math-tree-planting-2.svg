@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#f0f5ff" rx="10" ry="10"/>
+  
+  <!-- Linear Case (Reminder) -->
+  <line x1="30" y1="50" x2="150" y2="50" stroke="#333" stroke-width="2"/>
+  <circle cx="30" cy="50" r="5" fill="#52c41a" />
+  <circle cx="70" cy="50" r="5" fill="#52c41a" />
+  <circle cx="110" cy="50" r="5" fill="#52c41a" />
+  <circle cx="150" cy="50" r="5" fill="#52c41a" />
+  <text x="90" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">直线：棵数 = 间隔 + 1</text>
+  
+  <!-- Circular Case (New) -->
+  <circle cx="280" cy="100" r="50" fill="none" stroke="#333" stroke-width="2"/>
+  <circle cx="280" cy="50" r="6" fill="#52c41a" />
+  <circle cx="330" cy="100" r="6" fill="#52c41a" />
+  <circle cx="280" cy="150" r="6" fill="#52c41a" />
+  <circle cx="230" cy="100" r="6" fill="#52c41a" />
+  <text x="280" y="175" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">封闭：棵数 = 间隔</text>
+  
+  <!-- Stair Case -->
+  <path d="M 30 180 L 60 180 L 60 150 L 90 150 L 90 120 L 120 120" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="75" y="110" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">爬楼梯：间隔 = 层数 - 1</text>
+  
+  <!-- Legend -->
+  <text x="200" y="195" font-family="Arial" font-size="10" fill="#8c8c8c" text-anchor="middle">关键：首尾相接时，一棵树占用一个间隔</text>
+</svg>

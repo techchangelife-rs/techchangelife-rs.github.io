@@ -1,0 +1,23 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#E1F5FE" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#01579B">监督学习 vs 无监督学习</text>
+  
+  <!-- Supervised -->
+  <g transform="translate(100, 100)">
+    <rect width="250" height="200" rx="10" fill="#fff" stroke="#03A9F4" stroke-width="2"/>
+    <text x="125" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#01579B">监督学习 (有人教)</text>
+    <text x="125" y="80" font-size="40" text-anchor="middle">🍎</text>
+    <text x="125" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">标签：这是苹果</text>
+    <text x="125" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">像老师教你认字</text>
+  </g>
+  
+  <!-- Unsupervised -->
+  <g transform="translate(450, 100)">
+    <rect width="250" height="200" rx="10" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+    <text x="125" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1B5E20">无监督学习 (自己悟)</text>
+    <text x="80" y="80" font-size="30" text-anchor="middle">🍎</text>
+    <text x="170" y="80" font-size="30" text-anchor="middle">🍒</text>
+    <text x="125" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">结论：这些都是红色的</text>
+    <text x="125" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">像你自己给玩具分类</text>
+  </g>
+</svg>

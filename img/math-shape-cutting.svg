@@ -1,0 +1,36 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f4f8" rx="10"/>
+  
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">图形剪拼：变身魔法</text>
+  
+  <!-- 剪开 -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="80" height="60" fill="#3498db" opacity="0.6" stroke="#2980b9"/>
+    <line x1="0" y1="0" x2="80" y2="60" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4"/>
+    <text x="40" y="80" font-family="Arial" font-size="12" fill="#7f8c8d" text-anchor="middle">1. 沿对角线剪开</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M 140 100 L 180 100" fill="none" stroke="#bdc3c7" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 拼成三角形 -->
+  <g transform="translate(220, 60)">
+    <path d="M 0 60 L 80 60 L 80 0 Z" fill="#3498db" opacity="0.8" stroke="#2980b9"/>
+    <path d="M 80 60 L 160 60 L 80 0 Z" fill="#3498db" opacity="0.8" stroke="#2980b9"/>
+    <text x="80" y="80" font-family="Arial" font-size="12" fill="#7f8c8d" text-anchor="middle">2. 拼成一个大三角形</text>
+  </g>
+  
+  <!-- 拼成平行四边形 -->
+  <g transform="translate(220, 130)">
+    <path d="M 0 40 L 80 40 L 40 0 Z" fill="none" /> <!-- placeholder -->
+    <path d="M 0 40 L 80 40 L 80 0 Z" fill="#9b59b6" opacity="0.8" stroke="#8e44ad" transform="translate(0,-20)"/>
+    <path d="M 40 0 L 120 0 L 40 40 Z" fill="#9b59b6" opacity="0.8" stroke="#8e44ad" transform="translate(0,20)"/>
+    <text x="80" y="55" font-family="Arial" font-size="12" fill="#7f8c8d" text-anchor="middle">3. 或者拼成平行四边形</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#bdc3c7" />
+    </marker>
+  </defs>
+</svg>

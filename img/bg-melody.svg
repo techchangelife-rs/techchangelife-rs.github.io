@@ -1,0 +1,20 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dopamine-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4D94;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00E5FF;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#dopamine-grad)" />
+  
+  <!-- Floating bubbles/shapes -->
+  <circle cx="100" cy="100" r="50" fill="#FF4D94" opacity="0.15" />
+  <circle cx="900" cy="200" r="80" fill="#00E5FF" opacity="0.1" />
+  <circle cx="500" cy="800" r="120" fill="#FFD700" opacity="0.12" />
+  <circle cx="200" cy="600" r="60" fill="#00FFC6" opacity="0.1" />
+  <circle cx="800" cy="900" r="40" fill="#FF8C00" opacity="0.15" />
+  
+  <path d="M0,500 Q250,400 500,500 T1000,500" stroke="#FF4D94" stroke-width="2" fill="none" opacity="0.05" />
+  <path d="M0,300 Q250,400 500,300 T1000,300" stroke="#00E5FF" stroke-width="2" fill="none" opacity="0.05" />
+</svg>

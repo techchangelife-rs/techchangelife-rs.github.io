@@ -1,0 +1,32 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="300" fill="#fdfdfd" rx="10"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">图 8.1: MCP 协议统一工具调用模型</text>
+
+  <!-- OpenClaw -->
+  <rect x="100" y="100" width="150" height="100" rx="10" fill="#49B1F5"/>
+  <text x="175" y="155" text-anchor="middle" fill="#fff" font-weight="bold">OpenClaw</text>
+
+  <!-- MCP Hub -->
+  <polygon points="400,80 450,150 400,220 350,150" fill="#f1c40f"/>
+  <text x="400" y="155" text-anchor="middle" fill="#2c3e50" font-size="12" font-weight="bold">MCP 总线</text>
+
+  <!-- External Tools -->
+  <rect x="550" y="60" width="150" height="40" rx="5" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="625" y="85" text-anchor="middle" fill="#7f8c8d" font-size="11">Google Search API</text>
+  <rect x="550" y="130" width="150" height="40" rx="5" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="625" y="155" text-anchor="middle" fill="#7f8c8d" font-size="11">GitHub MCP Server</text>
+  <rect x="550" y="200" width="150" height="40" rx="5" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="625" y="225" text-anchor="middle" fill="#7f8c8d" font-size="11">AWS Lambda Runner</text>
+
+  <!-- 连线 -->
+  <line x1="250" y1="150" x2="350" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="150" x2="550" y2="80" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="150" x2="550" y2="150" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="150" x2="550" y2="220" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

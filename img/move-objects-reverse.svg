@@ -1,0 +1,24 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#fef7f7" rx="10"/>
+  
+  <!-- 哥哥给弟弟 -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="0" width="80" height="40" fill="#FFE0B2" stroke="#FB8C00" rx="5"/>
+    <text x="40" y="25" font-family="Arial" font-size="14" fill="#E65100" text-anchor="middle">给出 3 个</text>
+    
+    <path d="M 90 20 L 140 20" fill="none" stroke="#FB8C00" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <rect x="150" y="0" width="80" height="40" fill="#C8E6C9" stroke="#4CAF50" rx="5"/>
+    <text x="190" y="25" font-family="Arial" font-size="14" fill="#1B5E20" text-anchor="middle">得到 3 个</text>
+  </g>
+  
+  <!-- 差距计算 -->
+  <text x="200" y="110" font-family="Arial" font-size="16" fill="#D32F2F" text-anchor="middle" font-weight="bold">原来的差距 = 3 + 3 = 6 个</text>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FB8C00" />
+    </marker>
+  </defs>
+</svg>

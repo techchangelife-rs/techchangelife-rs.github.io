@@ -1,0 +1,85 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#f0f7ff" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">三角形核心定理与严谨证明图解</text>
+  
+  <!-- Section 1: Angle Sum Theorem -->
+  <g transform="translate(50, 80)">
+    <rect width="700" height="200" rx="15" fill="#ffffff" stroke="#27ae60" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#27ae60">1. 内角和定理证明 (Angle Sum Proof)</text>
+    
+    <line x1="100" y1="150" x2="600" y2="150" stroke="#333" stroke-width="2" />
+    <line x1="200" y1="50" x2="500" y2="50" stroke="#27ae60" stroke-width="2" stroke-dasharray="4,2" />
+    <path d="M 250 150 L 350 50 L 450 150 Z" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" />
+    
+    <text x="250" y="140" font-family="Arial, sans-serif" font-size="12" fill="#333">∠1</text>
+    <text x="440" y="140" font-family="Arial, sans-serif" font-size="12" fill="#333">∠2</text>
+    <text x="345" y="70" font-family="Arial, sans-serif" font-size="12" fill="#333">∠3</text>
+    
+    <text x="310" y="45" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">∠1'</text>
+    <text x="380" y="45" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">∠2'</text>
+    
+    <text x="350" y="180" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#333">平行线内错角相等：∠1=∠1', ∠2=∠2' → ∠1+∠2+∠3 = 180°</text>
+  </g>
+  
+  <!-- Section 2: Congruence (SSS, SAS, ASA) -->
+  <g transform="translate(50, 300)">
+    <rect width="700" height="280" rx="15" fill="#ffffff" stroke="#3498db" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#3498db">2. 全等判定模型 (Congruence Models)</text>
+    
+    <!-- SAS Model -->
+    <g transform="translate(50, 60)">
+      <path d="M 0 100 L 100 100 L 50 20 Z" fill="#d6eaf8" stroke="#3498db" stroke-width="2" />
+      <text x="50" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">SAS</text>
+      <line x1="20" y1="60" x2="30" y2="60" stroke="#e74c3c" stroke-width="2" />
+      <line x1="70" y1="60" x2="80" y2="60" stroke="#e74c3c" stroke-width="2" />
+      <path d="M 40 100 A 10 10 0 0 1 60 100" fill="none" stroke="#e74c3c" stroke-width="2" />
+    </g>
+    
+    <!-- ASA Model -->
+    <g transform="translate(250, 60)">
+      <path d="M 0 100 L 120 100 L 60 20 Z" fill="#d6eaf8" stroke="#3498db" stroke-width="2" />
+      <text x="60" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">ASA</text>
+      <path d="M 10 100 A 10 10 0 0 1 20 90" fill="none" stroke="#e74c3c" stroke-width="2" />
+      <path d="M 100 100 A 10 10 0 0 0 110 90" fill="none" stroke="#e74c3c" stroke-width="2" />
+      <line x1="50" y1="105" x2="70" y2="105" stroke="#e74c3c" stroke-width="2" />
+    </g>
+    
+    <!-- SSS Model -->
+    <g transform="translate(480, 60)">
+      <path d="M 0 100 L 100 100 L 70 20 Z" fill="#d6eaf8" stroke="#3498db" stroke-width="2" />
+      <text x="50" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">SSS</text>
+      <line x1="40" y1="105" x2="60" y2="105" stroke="#e74c3c" stroke-width="2" />
+      <line x1="25" y1="60" x2="35" y2="60" stroke="#e74c3c" stroke-width="2" />
+      <line x1="80" y1="60" x2="90" y2="60" stroke="#e74c3c" stroke-width="2" />
+    </g>
+    
+    <text x="350" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">全等意味着：形状完全相同，大小完全相等</text>
+  </g>
+  
+  <!-- Section 3: Pythagorean Theorem (Visual Proof) -->
+  <g transform="translate(50, 600)">
+    <rect width="700" height="350" rx="15" fill="#ffffff" stroke="#e74c3c" stroke-width="2" />
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#e74c3c">3. 勾股定理的视觉证明 (Pythagorean Visual)</text>
+    
+    <g transform="translate(100, 60)">
+      <!-- Right Triangle -->
+      <path d="M 100 150 L 100 50 L 250 150 Z" fill="#fdedec" stroke="#e74c3c" stroke-width="2" />
+      <rect x="100" y="140" width="10" height="10" fill="none" stroke="#e74c3c" stroke-width="1" />
+      
+      <!-- Squares on sides -->
+      <rect x="0" y="50" width="100" height="100" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="1" />
+      <rect x="100" y="150" width="150" height="150" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="1" />
+      <rect x="100" y="50" width="180" height="180" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="1" transform="rotate(-33.7, 100, 50)" />
+      
+      <text x="50" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">a²</text>
+      <text x="175" y="230" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">b²</text>
+      <text x="220" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">c²</text>
+      
+      <text x="450" y="100" font-family="Times New Roman, serif" font-size="24" font-weight="bold" fill="#e74c3c">a² + b² = c²</text>
+      <text x="450" y="140" font-family="Arial, sans-serif" font-size="14" fill="#666">“勾三股四弦五” —— 中国古代的智慧</text>
+    </g>
+  </g>
+</svg>

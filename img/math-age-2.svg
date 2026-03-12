@@ -1,0 +1,32 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#fff0f6" rx="10" ry="10"/>
+  
+  <!-- Timeline -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="350" y="170" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">时间流逝</text>
+  
+  <!-- Person A (Large) -->
+  <rect x="80" y="60" width="120" height="20" fill="#ff85c0" stroke="#c41d7f" stroke-width="2"/>
+  <text x="140" y="50" font-family="Arial" font-size="14" fill="#c41d7f" text-anchor="middle">父亲</text>
+  
+  <!-- Person B (Small) -->
+  <rect x="80" y="100" width="30" height="20" fill="#ffadd2" stroke="#eb2f96" stroke-width="2"/>
+  <text x="95" y="130" font-family="Arial" font-size="14" fill="#eb2f96" text-anchor="middle">儿子</text>
+  
+  <!-- Age Difference (Constant) -->
+  <path d="M 110 100 L 200 100" stroke="#f5222d" stroke-width="2" stroke-dasharray="4,2"/>
+  <path d="M 110 90 L 110 110 M 200 90 L 200 110" stroke="#f5222d" stroke-width="1"/>
+  <text x="155" y="120" font-family="Arial" font-size="12" fill="#f5222d" text-anchor="middle">年龄差 (永恒不变)</text>
+  
+  <!-- Formula -->
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">
+    年龄差 = 大年龄 - 小年龄
+  </text>
+  
+  <defs>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>

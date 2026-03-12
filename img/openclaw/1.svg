@@ -1,0 +1,32 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景与网格 -->
+  <rect width="800" height="500" fill="#fdfdfd" rx="10"/>
+  <circle cx="400" cy="250" r="180" fill="none" stroke="#eee" stroke-width="1"/>
+  <circle cx="400" cy="250" r="135" fill="none" stroke="#eee" stroke-width="1"/>
+  <circle cx="400" cy="250" r="90" fill="none" stroke="#eee" stroke-width="1"/>
+  <circle cx="400" cy="250" r="45" fill="none" stroke="#eee" stroke-width="1"/>
+  
+  <!-- 轴线 -->
+  <line x1="400" y1="70" x2="400" y2="430" stroke="#ddd" stroke-width="1"/>
+  <line x1="220" y1="250" x2="580" y2="250" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- 标签 -->
+  <text x="400" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">系统执行力 (Execution)</text>
+  <text x="400" y="460" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">隐私安全性 (Privacy)</text>
+  <text x="600" y="255" text-anchor="start" font-size="14" font-weight="bold" fill="#2c3e50">自主性 (Autonomy)</text>
+  <text x="200" y="255" text-anchor="end" font-size="14" font-weight="bold" fill="#2c3e50">模型推理能力 (Reasoning)</text>
+
+  <!-- OpenClaw 数据 (蓝) -->
+  <polygon points="400,90 560,250 400,420 280,250" fill="rgba(73, 177, 245, 0.3)" stroke="#49B1F5" stroke-width="3"/>
+  <!-- Manus AI 数据 (橙) -->
+  <polygon points="400,120 570,250 400,180 340,250" fill="rgba(255, 114, 66, 0.2)" stroke="#FF7242" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- 图例 -->
+  <rect x="620" y="400" width="15" height="15" fill="#49B1F5"/>
+  <text x="645" y="413" font-size="12" fill="#666">OpenClaw (Local-first)</text>
+  <rect x="620" y="430" width="15" height="15" fill="none" stroke="#FF7242" stroke-dasharray="2,2"/>
+  <text x="645" y="443" font-size="12" fill="#666">Manus AI (Cloud-native)</text>
+  
+  <text x="400" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">图 2.1: 2026 AI Agent 市场竞争雷达图</text>
+  <text x="400" y="485" text-anchor="middle" font-size="11" fill="#999">数据来源: Prosus Global Agent Benchmark Report 2026</text>
+</svg>

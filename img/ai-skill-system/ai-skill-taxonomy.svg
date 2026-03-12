@@ -1,0 +1,47 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="600" fill="#fcfcfc" />
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333">1700+ 核心技能分类体系 (Core Skill Taxonomy)</text>
+  
+  <!-- Central Hub -->
+  <circle cx="400" cy="300" r="60" fill="#FF4D94" opacity="0.8" />
+  <text x="400" y="305" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">技能大脑</text>
+  
+  <!-- Categories -->
+  <!-- Programming -->
+  <circle cx="150" cy="150" r="50" fill="#00E5FF" opacity="0.6" />
+  <text x="150" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">编程开发</text>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="10">代码生成 · 调试 · 架构</text>
+
+  <!-- Design -->
+  <circle cx="650" cy="150" r="50" fill="#FFD700" opacity="0.6" />
+  <text x="650" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">创意设计</text>
+  <text x="650" y="180" text-anchor="middle" font-family="Arial" font-size="10">UI/UX · 3D建模 · 插画</text>
+
+  <!-- Analysis -->
+  <circle cx="150" cy="450" r="50" fill="#4CAF50" opacity="0.6" />
+  <text x="150" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">数据分析</text>
+  <text x="150" y="480" text-anchor="middle" font-family="Arial" font-size="10">统计 · 预测 · 可视化</text>
+
+  <!-- Professional -->
+  <circle cx="650" cy="450" r="50" fill="#F44336" opacity="0.6" />
+  <text x="650" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">专业领域</text>
+  <text x="650" y="480" text-anchor="middle" font-family="Arial" font-size="10">医疗 · 法律 · 金融</text>
+
+  <!-- Creation -->
+  <circle cx="400" cy="120" r="50" fill="#9C27B0" opacity="0.6" />
+  <text x="400" y="125" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">内容创作</text>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="10">文案 · 脚本 · 翻译</text>
+
+  <!-- Research -->
+  <circle cx="400" cy="480" r="50" fill="#2196F3" opacity="0.6" />
+  <text x="400" y="485" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">科学研究</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Arial" font-size="10">论文分析 · 实验设计</text>
+
+  <!-- Connecting Lines -->
+  <line x1="400" y1="240" x2="400" y2="170" stroke="#ddd" stroke-width="2" />
+  <line x1="400" y1="360" x2="400" y2="430" stroke="#ddd" stroke-width="2" />
+  <line x1="340" y1="300" x2="200" y2="150" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="460" y1="300" x2="600" y2="150" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="340" y1="300" x2="200" y2="450" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="460" y1="300" x2="600" y2="450" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+</svg>

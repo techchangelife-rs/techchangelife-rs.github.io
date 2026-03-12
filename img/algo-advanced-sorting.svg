@@ -1,0 +1,26 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#f0f7ff" rx="15"/>
+  <text x="300" y="40" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#003a8c">工业级混合排序算法原理 (Hybrid Sorting)</text>
+  
+  <!-- Timsort Section -->
+  <g transform="translate(50, 80)">
+    <rect width="230" height="180" fill="#ffffff" stroke="#1890ff" stroke-width="2" rx="8"/>
+    <text x="115" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1890ff">Timsort (Python/Java)</text>
+    <path d="M 30 60 H 200" stroke="#bae7ff" stroke-width="2"/>
+    <text x="115" y="80" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">分段寻找升序序列 (Runs)</text>
+    <text x="115" y="110" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">小段：插入排序 (Insertion)</text>
+    <text x="115" y="140" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">大段：归并排序 (Merge)</text>
+    <text x="115" y="170" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#40a9ff">特点：稳定 + 适应性强</text>
+  </g>
+
+  <!-- Introsort Section -->
+  <g transform="translate(320, 80)">
+    <rect width="230" height="180" fill="#ffffff" stroke="#722ed1" stroke-width="2" rx="8"/>
+    <text x="115" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#722ed1">Introsort (C++ std::sort)</text>
+    <path d="M 30 60 H 200" stroke="#efdbff" stroke-width="2"/>
+    <text x="115" y="80" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">初始：快速排序 (Quick)</text>
+    <text x="115" y="110" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">深度过大：堆排序 (Heap)</text>
+    <text x="115" y="140" font-family="Arial" font-size="13" text-anchor="middle" fill="#666">数据极小：插入排序 (Insertion)</text>
+    <text x="115" y="170" font-family="Arial" font-size="12" font-style="italic" text-anchor="middle" fill="#b37feb">特点：极致速度 + 无最坏情况</text>
+  </g>
+</svg>

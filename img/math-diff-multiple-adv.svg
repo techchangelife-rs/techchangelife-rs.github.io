@@ -1,0 +1,28 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#fffbe6" rx="10" ry="10"/>
+  
+  <!-- Labels -->
+  <text x="20" y="60" font-family="Arial" font-size="16" fill="#333">大数 (4份)</text>
+  <text x="20" y="110" font-family="Arial" font-size="16" fill="#333">小数 (1份)</text>
+  
+  <!-- Small Number (1 unit) -->
+  <rect x="120" y="95" width="50" height="20" fill="#52c41a" stroke="#237804" stroke-width="2"/>
+  
+  <!-- Large Number (4 units example) -->
+  <rect x="120" y="45" width="50" height="20" fill="#52c41a" stroke="#237804" stroke-width="2"/>
+  <rect x="170" y="45" width="50" height="20" fill="#faad14" stroke="#d48806" stroke-width="2" opacity="0.6"/>
+  <rect x="220" y="45" width="50" height="20" fill="#faad14" stroke="#d48806" stroke-width="2" opacity="0.6"/>
+  <rect x="270" y="45" width="50" height="20" fill="#faad14" stroke="#d48806" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Difference Indicator -->
+  <path d="M 170 85 L 170 105" stroke="#333" stroke-width="1"/>
+  <path d="M 320 85 L 320 105" stroke="#333" stroke-width="1"/>
+  <line x1="170" y1="95" x2="320" y2="95" stroke="#d0021b" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="245" y="115" font-family="Arial" font-size="14" fill="#d0021b" text-anchor="middle">差 (3份)</text>
+  
+  <!-- Logic -->
+  <text x="200" y="170" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">
+    1份量 = 差 ÷ (4 - 1)
+  </text>
+</svg>

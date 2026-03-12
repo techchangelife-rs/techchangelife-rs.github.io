@@ -1,0 +1,19 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#f9f9f9" rx="10"/>
+  
+  <!-- 小数 (1份) -->
+  <text x="20" y="45" font-family="Arial" font-size="16" fill="#333">小数:</text>
+  <rect x="70" y="30" width="80" height="20" fill="#50E3C2" rx="5"/>
+  <text x="100" y="45" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">1份</text>
+  
+  <!-- 大数 (3份) -->
+  <text x="20" y="95" font-family="Arial" font-size="16" fill="#333">大数:</text>
+  <rect x="70" y="80" width="80" height="20" fill="#4A90E2" rx="5"/>
+  <rect x="155" y="80" width="80" height="20" fill="#4A90E2" rx="5"/>
+  <rect x="240" y="80" width="80" height="20" fill="#4A90E2" rx="5"/>
+  <text x="190" y="95" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">3份 (倍数)</text>
+  
+  <!-- 和的标注 -->
+  <path d="M 70 130 L 70 140 L 320 140 L 320 130" fill="none" stroke="#666" stroke-width="2"/>
+  <text x="195" y="160" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">和 (1 + 3 = 4份)</text>
+</svg>

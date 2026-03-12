@@ -1,0 +1,40 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Agent 安全三道防线</text>
+  
+  <!-- Line 1: Pre-Audit -->
+  <g transform="translate(50, 150)">
+    <rect width="180" height="120" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565c0">1. 静态审计</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">意图/Prompt 扫描</text>
+    <text x="90" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">禁止高危指令</text>
+  </g>
+  
+  <!-- Line 2: Human Approval -->
+  <g transform="translate(310, 150)">
+    <rect width="180" height="120" rx="10" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#f57f17">2. 人类确认</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Human-in-the-Loop</text>
+    <text x="90" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#f44336">✅ / ❌</text>
+  </g>
+  
+  <!-- Line 3: Sandbox Execution -->
+  <g transform="translate(570, 150)">
+    <rect width="180" height="120" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">3. 沙箱隔离</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Docker/WASM 隔离</text>
+    <text x="90" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">权限最小化原则</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <path d="M 230 210 L 310 210" stroke="#bdbdbd" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 490 210 L 570 210" stroke="#bdbdbd" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <text x="400" y="350" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#666">“零信任”原则：默认不通过 -> 显式授权 -> 隔离运行</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

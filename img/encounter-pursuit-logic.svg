@@ -1,0 +1,62 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f1f3f5" rx="10" ry="10" />
+  
+  <!-- Section 1: Encounter (相遇) -->
+  <text x="300" y="30" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">1. 相遇问题 (Encounter)</text>
+  <line x1="50" y1="100" x2="550" y2="100" stroke="#6c757d" stroke-width="2" />
+  
+  <!-- Object A -->
+  <rect x="50" y="70" width="40" height="20" fill="#dc3545" rx="3" />
+  <text x="70" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#dc3545">甲 (V1)</text>
+  <line x1="90" y1="80" x2="140" y2="80" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-red)" />
+  
+  <!-- Object B -->
+  <rect x="510" y="70" width="40" height="20" fill="#007bff" rx="3" />
+  <text x="530" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#007bff">乙 (V2)</text>
+  <line x1="510" y1="80" x2="460" y2="80" stroke="#007bff" stroke-width="2" marker-end="url(#arrow-blue)" />
+  
+  <!-- Meeting Point -->
+  <line x1="350" y1="90" x2="350" y2="110" stroke="#ffc107" stroke-width="3" />
+  <text x="350" y="130" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">相遇点</text>
+  
+  <!-- Formula Encounter -->
+  <text x="300" y="160" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    路程和 = (V1 + V2) × 相遇时间
+  </text>
+  
+  <line x1="20" y1="180" x2="580" y2="180" stroke="#dee2e6" stroke-width="1" />
+  
+  <!-- Section 2: Pursuit (追及) -->
+  <text x="300" y="210" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">2. 追及问题 (Pursuit)</text>
+  <line x1="50" y1="280" x2="550" y2="280" stroke="#6c757d" stroke-width="2" />
+  
+  <!-- Object A (Chaser) -->
+  <rect x="50" y="250" width="40" height="20" fill="#dc3545" rx="3" />
+  <text x="70" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#dc3545">甲 (V1 快)</text>
+  <line x1="90" y1="260" x2="160" y2="260" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-red)" />
+  
+  <!-- Object B (Target) -->
+  <rect x="250" y="250" width="40" height="20" fill="#007bff" rx="3" />
+  <text x="270" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#007bff">乙 (V2 慢)</text>
+  <line x1="290" y1="260" x2="330" y2="260" stroke="#007bff" stroke-width="2" marker-end="url(#arrow-blue)" />
+  
+  <!-- Distance Gap -->
+  <path d="M 70 300 L 70 310 L 270 310 L 270 300" fill="none" stroke="#fd7e14" stroke-width="2" />
+  <text x="170" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#fd7e14">初始距离差</text>
+  
+  <!-- Formula Pursuit -->
+  <text x="300" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    路程差 = (V1 - V2) × 追及时间
+  </text>
+  
+  <!-- Markers -->
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc3545" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#007bff" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0fdf4" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#166534" font-weight="bold">数的进制：二进制与十进制的转换</text>
+  
+  <!-- Decimal to Binary (Division Method) -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#15803d" font-weight="bold">十进制 13 转 二进制：</text>
+    
+    <g transform="translate(20, 50)">
+      <text x="0" y="20" font-family="Courier New" font-size="20">13 ÷ 2 = 6 ... 余 1</text>
+      <text x="0" y="50" font-family="Courier New" font-size="20"> 6 ÷ 2 = 3 ... 余 0</text>
+      <text x="0" y="80" font-family="Courier New" font-size="20"> 3 ÷ 2 = 1 ... 余 1</text>
+      <text x="0" y="110" font-family="Courier New" font-size="20"> 1 ÷ 2 = 0 ... 余 1</text>
+      
+      <!-- Arrow pointing up -->
+      <path d="M220,110 L220,20" stroke="#e11d48" stroke-width="3" marker-end="url(#arrow-red)" />
+      <text x="230" y="65" font-family="Arial" font-size="14" fill="#e11d48">从下往上读</text>
+    </g>
+    
+    <text x="20" y="200" font-family="Arial" font-size="20" fill="#333">结果：(13)₁₀ = (1101)₂</text>
+  </g>
+  
+  <!-- Binary to Decimal (Weight Method) -->
+  <g transform="translate(320, 80)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#15803d" font-weight="bold">二进制 1101 转 十进制：</text>
+    
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" font-family="Courier New" font-size="24" letter-spacing="10">1 1 0 1</text>
+      <text x="0" y="30" font-family="Arial" font-size="12" fill="#666" letter-spacing="10">2³ 2² 2¹ 2⁰</text>
+      
+      <text x="0" y="70" font-family="Arial" font-size="14">1 × 8 = 8</text>
+      <text x="0" y="90" font-family="Arial" font-size="14">1 × 4 = 4</text>
+      <text x="0" y="110" font-family="Arial" font-size="14">0 × 2 = 0</text>
+      <text x="0" y="130" font-family="Arial" font-size="14">1 × 1 = 1</text>
+      
+      <line x1="0" y1="140" x2="80" y2="140" stroke="#333" stroke-width="1" />
+      <text x="0" y="165" font-family="Arial" font-size="18" font-weight="bold">和 = 13</text>
+    </g>
+  </g>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e11d48" />
+    </marker>
+  </defs>
+</svg>

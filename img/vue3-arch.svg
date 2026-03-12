@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <style>
+    .box{rx:8;fill:#00C4B6}
+    .txt{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;font-size:16px;fill:#fff}
+    .line{stroke:#1B9EF3;stroke-width:2;marker-end:url(#arrow)}
+    .group{fill:#49B1F5}
+    .note{font-size:12px;fill:#333}
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1B9EF3"/>
+    </marker>
+  </defs>
+  <rect x="80" y="80" width="220" height="60" class="box group"/><text x="100" y="115" class="txt">reactivity</text>
+  <rect x="360" y="80" width="240" height="60" class="box"/><text x="380" y="115" class="txt">runtime-core / runtime-dom</text>
+  <rect x="640" y="80" width="220" height="60" class="box group"/><text x="660" y="115" class="txt">compiler-core</text>
+  <line x1="300" y1="110" x2="360" y2="110" class="line"/>
+  <line x1="600" y1="110" x2="640" y2="110" class="line"/>
+
+  <rect x="360" y="200" width="240" height="60" class="box"/><text x="380" y="235" class="txt">renderer / patch / scheduler</text>
+  <line x1="480" y1="140" x2="480" y2="200" class="line"/>
+
+  <rect x="360" y="320" width="240" height="60" class="box"/><text x="380" y="355" class="txt">DOM 操作 / 事件系统</text>
+  <line x1="480" y1="260" x2="480" y2="320" class="line"/>
+
+  <text x="80" y="430" class="note">数据变化 → reactivity 触发副作用 → runtime-core 渲染 → runtime-dom 更新 → 编译器将模板转换为渲染函数。</text>
+</svg>

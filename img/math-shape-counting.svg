@@ -1,0 +1,23 @@
+<svg width="400" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="180" fill="#ebf8ff" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#2b6cb0" text-anchor="middle" font-weight="bold">分类数图形：从小到大</text>
+  
+  <!-- 组合三角形 -->
+  <g transform="translate(100, 50)">
+    <!-- 大三角形外框 -->
+    <path d="M 100 0 L 0 100 L 200 100 Z" fill="none" stroke="#2b6cb0" stroke-width="2"/>
+    <!-- 中间分割线 -->
+    <line x1="100" y1="0" x2="100" y2="100" stroke="#2b6cb0" stroke-width="2"/>
+    
+    <!-- 标注 -->
+    <text x="45" y="80" font-family="Arial" font-size="14" fill="#2b6cb0" text-anchor="middle">1</text>
+    <text x="155" y="80" font-family="Arial" font-size="14" fill="#2b6cb0" text-anchor="middle">2</text>
+  </g>
+  
+  <!-- 统计逻辑 -->
+  <g transform="translate(50, 160)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#4a5568">单体三角形: 2个 (1, 2)</text>
+    <text x="150" y="0" font-family="Arial" font-size="12" fill="#4a5568">组合三角形: 1个 (1+2)</text>
+    <text x="280" y="0" font-family="Arial" font-size="14" fill="#2b6cb0" font-weight="bold">总计: 3个</text>
+  </g>
+</svg>

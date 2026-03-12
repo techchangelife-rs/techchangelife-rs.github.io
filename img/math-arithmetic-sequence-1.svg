@@ -1,0 +1,25 @@
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0fdf4" rx="10"/>
+  <text x="200" y="30" font-family="Arial" font-size="18" fill="#166534" text-anchor="middle" font-weight="bold">等差数列：台阶模型</text>
+  
+  <g transform="translate(40, 50)">
+    <!-- 台阶 -->
+    <rect x="0" y="60" width="40" height="20" fill="#86efac" stroke="#166534"/>
+    <text x="20" y="75" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">2</text>
+    
+    <rect x="50" y="40" width="40" height="40" fill="#86efac" stroke="#166534"/>
+    <text x="70" y="55" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">5</text>
+    
+    <rect x="100" y="20" width="40" height="60" fill="#86efac" stroke="#166534"/>
+    <text x="120" y="35" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">8</text>
+    
+    <rect x="150" y="0" width="40" height="80" fill="#86efac" stroke="#166534"/>
+    <text x="170" y="15" font-family="Arial" font-size="12" fill="#064e3b" text-anchor="middle">11</text>
+    
+    <!-- 公差标注 -->
+    <path d="M 40 70 L 50 70" stroke="#15803d" stroke-width="1" stroke-dasharray="2"/>
+    <text x="45" y="65" font-family="Arial" font-size="10" fill="#15803d" text-anchor="middle">d=3</text>
+  </g>
+  
+  <text x="200" y="135" font-family="Arial" font-size="14" fill="#166534" font-weight="bold">第n项 = 首项 + (n-1) × 公差</text>
+</svg>

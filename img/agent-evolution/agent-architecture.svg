@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f8f9fa" rx="20"/>
+  
+  <text x="400" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">AI Agent 架构蓝图</text>
+  
+  <!-- LLM Core -->
+  <g transform="translate(300, 100)">
+    <rect width="200" height="100" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="4"/>
+    <text x="100" y="55" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#1565c0">LLM Core</text>
+    <text x="100" y="80" font-family="Arial" font-size="14" text-anchor="middle" fill="#424242">(大脑/推理引擎)</text>
+  </g>
+  
+  <!-- Planning -->
+  <g transform="translate(50, 250)">
+    <rect width="200" height="150" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">Planning (规划)</text>
+    <text x="100" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">1. 子任务分解</text>
+    <text x="100" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">2. 反思与自省</text>
+    <text x="100" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">3. 策略优化</text>
+  </g>
+  
+  <!-- Memory -->
+  <g transform="translate(300, 250)">
+    <rect width="200" height="150" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">Memory (记忆)</text>
+    <text x="100" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">短期记忆 (Context)</text>
+    <text x="100" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">长期记忆 (Vector DB)</text>
+    <text x="100" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">RAG 检索增强</text>
+  </g>
+  
+  <!-- Tool Use -->
+  <g transform="translate(550, 250)">
+    <rect width="200" height="150" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3"/>
+    <text x="100" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4a148c">Tool Use (工具)</text>
+    <text x="100" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">1. Web 搜索</text>
+    <text x="100" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">2. 代码解释器</text>
+    <text x="100" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">3. 外部 API 调用</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <path d="M 300 150 Q 150 150 150 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 200 L 400 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 500 150 Q 650 150 650 250" stroke="#bdbdbd" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="460" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#666">构建 AI Agent 的核心组件架构</text>
+</svg>

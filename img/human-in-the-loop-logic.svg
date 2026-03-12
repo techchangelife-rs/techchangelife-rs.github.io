@@ -1,0 +1,35 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="300" fill="#f5f5f5" rx="10" ry="10" />
+  
+  <!-- Agent System -->
+  <rect x="50" y="50" width="200" height="200" rx="15" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="150" y="140" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2196f3">AI Agent 自动执行</text>
+  <text x="150" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">分析、推理、草拟方案</text>
+  
+  <!-- Human -->
+  <rect x="350" y="50" width="200" height="200" rx="15" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+  <circle cx="450" cy="110" r="30" fill="#ffb74d" />
+  <text x="450" y="160" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff9800">人类在环 (HITL)</text>
+  <text x="450" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">决策审批、边界约束</text>
+  
+  <!-- Interaction Loops -->
+  <!-- Agent to Human (Proposal) -->
+  <path d="M 250 100 L 350 100" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow-head)" />
+  <text x="300" y="90" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">提交方案待审</text>
+  
+  <!-- Human to Agent (Feedback) -->
+  <path d="M 350 200 L 250 200" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow-head)" />
+  <text x="300" y="220" font-family="Arial" font-size="11" text-anchor="middle" fill="#333">纠偏、确认或否决</text>
+  
+  <!-- Safety Shield -->
+  <path d="M 300 20 L 300 280" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5" fill="none" />
+  <text x="300" y="40" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc3545">安全与合规边界</text>
+  
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow-head" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#666" />
+    </marker>
+  </defs>
+</svg>

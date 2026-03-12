@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f8f9fa" rx="20"/>
+  <text x="400" y="50" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Skill 元编程: 技能自我进化循环</text>
+  
+  <!-- Agent -->
+  <g transform="translate(325, 100)">
+    <circle cx="75" cy="75" r="70" fill="#e3f2fd" stroke="#2196f3" stroke-width="4"/>
+    <text x="75" y="80" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1565c0">Agent</text>
+  </g>
+  
+  <!-- Step 1: Code Generation -->
+  <g transform="translate(50, 250)">
+    <rect width="180" height="120" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">1. 生成代码</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Python/TS Logic</text>
+  </g>
+  
+  <!-- Step 2: Schema Generation -->
+  <g transform="translate(310, 320)">
+    <rect width="180" height="120" rx="10" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#f57f17">2. 编写 Schema</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">JSON Specification</text>
+  </g>
+  
+  <!-- Step 3: Registration -->
+  <g transform="translate(570, 250)">
+    <rect width="180" height="120" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+    <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#4a148c">3. 技能注册</text>
+    <text x="90" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Update Skill List</text>
+  </g>
+  
+  <!-- Connecting Arrows (Loop) -->
+  <path d="M 325 170 Q 140 170 140 250" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 230 310 L 310 350" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 490 350 L 570 310" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 660 250 Q 660 170 475 170" stroke="#bdbdbd" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <text x="400" y="480" font-family="Arial" font-size="16" font-style="italic" text-anchor="middle" fill="#666">Agent 发现能力缺口 -> 自主补齐技能 -> 再次尝试任务</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#bdbdbd" />
+    </marker>
+  </defs>
+</svg>

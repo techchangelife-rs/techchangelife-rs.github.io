@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f4f8" />
+  
+  <!-- Vertical Addition Puzzle -->
+  <g transform="translate(150, 50)">
+    <!-- Digits and Letters -->
+    <text x="40" y="40" font-family="Courier New" font-size="36" fill="#2c3e50">A 5</text>
+    <text x="10" y="80" font-family="Courier New" font-size="36" fill="#2c3e50">+ 3 B</text>
+    <line x1="0" y1="100" x2="100" y2="100" stroke="#333" stroke-width="3" />
+    <text x="40" y="140" font-family="Courier New" font-size="36" fill="#2c3e50">8 2</text>
+    
+    <!-- Highlights -->
+    <circle cx="85" cy="70" r="25" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4" />
+    <text x="120" y="75" font-family="Arial" font-size="14" fill="#e74c3c">个位：5 + B = ?2</text>
+    
+    <circle cx="50" cy="30" r="25" fill="none" stroke="#3498db" stroke-width="2" stroke-dasharray="4" />
+    <text x="-120" y="35" font-family="Arial" font-size="14" fill="#3498db">十位：A + 3 + 进位 = 8</text>
+  </g>
+  
+  <!-- Logic Box -->
+  <rect x="50" y="180" width="300" height="100" fill="#fff" stroke="#bdc3c7" rx="10" />
+  <text x="60" y="210" font-family="Arial" font-size="16" fill="#333" font-weight="bold">推理过程：</text>
+  <text x="60" y="235" font-family="Arial" font-size="14" fill="#555">1. 个位 5+B 尾数是 2，所以 5+B=12，B=7。</text>
+  <text x="60" y="260" font-family="Arial" font-size="14" fill="#555">2. 个位进 1 到十位，所以 A+3+1=8，A=4。</text>
+</svg>

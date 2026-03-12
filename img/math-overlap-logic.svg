@@ -1,0 +1,42 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f3f0ff" rx="10"/>
+  
+  <text x="200" y="30" font-family="Arial" font-size="16" fill="#5f3dc4" text-anchor="middle" font-weight="bold">重叠问题：被数了两次的人</text>
+  
+  <!-- 排队模型 -->
+  <g transform="translate(30, 60)">
+    <text x="0" y="-10" font-family="Arial" font-size="12" fill="#868e96">1. 排队模型 (从左数和从右数)</text>
+    <!-- 小朋友们 -->
+    <circle cx="20" cy="20" r="10" fill="#dee2e6"/>
+    <circle cx="50" cy="20" r="10" fill="#dee2e6"/>
+    <circle cx="80" cy="20" r="10" fill="#dee2e6"/>
+    <circle cx="110" cy="20" r="10" fill="#ff6b6b"/> <!-- 重叠的 -->
+    <circle cx="140" cy="20" r="10" fill="#dee2e6"/>
+    <circle cx="170" cy="20" r="10" fill="#dee2e6"/>
+    
+    <!-- 标注 -->
+    <path d="M 10 40 L 110 40" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#dot)"/>
+    <text x="60" y="55" font-family="Arial" font-size="10" fill="#fa5252" text-anchor="middle">从左数第 4</text>
+    
+    <path d="M 180 40 L 110 40" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#dot)"/>
+    <text x="145" y="55" font-family="Arial" font-size="10" fill="#fa5252" text-anchor="middle">从右数第 3</text>
+    
+    <text x="95" y="80" font-family="Arial" font-size="12" fill="#e67e22" font-weight="bold">总人数 = 4 + 3 - 1 = 6</text>
+  </g>
+  
+  <!-- 集合模型 -->
+  <g transform="translate(250, 80)">
+    <text x="30" y="-30" font-family="Arial" font-size="12" fill="#868e96" text-anchor="middle">2. 集合模型 (维恩图)</text>
+    <circle cx="0" cy="30" r="40" fill="#339af0" opacity="0.4" stroke="#1c7ed6"/>
+    <circle cx="50" cy="30" r="40" fill="#51cf66" opacity="0.4" stroke="#37b24d"/>
+    <text x="-15" y="35" font-family="Arial" font-size="12" fill="#1864ab">A</text>
+    <text x="65" y="35" font-family="Arial" font-size="12" fill="#2b8a3e">B</text>
+    <text x="25" y="35" font-family="Arial" font-size="10" fill="#333" font-weight="bold">重叠</text>
+  </g>
+
+  <defs>
+    <marker id="dot" markerWidth="4" markerHeight="4" refX="2" refY="2">
+      <circle cx="2" cy="2" r="2" fill="#fa5252" />
+    </marker>
+  </defs>
+</svg>

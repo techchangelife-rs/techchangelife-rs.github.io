@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f5f3ff" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#6d28d9" font-weight="bold">周期性问题：循环的规律</text>
+  
+  <!-- Sequence Visualization -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#333" font-weight="bold">规律：红、黄、蓝、红、黄、蓝 ...</text>
+    
+    <!-- Pattern Highlight -->
+    <rect x="15" y="40" width="130" height="60" fill="none" stroke="#6d28d9" stroke-width="2" stroke-dasharray="5,5" rx="5" />
+    <text x="80" y="120" text-anchor="middle" font-size="14" fill="#6d28d9">周期 T = 3</text>
+
+    <!-- Circles -->
+    <circle cx="40" cy="70" r="15" fill="#ef4444" /> <text x="40" y="105" text-anchor="middle" font-size="12">1</text>
+    <circle cx="80" cy="70" r="15" fill="#f59e0b" /> <text x="80" y="105" text-anchor="middle" font-size="12">2</text>
+    <circle cx="120" cy="70" r="15" fill="#3b82f6" /> <text x="120" y="105" text-anchor="middle" font-size="12">3 (余0)</text>
+    
+    <circle cx="180" cy="70" r="15" fill="#ef4444" /> <text x="180" y="105" text-anchor="middle" font-size="12">4</text>
+    <circle cx="220" cy="70" r="15" fill="#f59e0b" /> <text x="220" y="105" text-anchor="middle" font-size="12">5</text>
+    <circle cx="260" cy="70" r="15" fill="#3b82f6" /> <text x="260" y="105" text-anchor="middle" font-size="12">6</text>
+    
+    <text x="300" y="70" font-size="24">...</text>
+  </g>
+  
+  <!-- Calculation Step -->
+  <g transform="translate(50, 220)">
+    <text x="0" y="20" font-family="Arial" font-size="18" fill="#333" font-weight="bold">问题：第 20 个是什么颜色？</text>
+    
+    <rect x="20" y="40" width="300" height="100" fill="#fff" stroke="#ddd" rx="10" />
+    <text x="40" y="70" font-family="Courier New" font-size="20" fill="#6d28d9">20 ÷ 3 = 6 (组) ... 2 (个)</text>
+    <text x="40" y="110" font-family="Arial" font-size="16" fill="#333">结论：经历了 6 个完整周期，剩 2 个。</text>
+    
+    <!-- Result Indicator -->
+    <path d="M340,90 L380,90" stroke="#6d28d9" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <g transform="translate(400, 60)">
+      <circle cx="30" cy="30" r="25" fill="#f59e0b" stroke="#d97706" stroke-width="3" />
+      <text x="30" y="75" text-anchor="middle" font-weight="bold">黄色</text>
+    </g>
+  </g>
+
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6d28d9" />
+    </marker>
+  </defs>
+</svg>
