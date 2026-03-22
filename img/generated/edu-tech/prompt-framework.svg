@@ -1,0 +1,63 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+    </marker>
+  </defs>
+  <rect width="800" height="400" rx="15" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">ChatGPT 奥数辅导黄金提示词 (Prompt) 框架</text>
+
+  <!-- Framework Boxes -->
+  <g transform="translate(50, 100)">
+    <!-- Role -->
+    <rect width="140" height="80" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+    <text x="70" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1d4ed8" text-anchor="middle">1. 设定角色</text>
+    <text x="70" y="55" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">“你是一位有 10 年</text>
+    <text x="70" y="70" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">经验的小学奥数老师”</text>
+
+    <path d="M140,40 L190,40" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Context -->
+    <g transform="translate(150, 0)">
+      <rect x="50" y="0" width="140" height="80" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="2" />
+      <text x="120" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#047857" text-anchor="middle">2. 明确受众</text>
+      <text x="120" y="55" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">“讲解对象是</text>
+      <text x="120" y="70" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">三年级学生”</text>
+      <path d="M190,40 L240,40" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- Method -->
+    <g transform="translate(350, 0)">
+      <rect x="50" y="0" width="140" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" />
+      <text x="120" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#b45309" text-anchor="middle">3. 规定方法</text>
+      <text x="120" y="55" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">“不要用方程！</text>
+      <text x="120" y="70" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">请用画图法和列表法”</text>
+      <path d="M190,40 L240,40" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- Output -->
+    <g transform="translate(550, 0)">
+      <rect x="50" y="0" width="140" height="80" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2" />
+      <text x="120" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#be185d" text-anchor="middle">4. 互动输出</text>
+      <text x="120" y="55" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">“一步步提问引导</text>
+      <text x="120" y="70" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">最后出两道同类题”</text>
+    </g>
+  </g>
+
+  <!-- Example Output Box -->
+  <rect x="50" y="220" width="700" height="140" rx="10" fill="#1e293b" />
+  <text x="70" y="250" font-family="Courier New" font-size="14" font-weight="bold" fill="#38bdf8">完整 Prompt 示例：</text>
+  <text x="70" y="280" font-family="Courier New" font-size="13" fill="#cbd5e1">
+    你现在是一位资深的小学奥数金牌教练。我的孩子上三年级，刚接触【鸡兔同笼】问题。
+  </text>
+  <text x="70" y="300" font-family="Courier New" font-size="13" fill="#cbd5e1">
+    请注意：他还没学过二元一次方程。请你用“假设法”或者“画图法”给他讲解下面这道题。
+  </text>
+  <text x="70" y="320" font-family="Courier New" font-size="13" fill="#cbd5e1">
+    讲解时语言要生动有趣，分步骤引导他思考，不要直接给出最终答案。讲解完后，
+  </text>
+  <text x="70" y="340" font-family="Courier New" font-size="13" fill="#cbd5e1">
+    请再出两道难度递进的练习题供他巩固。
+  </text>
+</svg>

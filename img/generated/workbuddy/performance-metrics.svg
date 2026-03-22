@@ -1,0 +1,51 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="15" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Workbuddy vs 同类工具量化性能对比 (2026)</text>
+
+  <!-- Y Axis Labels -->
+  <g font-family="Arial" font-size="14" fill="#64748b" text-anchor="end">
+    <text x="140" y="100">代码生成准确率</text>
+    <text x="140" y="180">平均响应速度</text>
+    <text x="140" y="260">大规模项目兼容性</text>
+    <text x="140" y="340">资源消耗 (越低越好)</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(550, 70)" font-family="Arial" font-size="12">
+    <rect width="15" height="15" fill="#07C160" rx="3" />
+    <text x="25" y="12" fill="#334155">Workbuddy (OpenClaw)</text>
+    <rect y="25" width="15" height="15" fill="#cbd5e1" rx="3" />
+    <text x="25" y="37" fill="#334155">同类主流工具 (Avg.)</text>
+  </g>
+
+  <!-- Bars Group -->
+  <g transform="translate(160, 80)">
+    <!-- Accuracy -->
+    <rect x="0" y="0" width="450" height="25" fill="#07C160" rx="4" />
+    <text x="460" y="18" font-family="Arial" font-size="12" fill="#07C160" font-weight="bold">92%</text>
+    <rect x="0" y="30" width="380" height="25" fill="#cbd5e1" rx="4" />
+    <text x="390" y="48" font-family="Arial" font-size="12" fill="#64748b">78%</text>
+
+    <!-- Speed -->
+    <rect x="0" y="80" width="420" height="25" fill="#07C160" rx="4" />
+    <text x="430" y="98" font-family="Arial" font-size="12" fill="#07C160" font-weight="bold">1.2s</text>
+    <rect x="0" y="110" width="300" height="25" fill="#cbd5e1" rx="4" />
+    <text x="310" y="128" font-family="Arial" font-size="12" fill="#64748b">2.8s</text>
+
+    <!-- Project Compatibility -->
+    <rect x="0" y="160" width="480" height="25" fill="#07C160" rx="4" />
+    <text x="490" y="178" font-family="Arial" font-size="12" fill="#07C160" font-weight="bold">卓越</text>
+    <rect x="0" y="190" width="350" height="25" fill="#cbd5e1" rx="4" />
+    <text x="360" y="208" font-family="Arial" font-size="12" fill="#64748b">一般</text>
+
+    <!-- Resource Usage -->
+    <rect x="0" y="240" width="150" height="25" fill="#07C160" rx="4" />
+    <text x="160" y="258" font-family="Arial" font-size="12" fill="#07C160" font-weight="bold">极低</text>
+    <rect x="0" y="270" width="320" height="25" fill="#cbd5e1" rx="4" />
+    <text x="330" y="288" font-family="Arial" font-size="12" fill="#64748b">较高</text>
+  </g>
+
+  <!-- Footnote -->
+  <text x="400" y="460" font-family="Arial" font-size="12" fill="#94a3b8" text-anchor="middle">数据基于 2026 Q1 OpenClaw 实验室内部 Benchmark 测试</text>
+</svg>

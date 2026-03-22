@@ -1,0 +1,37 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="500" fill="#f5f5f5" rx="15" />
+  
+  <!-- AI Response Bubble for Chart -->
+  <g transform="translate(35, 50)">
+    <path d="M0,0 H400 Q410,0 410,10 V400 Q410,410 400,410 H10 L-10,410 L0,400 Z" fill="white" />
+    <text x="20" y="30" font-family="Arial" font-size="18" fill="#07C160" font-weight="bold">📊 上月转化率分析</text>
+    
+    <line x1="20" y1="50" x2="380" y2="50" stroke="#eee" stroke-width="2" />
+    
+    <!-- Bar Chart -->
+    <g transform="translate(40, 100)">
+      <line x1="0" y1="200" x2="300" y2="200" stroke="#333" stroke-width="2" />
+      <line x1="0" y1="0" x2="0" y2="200" stroke="#333" stroke-width="2" />
+      
+      <!-- Bars -->
+      <rect x="20" y="120" width="40" height="80" fill="#07C160" opacity="0.8" />
+      <rect x="80" y="80" width="40" height="120" fill="#07C160" opacity="0.8" />
+      <rect x="140" y="40" width="40" height="160" fill="#07C160" opacity="0.8" />
+      <rect x="200" y="60" width="40" height="140" fill="#07C160" opacity="0.8" />
+      <rect x="260" y="100" width="40" height="100" fill="#07C160" opacity="0.8" />
+      
+      <!-- Labels -->
+      <text x="40" y="220" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">W1</text>
+      <text x="100" y="220" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">W2</text>
+      <text x="160" y="220" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">W3</text>
+      <text x="220" y="220" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">W4</text>
+      <text x="280" y="220" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">W5</text>
+    </g>
+    
+    <text x="20" y="360" font-family="Arial" font-size="14" fill="#666">
+      <tspan x="20" dy="1.2em">平均转化率为 4.5%，相比上个月增长了 1.2%。</tspan>
+      <tspan x="20" dy="1.2em">主要增长点在 W3 期间的营销活动投放。</tspan>
+    </text>
+  </g>
+  <circle cx="15" cy="70" r="15" fill="#07C160" />
+</svg>

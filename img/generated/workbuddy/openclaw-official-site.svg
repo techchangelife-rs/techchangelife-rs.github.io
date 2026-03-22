@@ -1,0 +1,88 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#07C160;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#057b3d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Window Frame -->
+  <rect width="1200" height="800" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect width="1200" height="40" rx="10" ry="0" fill="#f5f5f5" />
+  <circle cx="20" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="20" r="6" fill="#27c93f"/>
+  
+  <!-- Navbar -->
+  <rect x="0" y="40" width="1200" height="70" fill="#ffffff" filter="url(#dropShadow)"/>
+  <text x="50" y="85" font-family="Arial" font-size="28" font-weight="bold" fill="#07C160">OpenClaw</text>
+  <g font-family="Arial" font-size="16" fill="#333">
+    <text x="800" y="82">Features</text>
+    <text x="900" y="82">Plugins</text>
+    <text x="1000" y="82">Docs</text>
+    <text x="1100" y="82">GitHub</text>
+  </g>
+
+  <!-- Hero Section -->
+  <rect x="0" y="110" width="1200" height="400" fill="#f9fafb"/>
+  <text x="600" y="220" font-family="Arial" font-size="56" font-weight="bold" fill="#111827" text-anchor="middle">OpenClaw: The Agentic OS</text>
+  <text x="600" y="270" font-family="Arial" font-size="24" fill="#4b5563" text-anchor="middle">Empowering Your AI with Hands, Memory, and Autonomy.</text>
+  
+  <!-- Call to Action Buttons -->
+  <rect x="450" y="320" width="140" height="50" rx="25" fill="#07C160" />
+  <text x="520" y="352" font-family="Arial" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Get Started</text>
+  <rect x="610" y="320" width="140" height="50" rx="25" fill="none" stroke="#07C160" stroke-width="2" />
+  <text x="680" y="352" font-family="Arial" font-size="18" font-weight="bold" fill="#07C160" text-anchor="middle">Learn More</text>
+
+  <!-- Product UI Preview (Workbuddy) -->
+  <rect x="200" y="420" width="800" height="350" rx="12" fill="#ffffff" filter="url(#dropShadow)" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="200" y="420" width="200" height="350" rx="12" ry="0" fill="#f3f4f6" />
+  <text x="220" y="455" font-family="Arial" font-size="14" font-weight="bold" fill="#9ca3af">WORKBUDDY PANEL</text>
+  
+  <!-- Functional Modules -->
+  <g transform="translate(220, 480)">
+    <rect width="160" height="35" rx="6" fill="#07C160" opacity="0.1" />
+    <text x="40" y="23" font-family="Arial" font-size="14" fill="#07C160" font-weight="bold">Code Generator</text>
+    <rect y="50" width="160" height="35" rx="6" fill="#f9fafb" />
+    <text x="40" y="73" font-family="Arial" font-size="14" fill="#4b5563">Debugger Pro</text>
+    <rect y="100" width="160" height="35" rx="6" fill="#f9fafb" />
+    <text x="40" y="123" font-family="Arial" font-size="14" fill="#4b5563">Doc Writer</text>
+    <rect y="150" width="160" height="35" rx="6" fill="#f9fafb" />
+    <text x="40" y="173" font-family="Arial" font-size="14" fill="#4b5563">Test Case Gen</text>
+  </g>
+
+  <!-- Main Chat/Code Area -->
+  <g transform="translate(420, 450)">
+    <text x="0" y="20" font-family="Courier New" font-size="14" fill="#059669">// Workbuddy: Refactoring auth.ts</text>
+    <rect x="0" y="40" width="350" height="20" rx="4" fill="#ecfdf5" />
+    <text x="10" y="55" font-family="Arial" font-size="12" fill="#065f46">Optimizing token validation logic using SOUL protocol...</text>
+    <rect x="0" y="80" width="350" height="150" rx="8" fill="#1f2937" />
+    <text x="15" y="110" font-family="Courier New" font-size="12" fill="#10b981">function validate(token: string) {</text>
+    <text x="15" y="130" font-family="Courier New" font-size="12" fill="#10b981">  return crypto.verify(token, key);</text>
+    <text x="15" y="150" font-family="Courier New" font-size="12" fill="#10b981">}</text>
+  </g>
+
+  <!-- Annotations -->
+  <g stroke="#ef4444" stroke-width="2" fill="none">
+    <path d="M150,150 L250,100" marker-end="url(#arrow)"/>
+    <circle cx="100" cy="100" r="40" />
+  </g>
+  <rect x="50" y="120" width="180" height="60" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="140" y="145" font-family="Arial" font-size="14" fill="#991b1b" text-anchor="middle" font-weight="bold">Core Ecosystem Logo</text>
+  <text x="140" y="165" font-family="Arial" font-size="12" fill="#991b1b" text-anchor="middle">The "Lobster" Identity</text>
+
+  <rect x="900" y="450" width="220" height="80" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="1"/>
+  <text x="1010" y="475" font-family="Arial" font-size="14" fill="#166534" text-anchor="middle" font-weight="bold">Workbuddy Panel</text>
+  <text x="1010" y="495" font-family="Arial" font-size="12" fill="#166534" text-anchor="middle">Real-time AI Collaboration</text>
+  <text x="1010" y="515" font-family="Arial" font-size="12" fill="#166534" text-anchor="middle">and Skill Execution</text>
+
+  <!-- Marker Def -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+    </marker>
+  </defs>
+</svg>

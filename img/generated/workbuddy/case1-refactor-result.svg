@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="12" fill="#1e1e1e" />
+  
+  <!-- Terminal Header -->
+  <rect width="600" height="30" rx="12" ry="0" fill="#333" />
+  <circle cx="20" cy="15" r="5" fill="#ff5f56" />
+  <circle cx="40" cy="15" r="5" fill="#ffbd2e" />
+  <circle cx="60" cy="15" r="5" fill="#27c93f" />
+  <text x="300" y="20" font-family="monospace" font-size="12" fill="#999" text-anchor="middle">auth.ts - Refactored</text>
+
+  <!-- Code Content -->
+  <g font-family="monospace" font-size="14">
+    <!-- Red Background for removal -->
+    <rect x="0" y="50" width="600" height="25" fill="#442a2a" />
+    <text x="10" y="67" fill="#f85149">- export function validateToken(token: string) {</text>
+    
+    <!-- Green Background for addition -->
+    <rect x="0" y="75" width="600" height="50" fill="#223723" />
+    <text x="10" y="92" fill="#3fb950">+ export async function validateToken(token: string) {</text>
+    <text x="10" y="117" fill="#3fb950">+   const soulToken = await SOUL.parse(token);</text>
+    
+    <text x="10" y="142" fill="#d1d5db">    return soulToken.isValid();</text>
+    <text x="10" y="167" fill="#d1d5db">  }</text>
+  </g>
+
+  <!-- Test Result Notification -->
+  <g transform="translate(150, 220)">
+    <rect width="300" height="120" rx="10" fill="#ffffff" filter="url(#shadow)" />
+    <circle cx="40" cy="40" r="15" fill="#07C160" />
+    <path d="M33,40 L38,45 L47,35" stroke="white" stroke-width="3" fill="none" />
+    <text x="70" y="45" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Test Passed!</text>
+    <text x="30" y="80" font-family="Arial" font-size="14" fill="#666">✓ unit-test:auth.ts (3/3 passed)</text>
+    <text x="30" y="100" font-family="Arial" font-size="14" fill="#666">Coverage: 98.5%</text>
+  </g>
+
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+</svg>

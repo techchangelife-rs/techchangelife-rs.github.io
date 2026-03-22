@@ -1,0 +1,75 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="15" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Workbuddy 执行链路全过程分析</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(50, 80)">
+    <rect width="180" height="100" rx="10" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+    <text x="90" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#07C160" text-anchor="middle">1. 意图解析</text>
+    <text x="90" y="65" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">微信指令 -> NLP 提取</text>
+    <text x="90" y="80" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">SOUL 协议生成任务链</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M230,130 L280,130" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(290, 80)">
+    <rect width="180" height="100" rx="10" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+    <text x="90" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#07C160" text-anchor="middle">2. 环境对齐</text>
+    <text x="90" y="65" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">扫描桌面/项目路径</text>
+    <text x="90" y="80" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">加载相关 RAG 记忆</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M470,130 L520,130" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(530, 80)">
+    <rect width="180" height="100" rx="10" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+    <text x="90" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#07C160" text-anchor="middle">3. 技能调用</text>
+    <text x="90" y="65" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">自动匹配最佳 Skill</text>
+    <text x="90" y="80" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">执行 Python/TS 脚本</text>
+  </g>
+
+  <!-- Arrow 3 (Down) -->
+  <path d="M620,180 L620,230" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(530, 240)">
+    <rect width="180" height="100" rx="10" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+    <text x="90" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#07C160" text-anchor="middle">4. 结果验证</text>
+    <text x="90" y="65" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">自检输出文件完整性</text>
+    <text x="90" y="80" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">运行单元测试/校验结果</text>
+  </g>
+
+  <!-- Arrow 4 (Left) -->
+  <path d="M530,290 L480,290" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5 -->
+  <g transform="translate(290, 240)">
+    <rect width="180" height="100" rx="10" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+    <text x="90" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#07C160" text-anchor="middle">5. 微信反馈</text>
+    <text x="90" y="65" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">任务完成通知</text>
+    <text x="90" y="80" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">推送总结摘要/预览链接</text>
+  </g>
+
+  <!-- Execution Case Visual -->
+  <rect x="50" y="380" width="700" height="180" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-dasharray="5 5" />
+  <text x="70" y="410" font-family="Arial" font-size="16" font-weight="bold" fill="#334155">典型案例：远程代码紧急重构</text>
+  
+  <g transform="translate(70, 430)" font-family="Arial" font-size="13" fill="#475569">
+    <text x="0" y="20">● 微信输入：“帮我检查 auth.ts 的 validateToken 函数并支持异步重构。”</text>
+    <text x="0" y="45">● Workbuddy 动作：</text>
+    <text x="20" y="70">1. 感知代码库上下文，分析目标文件逻辑。</text>
+    <text x="20" y="95">2. 自主修改代码，引入 async/await 并更新测试用例。</text>
+    <text x="20" y="120">3. 运行本地 npm test 验证改动，并将 Diff 摘要推送到微信。</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+</svg>

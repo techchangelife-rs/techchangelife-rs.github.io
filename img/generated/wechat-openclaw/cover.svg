@@ -1,0 +1,36 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07C160;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#057b3d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" rx="20" fill="url(#grad1)" />
+  
+  <!-- AI Brain Core -->
+  <circle cx="250" cy="200" r="80" fill="white" fill-opacity="0.1" stroke="white" stroke-width="2" stroke-dasharray="10 5" />
+  <path d="M220,180 Q250,140 280,180 T310,220 Q280,260 250,220 T190,180" fill="none" stroke="white" stroke-width="4">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
+  </path>
+  <text x="250" y="210" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">AI CORE</text>
+  
+  <!-- WeChat Logo Simulated -->
+  <g transform="translate(500, 150) scale(1.5)">
+    <circle cx="30" cy="30" r="25" fill="white" filter="url(#shadow)" />
+    <circle cx="22" cy="25" r="3" fill="#07C160" />
+    <circle cx="38" cy="25" r="3" fill="#07C160" />
+    <path d="M15,40 Q30,50 45,40" fill="none" stroke="#07C160" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- Connection Lines -->
+  <path d="M330,200 L470,200" stroke="white" stroke-width="3" stroke-dasharray="8 4">
+    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Text Content -->
+  <text x="400" y="340" font-family="Arial" font-size="32" fill="white" text-anchor="middle" font-weight="bold">OpenClaw + WeChat</text>
+  <text x="400" y="375" font-family="Arial" font-size="18" fill="white" text-anchor="middle" opacity="0.8">Empowering Your Daily Communication with AI</text>
+</svg>

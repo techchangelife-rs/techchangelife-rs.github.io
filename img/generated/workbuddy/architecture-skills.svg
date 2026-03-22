@@ -1,0 +1,59 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="600" rx="15" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">Workbuddy 深度技术架构与 Skills 体系</text>
+
+  <!-- User Layer -->
+  <rect x="100" y="80" width="800" height="60" rx="8" fill="#ffffff" stroke="#07C160" stroke-width="2" />
+  <text x="500" y="115" font-family="Arial" font-size="18" font-weight="bold" fill="#07C160" text-anchor="middle">用户交互层 (LUI / GUI / WeChat / IDE)</text>
+
+  <!-- Agent Core -->
+  <rect x="300" y="180" width="400" height="150" rx="12" fill="#07C160" />
+  <text x="500" y="215" font-family="Arial" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">Workbuddy Core (Agent Engine)</text>
+  <g transform="translate(320, 240)" font-family="Arial" font-size="14" fill="#ffffff">
+    <text x="0" y="0">● SOUL 推理协议 (Reasoning)</text>
+    <text x="0" y="30">● 层次化记忆管理 (Hierarchical Memory)</text>
+    <text x="0" y="60">● 上下文动态压缩 (Context Engine)</text>
+  </g>
+
+  <!-- Skills System -->
+  <g transform="translate(100, 380)">
+    <rect width="800" height="180" rx="12" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="5 5" />
+    <text x="400" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="#475569" text-anchor="middle">Skills &amp; 插件生态系统 (Extensibility)</text>
+    
+    <!-- Skill Boxes -->
+    <g transform="translate(40, 60)">
+      <rect width="160" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" />
+      <text x="80" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">代码生成</text>
+      <text x="80" y="55" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">多语言/全栈支持</text>
+    </g>
+    <g transform="translate(220, 60)">
+      <rect width="160" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" />
+      <text x="80" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">调试辅助</text>
+      <text x="80" y="55" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">异常追踪/自动修复</text>
+    </g>
+    <g transform="translate(400, 60)">
+      <rect width="160" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" />
+      <text x="80" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">文档撰写</text>
+      <text x="80" y="55" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">README/注释/Wiki</text>
+    </g>
+    <g transform="translate(580, 60)">
+      <rect width="160" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" />
+      <text x="80" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">测试用例</text>
+      <text x="80" y="55" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Unit/E2E Test</text>
+    </g>
+  </g>
+
+  <!-- Connection Arrows -->
+  <g stroke="#94a3b8" stroke-width="2" fill="none">
+    <path d="M500,140 L500,180" marker-end="url(#arrowhead)"/>
+    <path d="M500,330 L500,380" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+</svg>

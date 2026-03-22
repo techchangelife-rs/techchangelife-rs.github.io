@@ -1,0 +1,60 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="15" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  
+  <text x="400" y="40" font-family="Courier New" font-size="20" font-weight="bold" fill="#38bdf8" text-anchor="middle">Agent Workflow: Data Scraper to Money</text>
+
+  <!-- Node 1: Input -->
+  <g transform="translate(100, 100)">
+    <rect width="160" height="80" rx="10" fill="#334155" stroke="#94a3b8" />
+    <text x="80" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">1. 定时触发</text>
+    <text x="80" y="55" font-family="Courier New" font-size="12" fill="#cbd5e1" text-anchor="middle">Cron: 0 8 * * *</text>
+    <text x="80" y="70" font-family="Courier New" font-size="12" fill="#cbd5e1" text-anchor="middle">(每天早晨8点)</text>
+  </g>
+
+  <path d="M260,140 L340,140" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 2: AI Scraper -->
+  <g transform="translate(340, 100)">
+    <rect width="160" height="80" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <text x="80" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">2. AI 抓取与清洗</text>
+    <text x="80" y="55" font-family="Courier New" font-size="12" fill="#94a3b8" text-anchor="middle">爬取海外折扣站</text>
+    <text x="80" y="70" font-family="Courier New" font-size="12" fill="#94a3b8" text-anchor="middle">大模型提取关键信息</text>
+  </g>
+
+  <path d="M500,140 L580,140" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 3: Formatting -->
+  <g transform="translate(580, 100)">
+    <rect width="160" height="80" rx="10" fill="#334155" stroke="#94a3b8" />
+    <text x="80" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">3. 自动排版</text>
+    <text x="80" y="55" font-family="Courier New" font-size="12" fill="#cbd5e1" text-anchor="middle">生成 Markdown</text>
+    <text x="80" y="70" font-family="Courier New" font-size="12" fill="#cbd5e1" text-anchor="middle">插入分销带货链接</text>
+  </g>
+
+  <path d="M660,180 L660,250" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node 4: Publishing -->
+  <g transform="translate(580, 260)">
+    <rect width="160" height="80" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+    <text x="80" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">4. 多渠道分发</text>
+    <text x="80" y="55" font-family="Courier New" font-size="12" fill="#94a3b8" text-anchor="middle">API 同步至：</text>
+    <text x="80" y="70" font-family="Courier New" font-size="12" fill="#94a3b8" text-anchor="middle">公众号 / 飞书群</text>
+  </g>
+
+  <!-- Output Console -->
+  <rect x="100" y="260" width="400" height="180" rx="5" fill="#000000" stroke="#333" />
+  <circle cx="120" cy="280" r="5" fill="#ff5f56"/>
+  <circle cx="135" cy="280" r="5" fill="#ffbd2e"/>
+  <circle cx="150" cy="280" r="5" fill="#27c93f"/>
+  <text x="120" y="310" font-family="Courier New" font-size="13" fill="#10b981">> [Worker-01] Starting morning routine...</text>
+  <text x="120" y="335" font-family="Courier New" font-size="13" fill="#cbd5e1">> Found 15 new deals on Amazon.</text>
+  <text x="120" y="360" font-family="Courier New" font-size="13" fill="#38bdf8">> AI summarizing and translating to CN...</text>
+  <text x="120" y="385" font-family="Courier New" font-size="13" fill="#cbd5e1">> Injecting Affiliate ID: techchange-20</text>
+  <text x="120" y="410" font-family="Courier New" font-size="13" fill="#10b981">> Successfully posted to WeChat MP! 🎉</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+</svg>
