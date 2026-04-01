@@ -1,0 +1,47 @@
+<svg width="700" height="300" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowS" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d6336c"/>
+    </marker>
+  </defs>
+  <rect width="700" height="300" fill="#f8f9fa"/>
+  <!-- 标题 -->
+  <text x="350" y="25" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">图3：燕尾模型——三角形内部的神秘比例</text>
+
+  <!-- 大三角形 ABC -->
+  <!-- A(350,30) B(80,250) C(620,250) -->
+  <polygon points="350,30 80,250 620,250" fill="#fff8e1" stroke="#ff8f00" stroke-width="3"/>
+
+  <!-- 内部点 O -->
+  <circle cx="350" cy="140" r="8" fill="#d6336c"/>
+  <text x="360" y="135" font-size="14" font-weight="bold" fill="#d6336c">O</text>
+
+  <!-- 顶点连线 -->
+  <line x1="350" y1="30" x2="350" y2="140" stroke="#d6336c" stroke-width="3"/>
+  <line x1="80" y1="250" x2="350" y2="140" stroke="#1565c0" stroke-width="3"/>
+  <line x1="620" y1="250" x2="350" y2="140" stroke="#1565c0" stroke-width="3"/>
+
+  <!-- 底边交点 D（设在 BC 上，假设 BD:DC = 2:1） -->
+  <!-- B(80,250) C(620,250)，D 在 BC 上，设为 (440,250) -->
+  <!-- BD = 360, DC = 180 = 2:1 -->
+  <circle cx="440" cy="250" r="5" fill="#333"/>
+  <line x1="350" y1="140" x2="440" y2="250" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- 三个区域标注 -->
+  <text x="350" y="80" font-size="15" font-weight="bold" fill="#ff8f00">①</text>
+  <text x="200" y="190" font-size="15" font-weight="bold" fill="#1565c0">②</text>
+  <text x="480" y="190" font-size="15" font-weight="bold" fill="#1565c0">③</text>
+
+  <!-- 燕尾标注 -->
+  <text x="280" y="240" font-size="12" fill="#d6336c">左燕尾</text>
+  <text x="460" y="240" font-size="12" fill="#2e7d32">右燕尾</text>
+
+  <!-- 结论框 -->
+  <rect x="30" y="30" width="200" height="220" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="130" y="65" font-size="15" font-weight="bold" fill="#212529" text-anchor="middle">🎯 燕尾定理</text>
+  <text x="130" y="100" font-size="13" fill="#333" text-anchor="middle">底边被切成了</text>
+  <text x="130" y="125" font-size="14" font-weight="bold" fill="#d6336c" text-anchor="middle">BD : DC = 2 : 1</text>
+  <text x="130" y="160" font-size="13" fill="#333" text-anchor="middle">则：</text>
+  <text x="130" y="185" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">① : ② : ③</text>
+  <text x="130" y="210" font-size="14" font-weight="bold" fill="#d6336c" text-anchor="middle">= 2 : 1 : 2</text>
+</svg>

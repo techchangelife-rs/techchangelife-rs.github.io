@@ -1,0 +1,21 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 三角形顶点: A(200,30), B(50,250), C(350,250) -->
+  <!-- 内部点 O(200, 160) -->
+  <polygon points="200,30 50,250 350,250" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- 连线 OA, OB, OC -->
+  <line x1="200" y1="30" x2="200" y2="160" stroke="#333" stroke-width="2"/>
+  <line x1="50" y1="250" x2="200" y2="160" stroke="#333" stroke-width="2"/>
+  <line x1="350" y1="250" x2="200" y2="160" stroke="#333" stroke-width="2"/>
+
+  <!-- 连线 OD (底边交点，假设就在正中间 200,250) -->
+  <line x1="200" y1="160" x2="200" y2="250" stroke="#d6336c" stroke-width="3" stroke-dasharray="5,5"/>
+
+  <!-- 燕尾两块 -->
+  <polygon points="50,250 200,160 200,250" fill="#ffd8a8" opacity="0.8"/>
+  <polygon points="350,250 200,160 200,250" fill="#b2f2bb" opacity="0.8"/>
+
+  <text x="140" y="220" font-size="16" font-weight="bold" fill="#333">左燕尾</text>
+  <text x="230" y="220" font-size="16" font-weight="bold" fill="#333">右燕尾</text>
+  <text x="130" y="130" font-size="16" font-weight="bold" fill="#666">左上块</text>
+  <text x="240" y="130" font-size="16" font-weight="bold" fill="#666">右上块</text>
+</svg>

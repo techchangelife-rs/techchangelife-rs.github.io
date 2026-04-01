@@ -1,0 +1,33 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例3图：梯形中的一半 -->
+  <text x="10" y="18" font-size="13" fill="#666">【例3图：梯形中，一半模型的变体】</text>
+
+  <!-- 梯形 ABCD（AB上底，CD下底，AB平行CD） -->
+  <polygon points="120,60 280,60 340,150 60,150" fill="none" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- 顶点标签 -->
+  <text x="115" y="50" font-size="14" fill="#495057">A</text>
+  <text x="285" y="50" font-size="14" fill="#495057">B</text>
+  <text x="345" y="162" font-size="14" fill="#495057">C</text>
+  <text x="50" y="162" font-size="14" fill="#495057">D</text>
+
+  <!-- 梯形中位线 -->
+  <line x1="90" y1="105" x2="310" y2="105" stroke="#868e96" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="200" y="98" font-size="11" fill="#868e96">中位线 = (AB+CD)÷2</text>
+
+  <!-- 三角形：顶点在A，连到CD上E点 -->
+  <polygon points="120,60 340,150 120,150" fill="#a5d8ff" opacity="0.6" stroke="#1971c2" stroke-width="2"/>
+  <text x="110" y="110" font-size="13" fill="#1971c2">△ADE</text>
+
+  <!-- E点 -->
+  <text x="225" y="165" font-size="12" fill="#1971c2">E在CD上</text>
+  <circle cx="230" cy="150" r="3" fill="#1971c2"/>
+
+  <!-- 平行标注 -->
+  <path d="M 200 55 L 200 165" stroke="#868e96" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="205" y="110" font-size="11" fill="#868e96">高相同</text>
+
+  <!-- 结论 -->
+  <rect x="60" y="178" width="290" height="24" rx="5" fill="#e3f2fd" stroke="#1971c2" stroke-width="1.5"/>
+  <text x="205" y="195" font-size="11" fill="#1971c2" text-anchor="middle">S<sub>△ADE</sub> = (AB+CD)×高÷4 = S<sub>梯形</sub>÷2</text>
+</svg>

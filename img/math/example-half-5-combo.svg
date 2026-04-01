@@ -1,0 +1,35 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例5图：组合一半模型（两个平行四边形拼成"Z"字形） -->
+  <text x="10" y="18" font-size="13" fill="#666">【例5图：平行四边形ABCD被EFGH分割，阴影=?】</text>
+
+  <!-- 平行四边形 ABCD -->
+  <polygon points="70,60 250,30 370,60 190,90" fill="none" stroke="#495057" stroke-width="2.5"/>
+  <text x="60" y="70" font-size="13" fill="#495057">A</text>
+  <text x="250" y="20" font-size="13" fill="#495057">B</text>
+  <text x="375" y="70" font-size="13" fill="#495057">C</text>
+  <text x="180" y="100" font-size="13" fill="#495057">D</text>
+
+  <!-- 平行四边形下方（与BC平行的部分） -->
+  <polygon points="70,60 250,120 370,120 190,90" fill="none" stroke="#495057" stroke-width="2.5" stroke-dasharray="5,4"/>
+
+  <!-- 分割线 EFGH（连接AD边上点E和点F，以及BC边上点G和点H） -->
+  <line x1="130" y1="45" x2="130" y2="120" stroke="#e64980" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="310" y1="45" x2="310" y2="120" stroke="#e64980" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- E, F, G, H标注 -->
+  <text x="125" y="38" font-size="11" fill="#e64980">E</text>
+  <text x="125" y="132" font-size="11" fill="#e64980">F</text>
+  <text x="305" y="38" font-size="11" fill="#e64980">G</text>
+  <text x="305" y="132" font-size="11" fill="#e64980">H</text>
+
+  <!-- 阴影部分（两个平行四边形的中间部分） -->
+  <polygon points="130,45 130,120 310,120 310,45" fill="#fab005" opacity="0.6" stroke="#e67700" stroke-width="2"/>
+
+  <!-- 标注 -->
+  <text x="220" y="85" font-size="14" fill="#e67700" text-anchor="middle">阴影 = S<sub>平行四边形</sub> ÷ 2</text>
+  <path d="M 220 95 L 220 115" stroke="#e67700" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- 解释 -->
+  <rect x="70" y="140" width="280" height="22" rx="5" fill="#fff3bf" stroke="#fab005" stroke-width="1.5"/>
+  <text x="210" y="156" font-size="11" fill="#e67700" text-anchor="middle">左右两边都是"一半"，合起来正好整除！</text>
+</svg>

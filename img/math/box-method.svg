@@ -1,0 +1,14 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景框 -->
+  <rect x="50" y="30" width="200" height="150" fill="#f8f9fa" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 内部斜三角形 -->
+  <!-- 假设长方形框为 x: 50~250, y: 30~180 -->
+  <polygon points="50,100 250,180 150,30" fill="#ff9a9e" stroke="#d6336c" stroke-width="2"/>
+  
+  <!-- 标注直角三角形 -->
+  <text x="80" y="70" font-size="12" fill="#666">减去1</text>
+  <text x="100" y="160" font-size="12" fill="#666">减去2</text>
+  <text x="210" y="100" font-size="12" fill="#666">减去3</text>
+  <text x="150" y="110" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">目标面积</text>
+</svg>

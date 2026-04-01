@@ -1,0 +1,39 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例12图：共角不共边——旋转角度仍相同 -->
+  <text x="10" y="18" font-size="13" fill="#666">【例12图：∠A是共用角，即使三角形旋转了，∠A仍然相同】</text>
+
+  <!-- 三角形1：ABC -->
+  <polygon points="80,60 40,180 200,180" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="75" y="50" font-size="13" fill="#1565c0" font-weight="bold">A</text>
+  <text x="25" y="190" font-size="13" fill="#1565c0">B</text>
+  <text x="205" y="190" font-size="13" fill="#1565c0">C</text>
+
+  <!-- ∠A标注 -->
+  <path d="M 85 65 Q 70 80 85 90" fill="none" stroke="#e64980" stroke-width="2"/>
+  <text x="55" y="85" font-size="10" fill="#e64980">∠A</text>
+
+  <!-- 三角形2：A'B'C'（旋转后） -->
+  <polygon points="320,40 380,160 240,160" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="315" y="30" font-size="13" fill="#7b1fa2" font-weight="bold">A'</text>
+  <text x="390" y="165" font-size="13" fill="#7b1fa2">B'</text>
+  <text x="225" y="165" font-size="13" fill="#7b1fa2">C'</text>
+
+  <!-- ∠A'标注 -->
+  <path d="M 325 45 Q 310 60 325 70" fill="none" stroke="#e64980" stroke-width="2"/>
+  <text x="298" y="65" font-size="10" fill="#e64980">∠A'</text>
+
+  <!-- 旋转箭头 -->
+  <path d="M 150 100 Q 200 40 280 100" stroke="#e64980" stroke-width="2" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+  <text x="210" y="70" font-size="11" fill="#e64980">旋转了位置</text>
+  <text x="210" y="85" font-size="11" fill="#e64980">但∠A=∠A'</text>
+
+  <!-- 共角结论 -->
+  <rect x="100" y="190" width="220" height="22" rx="5" fill="#fff0f6" stroke="#e64980" stroke-width="1.5"/>
+  <text x="210" y="205" font-size="11" fill="#c92a6b" text-anchor="middle">共用∠A = ∠A'，可用共角定理！</text>
+
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#e64980"/>
+    </marker>
+  </defs>
+</svg>

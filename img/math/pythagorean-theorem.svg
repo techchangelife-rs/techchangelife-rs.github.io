@@ -1,0 +1,29 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- 中心直角三角形: a=60(底), b=80(高), c=100(斜) -->
+  <!-- 顶点: 顶(150, 100), 直角(150, 180), 右(210, 180) -->
+  <polygon points="150,100 150,180 210,180" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  <!-- 直角符号 -->
+  <polyline points="150,170 160,170 160,180" fill="none" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- 以 a 为边的正方形 (底边往下) -->
+  <rect x="150" y="180" width="60" height="60" fill="#ff9a9e" opacity="0.8"/>
+  <text x="180" y="215" font-size="14" fill="#fff" font-weight="bold">a²</text>
+  
+  <!-- 以 b 为边的正方形 (左边往左) -->
+  <rect x="70" y="100" width="80" height="80" fill="#a1c4fd" opacity="0.8"/>
+  <text x="110" y="145" font-size="14" fill="#fff" font-weight="bold">b²</text>
+  
+  <!-- 以 c 为边的正方形 (斜边向上) -->
+  <!-- 坐标推算: c=100, 倾角为 53.1度。左上(70,40), 右上(130,-40), 但为了简单直接用 polygon 画 -->
+  <!-- 顶点: (150,100), (210,180). dx=60, dy=80. 垂直向量系为 (-80, 60) -->
+  <polygon points="150,100 210,180 290,120 230,40" fill="#b2f2bb" opacity="0.8"/>
+  <text x="220" y="115" font-size="16" fill="#333" font-weight="bold">c²</text>
+  
+  <!-- 箭头示意 a^2 + b^2 -> c^2 -->
+  <path d="M 120 180 Q 200 250 250 150" fill="none" stroke="#d6336c" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow_py)"/>
+  <defs>
+    <marker id="arrow_py" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d6336c" />
+    </marker>
+  </defs>
+</svg>

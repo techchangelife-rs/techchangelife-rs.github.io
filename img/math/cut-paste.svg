@@ -1,0 +1,32 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666" />
+    </marker>
+  </defs>
+  <!-- 背景网格 -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+  
+  <!-- 原平行四边形虚线轮廓 -->
+  <polygon points="100,180 300,180 350,60 150,60" fill="none" stroke="#ccc" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 移动的三角形 (左侧原来位置 - 虚线) -->
+  <polygon points="100,180 150,180 150,60" fill="#ff9a9e" opacity="0.3" stroke="#ff758c" stroke-width="2" stroke-dasharray="4,4"/>
+  
+  <!-- 移动的箭头 -->
+  <path d="M 125 120 C 200 80, 250 80, 325 120" fill="none" stroke="#666" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow2)"/>
+  <text x="225" y="95" font-size="14" text-anchor="middle" fill="#666">剪下并平移</text>
+  
+  <!-- 剩余的梯形 -->
+  <polygon points="150,180 300,180 350,60 150,60" fill="#a1c4fd" stroke="#4c83ff" stroke-width="2"/>
+  
+  <!-- 拼合后的三角形 (右侧) -->
+  <polygon points="300,180 350,180 350,60" fill="#ff9a9e" stroke="#ff758c" stroke-width="2"/>
+  
+  <!-- 标注 -->
+  <text x="225" y="210" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">底 (变成了长)</text>
+  <text x="80" y="120" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">高</text>
+</svg>

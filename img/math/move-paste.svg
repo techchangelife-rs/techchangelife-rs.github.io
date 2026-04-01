@@ -1,0 +1,33 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow_move" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- 左半边图 -->
+  <g transform="translate(0, 0)">
+    <rect x="30" y="50" width="150" height="150" fill="none" stroke="#333" stroke-width="2"/>
+    <!-- 对角线 -->
+    <line x1="30" y1="50" x2="180" y2="200" stroke="#333" stroke-width="2"/>
+    <line x1="180" y1="50" x2="30" y2="200" stroke="#333" stroke-width="2"/>
+    <!-- 1/4圆 (左边) -->
+    <path d="M 30 50 A 150 150 0 0 0 180 200 L 105 125 Z" fill="#a1c4fd" opacity="0.8"/>
+    <!-- 1/4圆 (右边，假设它被移走) -->
+    <path d="M 180 50 A 150 150 0 0 1 30 200 L 105 125 Z" fill="#ff9a9e" opacity="0.8"/>
+  </g>
+
+  <!-- 箭头 -->
+  <path d="M 190 125 C 200 100, 210 100, 220 125" fill="none" stroke="#666" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow_move)"/>
+
+  <!-- 右半边图 (拼合后) -->
+  <g transform="translate(200, 0)">
+    <rect x="30" y="50" width="150" height="150" fill="none" stroke="#333" stroke-width="2"/>
+    <!-- 对角线 -->
+    <line x1="30" y1="50" x2="180" y2="200" stroke="#333" stroke-width="2"/>
+    <line x1="180" y1="50" x2="30" y2="200" stroke="#333" stroke-width="2"/>
+    <!-- 拼合成半个正方形 (大三角形) -->
+    <polygon points="30,50 30,200 180,200" fill="#b2f2bb" opacity="0.8"/>
+    <text x="80" y="160" font-size="14" font-weight="bold" fill="#333">变大三角形</text>
+  </g>
+</svg>

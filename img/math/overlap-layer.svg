@@ -1,0 +1,14 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 两个相交的圆 -->
+  <!-- 左圆 -->
+  <circle cx="150" cy="125" r="80" fill="#fddb92" opacity="0.6" stroke="#f6a03c" stroke-width="2"/>
+  <!-- 右圆 -->
+  <circle cx="250" cy="125" r="80" fill="#a1c4fd" opacity="0.6" stroke="#4c83ff" stroke-width="2"/>
+  
+  <!-- 阴影 (重叠部分) -->
+  <path d="M 200 62.5 A 80 80 0 0 1 200 187.5 A 80 80 0 0 1 200 62.5 Z" fill="#ff758c" opacity="0.8"/>
+  
+  <text x="200" y="130" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">重叠区</text>
+  
+  <text x="200" y="230" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">面积和 = 左圆 + 右圆 - 重叠区</text>
+</svg>

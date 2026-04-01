@@ -14,7 +14,7 @@
       "可观测性",
       "运维"
     ],
-    "score": 99.52834008097166
+    "score": 98.19835680751173
   },
   {
     "id": "/posts/ai-skill-series-2-dynamic",
@@ -31,7 +31,7 @@
       "动态加载",
       "插件系统"
     ],
-    "score": 96.88095163283842
+    "score": 95.55130890920015
   },
   {
     "id": "/posts/ai-skill-series-6-perf",
@@ -48,7 +48,7 @@
       "并发管理",
       "系统稳定性"
     ],
-    "score": 94.83929178135008
+    "score": 93.50937661785449
   },
   {
     "id": "/posts/agent-evolution-8-multi-agent",
@@ -66,7 +66,7 @@
       "协作模式",
       "Agent"
     ],
-    "score": 94.22983600405121
+    "score": 92.89202008469341
   },
   {
     "id": "/posts/algorithm-bfs-dfs",
@@ -83,7 +83,7 @@
       "BFS",
       "图论"
     ],
-    "score": 93.11767400141365
+    "score": 91.82518526331704
   },
   {
     "id": "/posts/algorithm-sorting-10-types",
@@ -100,7 +100,7 @@
       "TypeScript",
       "Python"
     ],
-    "score": 92.49513535751717
+    "score": 91.2079251416561
   },
   {
     "id": "/posts/agent-evolution-6-metaprogramming",
@@ -118,7 +118,7 @@
       "技能进化",
       "科幻实操"
     ],
-    "score": 92.04809758885108
+    "score": 90.71355094778109
   },
   {
     "id": "/posts/openclaw-edu-3",
@@ -134,7 +134,7 @@
       "OpenClaw",
       "小作家养成记"
     ],
-    "score": 90.79983867726517
+    "score": 89.48093462466949
   },
   {
     "id": "/posts/primary-math-olympiad-one-stroke",
@@ -151,7 +151,7 @@
       "图论入门",
       "逻辑推理"
     ],
-    "score": 90.24510870857925
+    "score": 88.94809065785476
   },
   {
     "id": "/posts/geography-environment-rheumatism",
@@ -169,6 +169,6 @@
       "南北差异",
       "中医养生"
     ],
-    "score": 89.46976730607477
+    "score": 88.13514120337973
   }
 ]

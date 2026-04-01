@@ -1,0 +1,52 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="400" rx="15" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" fill="#1e3a8a" text-anchor="middle">实战期 (9-12岁) 进阶球拍推荐</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" fill="#2563eb" text-anchor="middle">核心诉求：精准控球、更强中杆、4U标准重量</text>
+
+  <!-- Option 1 -->
+  <g transform="translate(40, 90)">
+    <rect width="340" height="280" rx="10" fill="white" filter="url(#shadow)" stroke="#f97316" stroke-width="2" />
+    <rect x="0" y="0" width="340" height="40" rx="10" fill="#f97316" />
+    <text x="170" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">🔥 控球利器：YONEX 弓剑 (ARC) 11 Play</text>
+    
+    <g transform="translate(20, 60)" font-family="Arial" font-size="14" fill="#333">
+      <text x="0" y="20" font-weight="bold">核心参数：</text>
+      <text x="10" y="45">● 重量：4U (约83g)</text>
+      <text x="10" y="70">● 拍框特性：控制型框型</text>
+      <text x="10" y="95">● 拍杆硬度：适中</text>
+      <text x="10" y="120">● 价格：约 350-400 元</text>
+      
+      <text x="0" y="160" font-weight="bold" fill="#c2410c">点评：</text>
+      <text x="10" y="185" fill="#9a3412">弓剑11的平替版。这个阶段孩子开始打</text>
+      <text x="10" y="205" fill="#9a3412">四方球和网前搓球，弓剑系列的包裹感能</text>
+      <text x="10" y="225" fill="#9a3412">极大提升控球的精准度，容错率极高。</text>
+    </g>
+  </g>
+
+  <!-- Option 2 -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="280" rx="10" fill="white" filter="url(#shadow)" stroke="#06b6d4" stroke-width="2" />
+    <rect x="0" y="0" width="340" height="40" rx="10" fill="#06b6d4" />
+    <text x="170" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">⚡ 进攻小炮：李宁 风暴 (Storm) 72</text>
+    
+    <g transform="translate(20, 60)" font-family="Arial" font-size="14" fill="#333">
+      <text x="0" y="20" font-weight="bold">核心参数：</text>
+      <text x="10" y="45">● 重量：6U (约72g)</text>
+      <text x="10" y="70">● 平衡点：高达 315mm (极度头重)</text>
+      <text x="10" y="95">● 科技：超导纳米材质</text>
+      <text x="10" y="120">● 价格：约 450-500 元</text>
+      
+      <text x="0" y="160" font-weight="bold" fill="#0369a1">点评：</text>
+      <text x="10" y="185" fill="#075985">虽然整体重量很轻，但平衡点极高，挥重</text>
+      <text x="10" y="205" fill="#075985">很大。非常适合喜欢后场杀球、力量偏小</text>
+      <text x="10" y="225" fill="#075985">但又想打出进攻威胁的高年级孩子。</text>
+    </g>
+  </g>
+</svg>

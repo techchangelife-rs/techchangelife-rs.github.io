@@ -1,0 +1,27 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 网格 -->
+  <defs>
+    <pattern id="grid4" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#eee" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow_axis" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid4)" />
+  
+  <!-- 坐标轴 -->
+  <line x1="150" y1="280" x2="150" y2="20" stroke="#333" stroke-width="2" marker-end="url(#arrow_axis)"/>
+  <line x1="20" y1="150" x2="280" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrow_axis)"/>
+  
+  <text x="285" y="165" font-weight="bold">x</text>
+  <text x="130" y="20" font-weight="bold">y</text>
+  <text x="135" y="165" font-weight="bold">O</text>
+  
+  <!-- 点 (3, 4) 对应像素：原点在(150,150)，每单位30px。x=150+3*30=240, y=150-4*30=30 -->
+  <circle cx="240" cy="30" r="5" fill="#d6336c"/>
+  <line x1="150" y1="30" x2="240" y2="30" stroke="#d6336c" stroke-width="2" stroke-dasharray="4,4"/>
+  <line x1="240" y1="150" x2="240" y2="30" stroke="#d6336c" stroke-width="2" stroke-dasharray="4,4"/>
+  
+  <text x="250" y="25" font-weight="bold" fill="#d6336c">P(3, 4)</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141E30" />
+      <stop offset="100%" stop-color="#243B55" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="20"/>
+  
+  <text x="400" y="60" fill="#ffffff" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">接杀球的“生死时速” (小学行程问题)</text>
+  <text x="400" y="100" fill="#aaaaaa" font-size="20" font-family="sans-serif" text-anchor="middle">公式：时间 (t) = 路程 (s) ÷ 速度 (v)</text>
+
+  <!-- Math Problem Box -->
+  <rect x="50" y="140" width="700" height="120" rx="15" fill="#ffffff" fill-opacity="0.1" stroke="#4488ff" stroke-width="2"/>
+  <text x="70" y="175" fill="#4488ff" font-size="22" font-weight="bold" font-family="sans-serif">🏸 球场上的应用题：</text>
+  <text x="70" y="210" fill="#ffffff" font-size="18" font-family="sans-serif">已知：对手在后场杀球，时速高达 360 km/h。半个球场长度约为 6.7 米。</text>
+  <text x="70" y="240" fill="#ffcc00" font-size="18" font-weight="bold" font-family="sans-serif">求：留给大脑反应和挥拍接球的时间，是多少秒？</text>
+
+  <!-- Calculation Steps -->
+  <g transform="translate(100, 290)" font-family="sans-serif" font-size="18">
+    <text x="0" y="0" fill="#ffffff">第一步 (单位换算)： 360 km/h = </text>
+    <text x="270" y="0" fill="#ff4444" font-weight="bold" font-size="22">100 m/s</text>
+    <text x="360" y="0" fill="#aaaaaa">(一秒钟飞过一个足球场！)</text>
+    
+    <text x="0" y="50" fill="#ffffff">第二步 (代入公式)： t = s ÷ v = 6.7 ÷ 100 = </text>
+    <text x="380" y="50" fill="#00ffcc" font-weight="bold" font-size="26" filter="url(#glow)">0.067 秒</text>
+    
+    <text x="0" y="100" fill="#ffffff">人类眨一次眼需要 0.3秒。结论：接杀球，</text>
+    <text x="360" y="100" fill="#ff4444" font-weight="bold">连眨眼的时间都不够！</text>
+  </g>
+
+  <!-- Conclusion -->
+  <rect x="100" y="420" width="600" height="50" rx="10" fill="#ff4444" fill-opacity="0.2"/>
+  <text x="400" y="452" fill="#ffcccc" font-size="18" font-family="sans-serif" font-weight="bold" text-anchor="middle">学霸启示：防守时退后1米，就能多争取 0.01秒的救命时间！</text>
+</svg>

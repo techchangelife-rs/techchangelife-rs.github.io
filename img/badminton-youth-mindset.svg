@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="breathIn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="breathOut" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="sans-serif" font-weight="bold" font-size="26" fill="#f8fafc" text-anchor="middle" filter="url(#glow)">绝境反击：枪挑心态与呼吸调节机制</text>
+
+  <!-- Section 1: Breathing Technique -->
+  <g transform="translate(50, 100)">
+    <rect width="320" height="300" rx="15" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="160" y="40" font-family="sans-serif" font-weight="bold" font-size="20" fill="#94a3b8" text-anchor="middle">2:4 物理降心率法则</text>
+    
+    <!-- Heart Rate Chart Concept -->
+    <path d="M 30,120 L 60,120 L 70,80 L 80,160 L 90,120 L 140,120 L 150,90 L 160,150 L 170,120 L 290,120" fill="none" stroke="#ef4444" stroke-width="3" opacity="0.3"/>
+    <path d="M 170,120 Q 230,120 290,160" fill="none" stroke="#10b981" stroke-width="3"/>
+    
+    <!-- Inhale / Exhale Bars -->
+    <g transform="translate(40, 190)">
+      <text x="0" y="15" font-family="sans-serif" font-weight="bold" fill="#60a5fa">吸气 (2秒)</text>
+      <rect x="90" y="0" width="80" height="20" rx="10" fill="url(#breathIn)"/>
+      <text x="180" y="15" font-family="sans-serif" font-size="12" fill="#94a3b8">交感神经活跃 (心率↑)</text>
+
+      <text x="0" y="55" font-family="sans-serif" font-weight="bold" fill="#34d399">呼气 (4秒)</text>
+      <rect x="90" y="40" width="160" height="20" rx="10" fill="url(#breathOut)"/>
+      <text x="130" y="80" font-family="sans-serif" font-size="12" fill="#94a3b8">强行激活副交感神经 (心率↓, 夺回身体控制权)</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Self-Talk Script -->
+  <g transform="translate(430, 100)">
+    <rect width="320" height="300" rx="15" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="160" y="40" font-family="sans-serif" font-weight="bold" font-size="20" fill="#94a3b8" text-anchor="middle">逆境自我暗示脚本 (白熊效应)</text>
+    
+    <!-- Wrong Script -->
+    <g transform="translate(20, 80)">
+      <rect width="280" height="80" rx="10" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/>
+      <text x="140" y="30" font-family="sans-serif" font-weight="bold" font-size="16" fill="#fca5a5" text-anchor="middle">❌ 错误指令 (引发焦虑)</text>
+      <text x="140" y="60" font-family="sans-serif" font-size="14" fill="#cbd5e1" text-anchor="middle">"千万别失误！下一个球稳一点！"</text>
+    </g>
+
+    <!-- Correct Script -->
+    <g transform="translate(20, 190)">
+      <rect width="280" height="80" rx="10" fill="rgba(16,185,129,0.1)" stroke="#10b981" stroke-width="1"/>
+      <text x="140" y="30" font-family="sans-serif" font-weight="bold" font-size="16" fill="#6ee7b7" text-anchor="middle">✅ 正向猎手指令 (建立攻击性)</text>
+      <text x="140" y="50" font-family="sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">"我是猎手！他现在比我更怕被追平！"</text>
+      <text x="140" y="70" font-family="sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">"盯死他的反手底线，坚决推！"</text>
+    </g>
+  </g>
+
+  <!-- Middle connection -->
+  <circle cx="400" cy="250" r="25" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+  <text x="400" y="256" font-family="sans-serif" font-weight="bold" font-size="16" fill="#f8fafc" text-anchor="middle">转过身</text>
+  <text x="400" y="275" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">切断视觉</text>
+</svg>

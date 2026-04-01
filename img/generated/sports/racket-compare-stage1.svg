@@ -1,0 +1,50 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="400" rx="15" fill="#fffbeb" stroke="#fcd34d" stroke-width="2"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="bold" fill="#b45309" text-anchor="middle">启蒙期 (4-5岁) 球拍红黑榜对比</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" fill="#d97706" text-anchor="middle">核心诉求：极轻、短手柄、防砸地</text>
+
+  <!-- Red List (Recommended) -->
+  <g transform="translate(40, 90)">
+    <rect width="340" height="280" rx="10" fill="white" filter="url(#shadow)" stroke="#10b981" stroke-width="2" />
+    <rect x="0" y="0" width="340" height="40" rx="10" fill="#10b981" />
+    <text x="170" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">✅ 红榜推荐：YONEX Muscle Power 2 Junior</text>
+    
+    <g transform="translate(20, 60)" font-family="Arial" font-size="14" fill="#333">
+      <text x="0" y="20" font-weight="bold">真实参数：</text>
+      <text x="10" y="45">● 长度：53.3cm (21英寸) - 专为幼童设计</text>
+      <text x="10" y="70">● 材质：全碳素拍框/钢管中杆</text>
+      <text x="10" y="95">● 重量：4U (约83g)</text>
+      <text x="10" y="120">● 价格：约 150-180 元</text>
+      
+      <text x="0" y="160" font-weight="bold" fill="#059669">入选理由：</text>
+      <text x="10" y="185" fill="#047857">长度完美契合 110cm 以下身高，不会拖地。</text>
+      <text x="10" y="205" fill="#047857">拍头面积大，增加击球自信心。</text>
+    </g>
+  </g>
+
+  <!-- Black List (Avoid) -->
+  <g transform="translate(420, 90)">
+    <rect width="340" height="280" rx="10" fill="white" filter="url(#shadow)" stroke="#ef4444" stroke-width="2" />
+    <rect x="0" y="0" width="340" height="40" rx="10" fill="#ef4444" />
+    <text x="170" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">❌ 黑榜避坑：超市/网购“几十块两支”合金拍</text>
+    
+    <g transform="translate(20, 60)" font-family="Arial" font-size="14" fill="#333">
+      <text x="0" y="20" font-weight="bold">真实参数：</text>
+      <text x="10" y="45">● 长度：67.5cm (成人标准长度)</text>
+      <text x="10" y="70">● 材质：铁合金/铝合金</text>
+      <text x="10" y="95">● 重量：往往 >100g (重如铁棍)</text>
+      <text x="10" y="120">● 价格：约 30-50 元/对</text>
+      
+      <text x="0" y="160" font-weight="bold" fill="#dc2626">避坑理由：</text>
+      <text x="10" y="185" fill="#b91c1c">太重！直接导致孩子手腕拉伤。</text>
+      <text x="10" y="205" fill="#b91c1c">太长！挥拍必砸地，动作彻底变形。</text>
+    </g>
+  </g>
+</svg>

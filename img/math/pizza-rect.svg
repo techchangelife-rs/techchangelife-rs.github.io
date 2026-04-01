@@ -1,0 +1,24 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ccc" />
+    </marker>
+  </defs>
+  <!-- 圆形披萨 -->
+  <circle cx="150" cy="125" r="80" fill="#fddb92" stroke="#f6a03c" stroke-width="3"/>
+  <!-- 切线 -->
+  <line x1="70" y1="125" x2="230" y2="125" stroke="#f6a03c" stroke-width="2"/>
+  <line x1="150" y1="45" x2="150" y2="205" stroke="#f6a03c" stroke-width="2"/>
+  <line x1="93" y1="68" x2="207" y2="182" stroke="#f6a03c" stroke-width="2"/>
+  <line x1="93" y1="182" x2="207" y2="68" stroke="#f6a03c" stroke-width="2"/>
+  <text x="150" y="230" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">切成无数份</text>
+  
+  <!-- 箭头 -->
+  <path d="M 260 125 L 310 125" stroke="#ccc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow3)"/>
+  
+  <!-- 拼成的长方形 -->
+  <path d="M 350 160 Q 360 180 370 160 Q 380 180 390 160 Q 400 180 410 160 Q 420 180 430 160 Q 440 180 450 160 Q 460 180 470 160 Q 480 180 490 160 L 490 80 Q 480 60 470 80 Q 460 60 450 80 Q 440 60 430 80 Q 420 60 410 80 Q 400 60 390 80 Q 380 60 370 80 Q 360 60 350 80 Z" fill="#fddb92" stroke="#f6a03c" stroke-width="2"/>
+  
+  <text x="420" y="210" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">长 = 圆周长的一半 (πr)</text>
+  <text x="540" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">宽 = 半径 (r)</text>
+</svg>

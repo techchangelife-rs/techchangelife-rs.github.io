@@ -1,0 +1,40 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例2图：平行四边形中的一半 -->
+  <text x="10" y="18" font-size="13" fill="#666">【例2图：平行四边形中，顶点在CD边上任意滑动】</text>
+
+  <!-- 平行四边形 ABCD -->
+  <polygon points="70,80 250,40 350,80 170,120" fill="none" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- 顶点标签 -->
+  <text x="60" y="90" font-size="14" fill="#495057">A</text>
+  <text x="245" y="30" font-size="14" fill="#495057">B</text>
+  <text x="355" y="90" font-size="14" fill="#495057">C</text>
+  <text x="160" y="132" font-size="14" fill="#495057">D</text>
+
+  <!-- 三角形，顶点在CD上的E点 -->
+  <polygon points="70,80 350,80 120,80" fill="#fab005" opacity="0.6" stroke="#e67700" stroke-width="2"/>
+
+  <!-- E点标注 -->
+  <text x="115" y="70" font-size="13" fill="#e67700">E</text>
+  <circle cx="120" cy="80" r="3" fill="#e67700"/>
+  <line x1="120" y1="80" x2="70" y2="80" stroke="#e67700" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="60" y="75" font-size="11" fill="#e67700">E在CD上</text>
+
+  <!-- 滑动箭头 -->
+  <path d="M 70 60 L 350 60" stroke="#e67700" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="210" y="52" font-size="11" fill="#e67700">在CD上滑滑梯</text>
+
+  <!-- BC的下边（延长线） -->
+  <polygon points="170,120 350,160 450,160 270,120" fill="none" stroke="#868e96" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="270" y="165" font-size="12" fill="#868e96">BC的平行线</text>
+
+  <!-- 标注高相等 -->
+  <path d="M 210 100 L 210 160" stroke="#868e96" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="215" y="130" font-size="11" fill="#868e96">高相同</text>
+
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#e67700"/>
+    </marker>
+  </defs>
+</svg>

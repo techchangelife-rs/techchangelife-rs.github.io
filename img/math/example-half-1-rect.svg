@@ -1,0 +1,30 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例1图：长方形中的一半 -->
+  <text x="10" y="18" font-size="13" fill="#666">【例1图：长方形中顶点在任意点】</text>
+
+  <!-- 长方形 ABCD -->
+  <rect x="70" y="40" width="280" height="140" fill="none" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- 顶点标签 -->
+  <text x="60" y="55" font-size="14" fill="#495057">A</text>
+  <text x="355" y="55" font-size="14" fill="#495057">B</text>
+  <text x="60" y="195" font-size="14" fill="#495057">D</text>
+  <text x="355" y="195" font-size="14" fill="#495057">C</text>
+
+  <!-- 三角形，顶点在E（AB上任意点） -->
+  <polygon points="70,180 350,180 180,40" fill="#ff9a9e" opacity="0.6" stroke="#e64980" stroke-width="2"/>
+
+  <!-- E点标注 -->
+  <text x="175" y="30" font-size="13" fill="#e64980">E</text>
+  <circle cx="180" cy="40" r="3" fill="#e64980"/>
+  <line x1="180" y1="40" x2="180" y2="180" stroke="#e64980" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="185" y="110" font-size="11" fill="#e64980">E在AB上</text>
+
+  <!-- 标注 -->
+  <path d="M 175 185 L 175 210" stroke="#868e96" stroke-width="1.5"/>
+  <text x="175" y="225" font-size="11" fill="#868e96" text-anchor="middle">E在AB上滑动</text>
+
+  <!-- 公式 -->
+  <rect x="70" y="205" width="280" height="24" rx="5" fill="#fff0f6" stroke="#e64980" stroke-width="1.5"/>
+  <text x="210" y="222" font-size="12" fill="#c92a6b" text-anchor="middle" font-weight="bold">S<sub>△ADC</sub> = S<sub>长方形</sub> ÷ 2</text>
+</svg>

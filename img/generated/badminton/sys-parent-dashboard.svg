@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283048"/>
+      <stop offset="100%" stop-color="#859398"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="860" height="480" fill="url(#bg)" rx="24"/>
+  <text x="430" y="60" fill="#ffffff" font-size="28" font-weight="bold" font-family="sans-serif" text-anchor="middle">家长仪表板（示意）</text>
+  <g transform="translate(60,100)" filter="url(#shadow)">
+    <rect x="0" y="0" width="740" height="320" rx="16" fill="#ffffff"/>
+    <rect x="0" y="0" width="740" height="50" rx="16" fill="#2F80ED"/>
+    <text x="20" y="32" fill="#ffffff" font-size="18" font-family="sans-serif">羽毛球训练 · 孩子：小明（四年级）</text>
+    <g>
+      <rect x="20" y="70" width="220" height="110" rx="12" fill="#F6F9FF" stroke="#2F80ED" stroke-width="2"/>
+      <text x="40" y="98" fill="#2F80ED" font-size="14" font-weight="bold" font-family="sans-serif">本周安排</text>
+      <text x="40" y="120" fill="#333" font-size="12" font-family="sans-serif">周三 18:00 步法课</text>
+      <text x="40" y="140" fill="#333" font-size="12" font-family="sans-serif">周六 15:00 技术课</text>
+      <text x="40" y="160" fill="#333" font-size="12" font-family="sans-serif">周日 09:00 体能课</text>
+    </g>
+    <g>
+      <rect x="260" y="70" width="220" height="110" rx="12" fill="#FFF7F0" stroke="#F2994A" stroke-width="2"/>
+      <text x="280" y="98" fill="#F2994A" font-size="14" font-weight="bold" font-family="sans-serif">训练报告</text>
+      <text x="280" y="120" fill="#333" font-size="12" font-family="sans-serif">步频：↑12%</text>
+      <text x="280" y="140" fill="#333" font-size="12" font-family="sans-serif">心率：平均 128</text>
+      <text x="280" y="160" fill="#333" font-size="12" font-family="sans-serif">眼肌：完成 3/3</text>
+    </g>
+    <g>
+      <rect x="500" y="70" width="220" height="110" rx="12" fill="#F0FFF5" stroke="#27AE60" stroke-width="2"/>
+      <text x="520" y="98" fill="#27AE60" font-size="14" font-weight="bold" font-family="sans-serif">视力与睡眠</text>
+      <text x="520" y="120" fill="#333" font-size="12" font-family="sans-serif">视力：左 4.9 右 5.0</text>
+      <text x="520" y="140" fill="#333" font-size="12" font-family="sans-serif">睡眠：平均 9.1 小时</text>
+      <text x="520" y="160" fill="#333" font-size="12" font-family="sans-serif">提醒：22:00 前入睡</text>
+    </g>
+    <g>
+      <rect x="20" y="200" width="700" height="100" rx="12" fill="#F8F8FB" stroke="#bbb" stroke-width="1.5"/>
+      <text x="40" y="230" fill="#333" font-size="14" font-weight="bold" font-family="sans-serif">作业与视频</text>
+      <text x="40" y="255" fill="#666" font-size="12" font-family="sans-serif">第7周：原地影子步 100 次、墙面对墙 5 分钟、眼肌训练 5 分钟</text>
+      <text x="40" y="275" fill="#666" font-size="12" font-family="sans-serif">上传：已提交 2/3（待补：眼肌训练）</text>
+      <rect x="600" y="230" width="100" height="28" rx="8" fill="#2F80ED"/>
+      <text x="650" y="248" fill="#ffffff" font-size="12" font-family="sans-serif" text-anchor="middle">上传视频</text>
+    </g>
+  </g>
+</svg>

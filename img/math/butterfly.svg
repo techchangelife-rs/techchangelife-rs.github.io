@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- 四边形顶点: A(50,50), B(350,80), C(300,250), D(100,220) -->
+    <!-- 交点 O 约在 (200, 140) -->
+    <polygon points="50,50 350,80 300,250 100,220" fill="none" stroke="#333" stroke-width="2" />
+    <!-- 对角线 -->
+    <line x1="50" y1="50" x2="300" y2="250" stroke="#333" stroke-width="2" />
+    <line x1="350" y1="80" x2="100" y2="220" stroke="#333" stroke-width="2" />
+
+    <!-- 蝴蝶翅膀 左边 (红色) -->
+
+    <polygon points="50,50 100,220 200,140" fill="#ff9a9e" opacity="0.7" />
+    <!-- 蝴蝶翅膀 右边 (蓝色) -->
+    <polygon points="350,80 300,250 200,140" fill="#a1c4fd" opacity="0.7" />
+
+    <text x="120" y="140" font-size="18" font-weight="bold" fill="#d6336c">S1 (左翅膀)</text> <text x="250" y="160"
+        font-size="18" font-weight="bold" fill="#1c7ed6">S3 (右翅膀)</text> <text x="200" y="90" font-size="18"
+        font-weight="bold" fill="#333">S2 (头)</text> <text x="180" y="220" font-size="18" font-weight="bold"
+        fill="#333">S4 (尾巴)</text>
+
+</svg>

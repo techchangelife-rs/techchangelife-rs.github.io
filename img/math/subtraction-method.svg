@@ -1,0 +1,13 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景框 -->
+  <rect x="50" y="50" width="300" height="150" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  
+  <!-- 半圆：以正方形底边为直径 -->
+  <!-- 圆心在(200, 200)，半径150，画上半圆 -->
+  <path d="M 50 200 A 150 150 0 0 1 350 200 Z" fill="#fff" stroke="#333" stroke-width="2"/>
+  
+  <!-- 阴影部分 (正方形减去半圆) -->
+  <path d="M 50 50 L 350 50 L 350 200 A 150 150 0 0 0 50 200 Z" fill="#ff9a9e" opacity="0.8"/>
+  
+  <text x="200" y="100" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">阴影 = 矩形 - 半圆</text>
+</svg>

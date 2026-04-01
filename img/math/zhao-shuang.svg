@@ -1,0 +1,26 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外围正方形 (边长 c=100, 但由于倾斜, 实际占据更大空间) -->
+  <g transform="translate(150,150) rotate(0)">
+    <!-- 4个直角三角形, 假设 a=40, b=100 -->
+    <!-- 1 -->
+    <polygon points="-50,-50 -50,50 50,50" fill="#ff9a9e" stroke="#fff" stroke-width="2"/>
+    <!-- 2 -->
+    <polygon points="-50,-50 50,-50 50,50" fill="#a1c4fd" stroke="#fff" stroke-width="2"/>
+    <!-- 为了清晰，直接画标准的赵爽弦图: 边长c的大正方形 -->
+    <polygon points="-80,-60 -60,80 80,60 60,-80" fill="none" stroke="#333" stroke-width="2"/>
+    
+    <!-- 四个三角形 -->
+    <!-- T1 -->
+    <polygon points="-80,-60 -60,80 -20,-20" fill="#ffb3ba" stroke="#fff"/>
+    <!-- T2 -->
+    <polygon points="-60,80 80,60 20,20" fill="#ffdfba" stroke="#fff"/>
+    <!-- T3 -->
+    <polygon points="80,60 60,-80 20,-20" fill="#baffc9" stroke="#fff"/>
+    <!-- T4 -->
+    <polygon points="60,-80 -80,-60 -20,20" fill="#bae1ff" stroke="#fff"/>
+    
+    <!-- 中间的小正方形 -->
+    <polygon points="-20,-20 20,-20 20,20 -20,20" fill="#fff" stroke="#333" stroke-width="2"/>
+    <text x="-5" y="5" font-size="12" font-weight="bold">(b-a)²</text>
+  </g>
+</svg>

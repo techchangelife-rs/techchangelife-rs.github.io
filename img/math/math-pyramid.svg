@@ -1,0 +1,28 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- 金字塔背景 -->
+  <polygon points="250,30 50,320 450,320" fill="#f8f9fa" stroke="#adb5bd" stroke-width="2"/>
+  
+  <!-- 第一层：小学 -->
+  <polygon points="250,30 180,130 320,130" fill="#ff9a9e" opacity="0.8"/>
+  <text x="250" y="90" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">小学：拼图时代</text>
+  <text x="250" y="115" font-size="12" fill="#fff" text-anchor="middle">割补平移、一半模型、蝴蝶燕尾</text>
+  
+  <!-- 第二层：初中 -->
+  <polygon points="180,130 110,230 390,230 320,130" fill="#a1c4fd" opacity="0.8"/>
+  <text x="250" y="170" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">初中：定理时代</text>
+  <text x="250" y="200" font-size="12" fill="#fff" text-anchor="middle">勾股平方、相似比例、坐标框图、扇形减三角</text>
+  
+  <!-- 第三层：高中 -->
+  <polygon points="110,230 50,320 450,320 390,230" fill="#b2f2bb" opacity="0.8"/>
+  <text x="250" y="270" font-size="16" fill="#333" font-weight="bold" text-anchor="middle">高中：代数与极限时代</text>
+  <text x="250" y="300" font-size="12" fill="#333" text-anchor="middle">解析几何(鞋带定理/联立方程)、微积分(积分求和)</text>
+  
+  <!-- 侧边箭头 -->
+  <path d="M 40 320 Q 10 180 230 20" fill="none" stroke="#d6336c" stroke-width="3" marker-end="url(#arrow_up)"/>
+  <text x="40" y="150" font-size="16" fill="#d6336c" font-weight="bold" transform="rotate(-60 40,150)">抽象度与威力飙升</text>
+  <defs>
+    <marker id="arrow_up" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d6336c" />
+    </marker>
+  </defs>
+</svg>

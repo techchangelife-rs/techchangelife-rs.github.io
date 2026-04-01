@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0b2e"/>
+      <stop offset="100%" stop-color="#4b1d52"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Stars/Math symbols in background -->
+  <g fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="20">
+    <text x="50" y="50">E=mc²</text>
+    <text x="700" y="80">F=ma</text>
+    <text x="100" y="350">v = v₀ + at</text>
+    <text x="650" y="320">Drag = ½ρv²CdA</text>
+    <circle cx="200" cy="100" r="2" fill="white"/>
+    <circle cx="600" cy="200" r="3" fill="white"/>
+    <circle cx="300" cy="300" r="1.5" fill="white"/>
+  </g>
+
+  <!-- Central Shuttlecock -->
+  <g transform="translate(400, 200) rotate(45)">
+    <!-- Aura -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#00ffff" stroke-width="2" stroke-dasharray="5,5">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Shuttlecock Body -->
+    <path d="M -20,30 L 20,30 L 40,-40 L -40,-40 Z" fill="rgba(255,255,255,0.9)" stroke="#fff" stroke-width="2"/>
+    <path d="M -15,30 C -15,50 15,50 15,30 Z" fill="#ff4d4d"/>
+    
+    <!-- Feathers -->
+    <line x1="-30" y1="-40" x2="-50" y2="-100" stroke="white" stroke-width="3"/>
+    <line x1="-10" y1="-40" x2="-15" y2="-105" stroke="white" stroke-width="3"/>
+    <line x1="10" y1="-40" x2="15" y2="-105" stroke="white" stroke-width="3"/>
+    <line x1="30" y1="-40" x2="50" y2="-100" stroke="white" stroke-width="3"/>
+    <line x1="-40" y1="-70" x2="40" y2="-70" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="-45" y1="-85" x2="45" y2="-85" stroke="white" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Force Arrows -->
+  <g transform="translate(400, 200)">
+    <!-- Gravity -->
+    <path d="M 0,50 L 0,120 L -10,110 M 0,120 L 10,110" stroke="#ffeb3b" stroke-width="4" fill="none"/>
+    <text x="15" y="110" fill="#ffeb3b" font-family="Arial" font-weight="bold">重力 (Gravity)</text>
+    
+    <!-- Air Resistance -->
+    <path d="M -60,-60 L -120,-120 L -110,-100 M -120,-120 L -100,-110" stroke="#00ffff" stroke-width="4" fill="none"/>
+    <text x="-190" y="-130" fill="#00ffff" font-family="Arial" font-weight="bold">空气阻力 (Drag)</text>
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">一颗羽毛球里的科学宇宙</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" fill="#a0c0ff" text-anchor="middle">空气动力学 × 材料科学 × 物理学</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" />
+      <stop offset="100%" stop-color="#fae8ff" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="16" />
+  <text x="400" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#4a044e" text-anchor="middle">插板法：相同元素的分配利器</text>
+  
+  <rect x="50" y="80" width="700" height="280" fill="#ffffff" rx="16" filter="url(#shadow)" />
+  
+  <text x="400" y="120" font-family="sans-serif" font-size="20" fill="#701a75" text-anchor="middle">10个相同的苹果，分给3个小朋友，每人至少1个</text>
+  
+  <!-- 苹果 -->
+  <g transform="translate(90, 160)">
+    <!-- 10 apples -->
+    <circle cx="20" cy="30" r="20" fill="#ef4444" />
+    <circle cx="80" cy="30" r="20" fill="#ef4444" />
+    <circle cx="140" cy="30" r="20" fill="#ef4444" />
+    <circle cx="200" cy="30" r="20" fill="#ef4444" />
+    <circle cx="260" cy="30" r="20" fill="#ef4444" />
+    <circle cx="320" cy="30" r="20" fill="#ef4444" />
+    <circle cx="380" cy="30" r="20" fill="#ef4444" />
+    <circle cx="440" cy="30" r="20" fill="#ef4444" />
+    <circle cx="500" cy="30" r="20" fill="#ef4444" />
+    <circle cx="560" cy="30" r="20" fill="#ef4444" />
+    
+    <!-- 间隙标记 -->
+    <path d="M 50,60 L 50,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 110,60 L 110,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 170,60 L 170,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 230,60 L 230,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 290,60 L 290,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 350,60 L 350,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 410,60 L 410,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 470,60 L 470,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M 530,60 L 530,70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2,2"/>
+    <text x="290" y="90" font-family="sans-serif" font-size="16" fill="#64748b" text-anchor="middle">共 9 个空隙可以插板</text>
+
+    <!-- 插入两块板 -->
+    <rect x="165" y="-10" width="10" height="90" fill="#3b82f6" rx="5" />
+    <rect x="405" y="-10" width="10" height="90" fill="#3b82f6" rx="5" />
+  </g>
+  
+  <g transform="translate(100, 300)">
+    <text x="0" y="0" font-family="sans-serif" font-size="18" fill="#1e293b">第1个小朋友得 3个</text>
+    <text x="220" y="0" font-family="sans-serif" font-size="18" fill="#1e293b">第2个小朋友得 4个</text>
+    <text x="440" y="0" font-family="sans-serif" font-size="18" fill="#1e293b">第3个小朋友得 3个</text>
+  </g>
+  
+  <text x="400" y="340" font-family="sans-serif" font-size="22" font-weight="bold" fill="#d946ef" text-anchor="middle">公式：C(n-1, m-1) = C(9, 2) = 36 种</text>
+</svg>

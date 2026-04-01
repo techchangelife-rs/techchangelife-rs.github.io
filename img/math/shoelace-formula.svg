@@ -1,0 +1,31 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 坐标列表框 -->
+  <rect x="100" y="20" width="200" height="260" rx="10" fill="#f8f9fa" stroke="#333" stroke-width="2"/>
+  
+  <!-- 坐标文本 -->
+  <text x="140" y="60" font-size="20" font-family="monospace">x₁</text>
+  <text x="240" y="60" font-size="20" font-family="monospace">y₁</text>
+  
+  <text x="140" y="120" font-size="20" font-family="monospace">x₂</text>
+  <text x="240" y="120" font-size="20" font-family="monospace">y₂</text>
+  
+  <text x="140" y="180" font-size="20" font-family="monospace">x₃</text>
+  <text x="240" y="180" font-size="20" font-family="monospace">y₃</text>
+  
+  <text x="140" y="240" font-size="20" font-family="monospace">x₁</text>
+  <text x="240" y="240" font-size="20" font-family="monospace">y₁</text>
+  
+  <!-- 右下交叉线 (红色) -->
+  <line x1="165" y1="65" x2="230" y2="105" stroke="#ff758c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="165" y1="125" x2="230" y2="165" stroke="#ff758c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="165" y1="185" x2="230" y2="225" stroke="#ff758c" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 左下交叉线 (蓝色) -->
+  <line x1="230" y1="65" x2="165" y2="105" stroke="#4c83ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="125" x2="165" y2="165" stroke="#4c83ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="185" x2="165" y2="225" stroke="#4c83ff" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 标注 -->
+  <text x="40" y="150" font-size="16" fill="#ff758c" font-weight="bold">相乘为正</text>
+  <text x="280" y="150" font-size="16" fill="#4c83ff" font-weight="bold">相乘为负</text>
+</svg>

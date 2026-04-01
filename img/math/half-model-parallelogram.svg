@@ -1,0 +1,50 @@
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 标题 -->
+  <text x="10" y="25" font-size="14" fill="#666">【图2：平行四边形中的一半模型——等积变形】</text>
+
+  <!-- 平行四边形 ABCD -->
+  <polygon points="100,150 300,80 600,80 400,150" fill="none" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- 顶点标签 -->
+  <text x="90" y="165" font-size="14" fill="#495057">A</text>
+  <text x="295" y="70" font-size="14" fill="#495057">B</text>
+  <text x="600" y="70" font-size="14" fill="#495057">C</text>
+  <text x="395" y="165" font-size="14" fill="#495057">D</text>
+
+  <!-- 三个顶点的候选位置三角形 -->
+  <!-- 顶点1：B点位置 -->
+  <polygon points="100,150 600,80 300,80" fill="#ff9a9e" opacity="0.6" stroke="#e64980" stroke-width="1.5"/>
+  <text x="310" y="65" font-size="11" fill="#e64980">滑到B</text>
+
+  <!-- 顶点2：BC中点 -->
+  <polygon points="100,150 600,80 450,80" fill="#fab005" opacity="0.4" stroke="#fab005" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="475" y="70" font-size="11" fill="#fab005">滑到BC中点</text>
+
+  <!-- 顶点3：BC上任意点 -->
+  <polygon points="100,150 600,80 350,80" fill="#22863a" opacity="0.3" stroke="#22863a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="355" y="68" font-size="11" fill="#22863a">滑到任意点</text>
+
+  <!-- 滑动箭头 -->
+  <path d="M 295 55 L 450 55" stroke="#e64980" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="372" y="45" font-size="12" fill="#e64980" text-anchor="middle">在BC上滑滑梯</text>
+
+  <!-- 平行四边形下方的对边 -->
+  <polygon points="100,150 300,220 600,220 400,150" fill="none" stroke="#868e96" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="90" y="235" font-size="14" fill="#868e96">D</text>
+  <text x="295" y="238" font-size="14" fill="#868e96">E</text>
+  <text x="600" y="238" font-size="14" fill="#868e96">F</text>
+
+  <!-- 标注 -->
+  <path d="M 350 105 L 350 220" stroke="#868e96" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="370" y="160" font-size="12" fill="#868e96">高相同</text>
+
+  <!-- 结论框 -->
+  <rect x="100" y="260" width="500" height="36" rx="8" fill="#fff3bf" stroke="#fab005" stroke-width="2"/>
+  <text x="350" y="284" font-size="14" fill="#e67700" text-anchor="middle" font-weight="bold">结论：在平行四边形中，底边BC上任意点到A的连线，都把平行四边形切成两半！</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e64980"/>
+    </marker>
+  </defs>
+</svg>

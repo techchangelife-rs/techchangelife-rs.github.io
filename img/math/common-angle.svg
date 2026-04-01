@@ -1,0 +1,12 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大三角形 ABC -->
+  <polygon points="150,30 50,220 280,220" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- 截取点 D, E，小三角形 ADE -->
+  <polygon points="150,30 100,125 215,125" fill="#a1c4fd" opacity="0.8"/>
+  
+  <text x="145" y="20" font-size="16" font-weight="bold">A (共角)</text>
+  <text x="35" y="235" font-size="16">B</text>
+  <text x="285" y="235" font-size="16">C</text>
+  <text x="75" y="130" font-size="16">D</text>
+  <text x="225" y="130" font-size="16">E</text>
+</svg>

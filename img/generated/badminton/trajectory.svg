@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027" />
+      <stop offset="50%" stop-color="#203a43" />
+      <stop offset="100%" stop-color="#2c5364" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="20"/>
+  
+  <text x="400" y="50" fill="#ffffff" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">羽毛球的“反直觉”空气动力学</text>
+  <text x="400" y="90" fill="#aaaaaa" font-size="20" font-family="sans-serif" text-anchor="middle">空气阻力公式：f = 1/2 × C × ρ × A × v² (阻力与速度的平方成正比)</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffffff" stroke-width="3"/>
+  <line x1="100" y1="400" x2="100" y2="150" stroke="#ffffff" stroke-width="3"/>
+  <text x="710" y="405" fill="#ffffff" font-size="18" font-family="sans-serif">飞行距离</text>
+  <text x="90" y="140" fill="#ffffff" font-size="18" font-family="sans-serif" text-anchor="end">高度</text>
+
+  <!-- Tennis Trajectory (Parabola) -->
+  <path d="M 100 400 Q 400 100 700 400" stroke="#55aaff" stroke-width="4" stroke-dasharray="10,10" fill="none"/>
+  <text x="500" y="220" fill="#55aaff" font-size="20" font-weight="bold" font-family="sans-serif">普通球类抛物线 (如网球)</text>
+
+  <!-- Badminton Trajectory -->
+  <path d="M 100 400 C 250 100, 450 150, 480 400" stroke="#ff4444" stroke-width="6" fill="none"/>
+  <circle cx="480" cy="400" r="8" fill="#ffffff" stroke="#ff4444" stroke-width="3"/>
+  
+  <text x="250" y="150" fill="#ff4444" font-size="20" font-weight="bold" font-family="sans-serif">羽毛球轨迹</text>
+  
+  <!-- Annotations -->
+  <g font-family="sans-serif">
+    <line x1="200" y1="280" x2="160" y2="340" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="270" fill="#ffffff" font-size="16">初速度极大 (可达400km/h)</text>
+    
+    <line x1="470" y1="280" x2="475" y2="340" stroke="#ffffff" stroke-width="2"/>
+    <text x="470" y="270" fill="#ffffff" font-size="16">羽毛产生巨大阻力，末端几乎垂直下落</text>
+  </g>
+
+  <!-- Conclusion -->
+  <rect x="150" y="430" width="500" height="50" rx="10" fill="#ffaa00" fill-opacity="0.2"/>
+  <text x="400" y="462" fill="#ffcc00" font-size="20" font-family="sans-serif" font-weight="bold" text-anchor="middle">战术启示：必须“迎球击打”，等球掉下来你就输了！</text>
+</svg>

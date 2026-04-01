@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f4f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Section 1: Weekly Plan Chart -->
+  <g transform="translate(50, 40)">
+    <text x="150" y="0" font-family="sans-serif" font-weight="bold" font-size="22" fill="#1e3a8a">科学周期化训练配比 (周计划)</text>
+    
+    <!-- Pie Chart approximation with rects for simplicity & clarity -->
+    <g transform="translate(0, 30)">
+      <!-- 技术 40% -->
+      <rect x="0" y="0" width="160" height="40" rx="5" fill="#3b82f6"/>
+      <text x="80" y="25" font-family="sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">技术 40%</text>
+      <text x="80" y="60" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">挥拍/多球/杀球</text>
+
+      <!-- 战术 30% -->
+      <rect x="170" y="0" width="120" height="40" rx="5" fill="#10b981"/>
+      <text x="230" y="25" font-family="sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">战术 30%</text>
+      <text x="230" y="60" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">落点/套路/对抗</text>
+
+      <!-- 体能 20% -->
+      <rect x="300" y="0" width="80" height="40" rx="5" fill="#f59e0b"/>
+      <text x="340" y="25" font-family="sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">体能 20%</text>
+      <text x="340" y="60" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">步法/核心/绳梯</text>
+
+      <!-- 心理 10% -->
+      <rect x="390" y="0" width="40" height="40" rx="5" fill="#8b5cf6"/>
+      <text x="410" y="25" font-family="sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">心理 10%</text>
+      <text x="410" y="60" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">冥想/复盘</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Parents Redline -->
+  <g transform="translate(50, 180)">
+    <rect width="700" height="120" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <text x="350" y="30" font-family="sans-serif" font-weight="bold" font-size="20" fill="#dc2626" text-anchor="middle">🚨 家长期待值红线指标 (避免揠苗助长)</text>
+    
+    <g font-family="sans-serif" font-size="16" fill="#1f2937">
+      <circle cx="120" cy="70" r="30" fill="#fff" stroke="#ef4444" stroke-width="2"/>
+      <text x="120" y="75" font-weight="bold" fill="#ef4444" text-anchor="middle">≤ 4次</text>
+      <text x="120" y="115" text-anchor="middle">每周专项训练</text>
+
+      <circle cx="350" cy="70" r="30" fill="#fff" stroke="#ef4444" stroke-width="2"/>
+      <text x="350" y="75" font-weight="bold" fill="#ef4444" text-anchor="middle">≤ 2站</text>
+      <text x="350" y="115" text-anchor="middle">每月高强度比赛</text>
+
+      <circle cx="580" cy="70" r="30" fill="#fff" stroke="#ef4444" stroke-width="2"/>
+      <text x="580" y="75" font-weight="bold" fill="#ef4444" text-anchor="middle">≥ 50%</text>
+      <text x="580" y="115" text-anchor="middle">文化课成绩(班级)</text>
+    </g>
+  </g>
+
+  <!-- Section 3: Professional terms to family terms -->
+  <g transform="translate(50, 340)">
+    <rect width="700" height="80" rx="10" fill="#f0fdf4" stroke="#10b981" stroke-width="2"/>
+    <text x="350" y="25" font-family="sans-serif" font-weight="bold" font-size="18" fill="#059669" text-anchor="middle">🗣️ 亲子沟通翻译机：专业术语 ➡️ 游戏口令</text>
+    
+    <text x="180" y="60" font-family="sans-serif" font-size="16" fill="#1f2937" text-anchor="middle"><tspan font-weight="bold">鞭打发力</tspan> ➡️ "甩毛巾！"</text>
+    <text x="520" y="60" font-family="sans-serif" font-size="16" fill="#1f2937" text-anchor="middle"><tspan font-weight="bold">三点一线步法</tspan> ➡️ "踩格子闯关！"</text>
+  </g>
+</svg>

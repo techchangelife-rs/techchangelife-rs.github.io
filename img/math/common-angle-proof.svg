@@ -1,0 +1,72 @@
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e64980"/>
+    </marker>
+  </defs>
+
+  <text x="10" y="25" font-size="14" fill="#666">【图3：共角定理（鸟头定理）——为什么是两边乘积的比？】</text>
+
+  <!-- 大三角形 ABC -->
+  <polygon points="350,50 80,420 650,420" fill="#e3f2fd" stroke="#1565c0" stroke-width="2.5"/>
+
+  <!-- 大三角形顶点标签 -->
+  <text x="345" y="35" font-size="16" fill="#1565c0" font-weight="bold">A（共用角）</text>
+  <text x="60" y="440" font-size="16" fill="#1565c0">B</text>
+  <text x="660" y="440" font-size="16" fill="#1565c0">C</text>
+
+  <!-- 小三角形 ADE -->
+  <polygon points="350,50 200,235 510,235" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+
+  <!-- 小三角形顶点标签 -->
+  <text x="175" y="240" font-size="15" fill="#7b1fa2">D</text>
+  <text x="525" y="240" font-size="15" fill="#7b1fa2">E</text>
+
+  <!-- AB边 (大) -->
+  <line x1="350" y1="50" x2="80" y2="420" stroke="#1565c0" stroke-width="2"/>
+  <text x="200" y="220" font-size="12" fill="#1565c0">AB（大边）</text>
+
+  <!-- AC边 (大) -->
+  <line x1="350" y1="50" x2="650" y2="420" stroke="#1565c0" stroke-width="2"/>
+  <text x="510" y="220" font-size="12" fill="#1565c0">AC（大边）</text>
+
+  <!-- AD边 (小) -->
+  <line x1="350" y1="50" x2="200" y2="235" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="250" y="135" font-size="12" fill="#7b1fa2">AD（小边）</text>
+
+  <!-- AE边 (小) -->
+  <line x1="350" y1="50" x2="510" y2="235" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="430" y="135" font-size="12" fill="#7b1fa2">AE（小边）</text>
+
+  <!-- 角A标注弧 -->
+  <path d="M 325 60 Q 310 80 330 90" fill="none" stroke="#e64980" stroke-width="2"/>
+  <text x="280" y="80" font-size="12" fill="#e64980">∠A 共用</text>
+
+  <!-- DE边 -->
+  <line x1="200" y1="235" x2="510" y2="235" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="355" y="252" font-size="12" fill="#7b1fa2">DE</text>
+
+  <!-- BC边 -->
+  <line x1="80" y1="420" x2="650" y2="420" stroke="#1565c0" stroke-width="2"/>
+  <text x="365" y="450" font-size="12" fill="#1565c0">BC</text>
+
+  <!-- 面积标注 -->
+  <text x="355" y="320" font-size="14" fill="#1565c0" text-anchor="middle">S<sub>大三角形</sub> = ½ × AB × AC × sin∠A</text>
+  <text x="355" y="345" font-size="14" fill="#7b1fa2" text-anchor="middle">S<sub>小三角形</sub> = ½ × AD × AE × sin∠A</text>
+
+  <!-- 推导箭头 -->
+  <path d="M 355 360 L 355 385" stroke="#e64980" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- 公式框 -->
+  <rect x="130" y="390" width="440" height="40" rx="8" fill="#fff0f6" stroke="#e64980" stroke-width="2"/>
+  <text x="350" y="415" font-size="15" fill="#c92a6b" text-anchor="middle" font-weight="bold">
+    共角定理：S<sub>小</sub> ÷ S<sub>大</sub> = (AD ÷ AB) × (AE ÷ AC)
+  </text>
+
+  <!-- 左右脖子标注 -->
+  <rect x="80" y="455" width="250" height="32" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="205" y="477" font-size="12" fill="#1565c0" text-anchor="middle">左脖子比例 = AD ÷ AB</text>
+
+  <rect x="370" y="455" width="250" height="32" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="495" y="477" font-size="12" fill="#7b1fa2" text-anchor="middle">右脖子比例 = AE ÷ AC</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b2735"/>
+      <stop offset="100%" stop-color="#090a0f"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="100%" stop-color="#2a5298"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8bd3ff"/>
+    </marker>
+  </defs>
+  <rect width="860" height="480" fill="url(#bg)" rx="24"/>
+  <text x="430" y="60" fill="#e8f4ff" font-size="30" font-weight="bold" font-family="sans-serif" text-anchor="middle">羽毛球训练系统落地流程（内测示意）</text>
+  <text x="430" y="90" fill="#7fb8ff" font-size="16" font-family="sans-serif" text-anchor="middle">关注公众号 ▸ 入班建档 ▸ 预约训练 ▸ 现场打卡 ▸ 数据复盘</text>
+  <g transform="translate(55,140)" font-family="sans-serif" filter="url(#shadow)">
+    <g>
+      <rect x="0" y="0" width="180" height="90" rx="14" fill="url(#card)"/>
+      <text x="90" y="38" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">关注公众号</text>
+      <text x="90" y="62" fill="#cfe6ff" font-size="12" text-anchor="middle">获取班级二维码与课表</text>
+    </g>
+    <g>
+      <rect x="210" y="0" width="180" height="90" rx="14" fill="url(#card)"/>
+      <text x="300" y="33" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">扫码入班建档</text>
+      <text x="300" y="60" fill="#cfe6ff" font-size="12" text-anchor="middle">家长填写身高体重视力</text>
+    </g>
+    <g>
+      <rect x="420" y="0" width="180" height="90" rx="14" fill="url(#card)"/>
+      <text x="510" y="33" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">预约训练</text>
+      <text x="510" y="60" fill="#cfe6ff" font-size="12" text-anchor="middle">选择时段与场地</text>
+    </g>
+    <g>
+      <rect x="630" y="0" width="180" height="90" rx="14" fill="url(#card)"/>
+      <text x="720" y="33" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">现场打卡</text>
+      <text x="720" y="60" fill="#cfe6ff" font-size="12" text-anchor="middle">训练任务自动下发</text>
+    </g>
+    <line x1="180" y1="45" x2="210" y2="45" stroke="#8bd3ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="390" y1="45" x2="420" y2="45" stroke="#8bd3ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="600" y1="45" x2="630" y2="45" stroke="#8bd3ff" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(55,260)" font-family="sans-serif" filter="url(#shadow)">
+    <g>
+      <rect x="0" y="0" width="260" height="150" rx="14" fill="#0f3e5e"/>
+      <text x="130" y="28" fill="#e8f4ff" font-size="16" font-weight="bold" text-anchor="middle">家长视角</text>
+      <text x="20" y="60" fill="#bfe4ff" font-size="12">• 查看课表与费用</text>
+      <text x="20" y="80" fill="#bfe4ff" font-size="12">• 上传作业与视频</text>
+      <text x="20" y="100" fill="#bfe4ff" font-size="12">• 接收训练报告</text>
+      <text x="20" y="120" fill="#bfe4ff" font-size="12">• 管理请假与补课</text>
+    </g>
+    <g>
+      <rect x="300" y="0" width="260" height="150" rx="14" fill="#0f5e4a"/>
+      <text x="430" y="28" fill="#e8f4ff" font-size="16" font-weight="bold" text-anchor="middle">学生视角</text>
+      <text x="320" y="60" fill="#bfe4ff" font-size="12">• 今日任务卡</text>
+      <text x="320" y="80" fill="#bfe4ff" font-size="12">• 打卡积分系统</text>
+      <text x="320" y="100" fill="#bfe4ff" font-size="12">• 眼肌与步法训练</text>
+      <text x="320" y="120" fill="#bfe4ff" font-size="12">• 错题记录复盘</text>
+    </g>
+    <g>
+      <rect x="600" y="0" width="260" height="150" rx="14" fill="#5e3e0f"/>
+      <text x="730" y="28" fill="#e8f4ff" font-size="16" font-weight="bold" text-anchor="middle">教练视角</text>
+      <text x="620" y="60" fill="#ffeccc" font-size="12">• 建班与分层分组</text>
+      <text x="620" y="80" fill="#ffeccc" font-size="12">• 任务下发与点评</text>
+      <text x="620" y="100" fill="#ffeccc" font-size="12">• 数据看板与预警</text>
+      <text x="620" y="120" fill="#ffeccc" font-size="12">• 训练计划模板库</text>
+    </g>
+  </g>
+</svg>

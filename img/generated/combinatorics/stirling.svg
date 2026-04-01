@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfeff" />
+      <stop offset="100%" stop-color="#ccfbf1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="16" />
+  <text x="400" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#042f2e" text-anchor="middle">第二类斯特林数模型</text>
+  
+  <rect x="50" y="80" width="700" height="280" fill="#ffffff" rx="16" filter="url(#shadow)" />
+
+  <text x="400" y="120" font-family="sans-serif" font-size="20" fill="#0f766e" text-anchor="middle">将 n 个【不同】的球，放入 k 个【相同】的盒子，且盒子不能为空</text>
+
+  <!-- 球 (不同的球) -->
+  <g transform="translate(180, 160)">
+    <!-- Ball 1 -->
+    <circle cx="0" cy="30" r="25" fill="#ef4444" />
+    <text x="0" y="36" font-family="sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">A</text>
+    
+    <!-- Ball 2 -->
+    <rect x="65" y="5" width="50" height="50" fill="#3b82f6" rx="8" />
+    <text x="90" y="36" font-family="sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">B</text>
+
+    <!-- Ball 3 -->
+    <polygon points="180,5 205,55 155,55" fill="#f59e0b" />
+    <text x="180" y="42" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">C</text>
+
+    <!-- Ball 4 -->
+    <polygon points="270,5 285,20 305,20 290,35 295,55 270,45 245,55 250,35 235,20 255,20" fill="#8b5cf6" />
+    <text x="270" y="36" font-family="sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">D</text>
+  </g>
+
+  <!-- 箭头 -->
+  <path d="M 400,240 L 400,270" fill="none" stroke="#94a3b8" stroke-width="4" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- 盒子 (相同的盒子) -->
+  <g transform="translate(250, 280)">
+    <rect x="0" y="0" width="120" height="60" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3" rx="4" />
+    <text x="60" y="35" font-family="sans-serif" font-size="16" fill="#64748b" text-anchor="middle">一模一样的盒子</text>
+
+    <rect x="180" y="0" width="120" height="60" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3" rx="4" />
+    <text x="240" y="35" font-family="sans-serif" font-size="16" fill="#64748b" text-anchor="middle">一模一样的盒子</text>
+  </g>
+</svg>

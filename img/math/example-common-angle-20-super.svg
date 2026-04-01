@@ -1,0 +1,58 @@
+<svg width="500" height="280" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#e64980"/>
+    </marker>
+  </defs>
+
+  <!-- 例20图：超级综合大挑战 -->
+  <text x="10" y="20" font-size="13" fill="#666">【例20图：超级综合——共角定理嵌套 + 一半模型 + 燕尾模型三合一！】</text>
+
+  <!-- 大三角形 ABC -->
+  <polygon points="250,30 60,230 440,230" fill="#e3f2fd" stroke="#1565c0" stroke-width="2.5"/>
+  <text x="245" y="18" font-size="14" fill="#1565c0" font-weight="bold">A</text>
+  <text x="40" y="248" font-size="14" fill="#1565c0">B</text>
+  <text x="448" y="248" font-size="14" fill="#1565c0">C</text>
+
+  <!-- BC上的点D（BD:DC=2:1） -->
+  <circle cx="180" cy="230" r="4" fill="#1971c2"/>
+  <text x="175" y="248" font-size="11" fill="#1971c2">D</text>
+  <text x="180" y="262" font-size="10" fill="#1971c2">BD:DC=2:1</text>
+
+  <!-- AB上的点F（AF:FB=1:1） -->
+  <circle cx="155" cy="130" r="4" fill="#fab005"/>
+  <text x="140" y="128" font-size="11" fill="#fab005">F</text>
+  <text x="100" y="100" font-size="10" fill="#fab005">F在AB上</text>
+  <text x="100" y="114" font-size="10" fill="#fab005">AF:FB=1:1</text>
+
+  <!-- AC上的点E（AE:EC=1:2） -->
+  <circle cx="316" cy="130" r="4" fill="#c92a6b"/>
+  <text x="326" y="128" font-size="11" fill="#c92a6b">E</text>
+  <text x="380" y="100" font-size="10" fill="#c92a6b">E在AC上</text>
+  <text x="380" y="114" font-size="10" fill="#c92a6b">AE:EC=1:2</text>
+
+  <!-- 三条重要线 -->
+  <!-- AD -->
+  <line x1="250" y1="30" x2="180" y2="230" stroke="#1971c2" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- AE -->
+  <line x1="250" y1="30" x2="316" y2="130" stroke="#c92a6b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- BF -->
+  <line x1="60" y1="230" x2="155" y2="130" stroke="#fab005" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- 三个交点：O（三条线交于一点） -->
+  <circle cx="200" cy="120" r="5" fill="#e64980"/>
+  <text x="205" y="115" font-size="12" fill="#e64980">O</text>
+  <text x="210" y="105" font-size="10" fill="#e64980">三线共点</text>
+
+  <!-- 区域标注 -->
+  <text x="230" y="75" font-size="11" fill="#1971c2">①</text>
+  <text x="170" y="95" font-size="11" fill="#fab005">②</text>
+  <text x="280" y="95" font-size="11" fill="#c92a6b">③</text>
+  <text x="250" y="150" font-size="11" fill="#22863a">④</text>
+  <text x="320" y="180" font-size="11" fill="#e64980">⑤</text>
+  <text x="110" y="180" font-size="11" fill="#e64980">⑥</text>
+
+  <!-- 解题思路 -->
+  <rect x="80" y="265" width="340" height="26" rx="6" fill="#fff3bf" stroke="#fab005" stroke-width="1.5"/>
+  <text x="250" y="282" font-size="11" fill="#e67700" text-anchor="middle">①先用燕尾定理→②再用共角定理→③最后一半模型！</text>
+</svg>

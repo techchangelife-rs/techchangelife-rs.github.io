@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b486b"/>
+      <stop offset="100%" stop-color="#f56217"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="24"/>
+
+  <text x="400" y="70" fill="#ffffff" font-size="30" font-weight="bold" font-family="sans-serif" text-anchor="middle">长方形的几何直觉</text>
+  <text x="400" y="105" fill="#ffeedd" font-size="18" font-family="sans-serif" text-anchor="middle">对角线 > 任一条边长（启蒙：发球优选对角线）</text>
+
+  <g transform="translate(180,130)">
+    <rect x="0" y="0" width="440" height="220" fill="#ff8c4a" fill-opacity="0.35" stroke="#ffffff" stroke-width="5" rx="16"/>
+    <line x1="0" y1="0" x2="440" y2="220" stroke="#ffff66" stroke-width="5" stroke-dasharray="10,6"/>
+    <text x="220" y="115" fill="#ffff66" font-size="24" font-weight="bold" font-family="sans-serif" text-anchor="middle">对角线</text>
+
+    <line x1="0" y1="0" x2="0" y2="220" stroke="#ffffff" stroke-width="6"/>
+    <line x1="0" y1="0" x2="440" y2="0" stroke="#ffffff" stroke-width="6"/>
+    <text x="16" y="115" fill="#ffffff" font-size="18" font-family="sans-serif">边</text>
+    <text x="220" y="-12" fill="#ffffff" font-size="18" font-family="sans-serif" text-anchor="middle">边</text>
+  </g>
+
+  <g transform="translate(120,370)">
+    <rect x="0" y="0" width="560" height="50" rx="10" fill="#000000" fill-opacity="0.28"/>
+    <text x="280" y="33" fill="#ffffff" font-size="18" font-family="sans-serif" text-anchor="middle">发对角线 = 距离更长 = 反应时间更充裕 = 容错更高</text>
+  </g>
+</svg>

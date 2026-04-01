@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#f0f4f8"/>
+    </linearGradient>
+    <!-- Carbon fiber hex pattern -->
+    <pattern id="hex" width="20" height="34.64" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+      <path d="M 20 8.66 L 10 2.88 L 0 8.66 L 0 20.2 L 10 26 L 20 20.2 Z" fill="none" stroke="#ced4da" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)"/>
+  
+  <text x="400" y="40" font-family="sans-serif" font-size="24" font-weight="bold" fill="#212529" text-anchor="middle">胡克定律与磅数：球拍上的"蹦床"力学</text>
+
+  <!-- High Tension (Professional) -->
+  <g transform="translate(150, 100)">
+    <rect x="-100" y="0" width="200" height="200" rx="10" fill="#fff" stroke="#adb5bd" stroke-width="2"/>
+    <text x="0" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#d90429" text-anchor="middle">高磅数 (28+ 磅)</text>
+    <text x="0" y="55" font-family="sans-serif" font-size="14" fill="#6c757d" text-anchor="middle">像一块硬木板</text>
+    
+    <!-- Tight Strings -->
+    <g stroke="#d90429" stroke-width="2" transform="translate(0, 110)">
+      <line x1="-60" y1="0" x2="60" y2="0"/>
+      <!-- Small dip -->
+      <path d="M -60,0 Q 0,10 60,0" fill="none" stroke="#2b2d42" stroke-width="3"/>
+      <circle cx="0" cy="8" r="8" fill="#8d99ae"/>
+    </g>
+
+    <g transform="translate(0, 150)" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle">
+      <text y="0">形变小 (x小) ➡️ 力量传递快</text>
+      <text y="20">控制准，但极费体力</text>
+      <text y="40" font-weight="bold" fill="#d90429">适合：专业大神</text>
+    </g>
+  </g>
+
+  <!-- VS Arrow -->
+  <text x="400" y="180" font-family="sans-serif" font-size="24" font-weight="bold" fill="#adb5bd" text-anchor="middle">VS</text>
+
+  <!-- Hooke's Law Center -->
+  <rect x="340" y="70" width="120" height="40" rx="5" fill="#e9ecef" stroke="#ced4da"/>
+  <text x="400" y="95" font-family="monospace" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">F = -kx</text>
+  <text x="400" y="240" font-family="sans-serif" font-size="12" fill="#adb5bd" text-anchor="middle">k = 拍线硬度</text>
+  <text x="400" y="260" font-family="sans-serif" font-size="12" fill="#adb5bd" text-anchor="middle">x = 凹陷深度</text>
+
+  <!-- Low Tension (Amateur) -->
+  <g transform="translate(650, 100)">
+    <rect x="-100" y="0" width="200" height="200" rx="10" fill="#fff" stroke="#adb5bd" stroke-width="2"/>
+    <text x="0" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2a9d8f" text-anchor="middle">低磅数 (22-24 磅)</text>
+    <text x="0" y="55" font-family="sans-serif" font-size="14" fill="#6c757d" text-anchor="middle">像一张软蹦床</text>
+    
+    <!-- Loose Strings -->
+    <g stroke="#2a9d8f" stroke-width="2" transform="translate(0, 110)">
+      <line x1="-60" y1="0" x2="60" y2="0" stroke-dasharray="2,2"/>
+      <!-- Deep dip -->
+      <path d="M -60,0 Q 0,40 60,0" fill="none" stroke="#2b2d42" stroke-width="3"/>
+      <circle cx="0" cy="25" r="8" fill="#8d99ae"/>
+    </g>
+
+    <g transform="translate(0, 160)" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle">
+      <text y="-10">形变大 (x大) ➡️ 弹性蓄能多</text>
+      <text y="10">借力好，轻松打后场</text>
+      <text y="30" font-weight="bold" fill="#2a9d8f">适合：初学者/小朋友</text>
+    </g>
+  </g>
+</svg>

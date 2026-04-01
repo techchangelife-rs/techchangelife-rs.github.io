@@ -1,0 +1,27 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 小三角形 -->
+  <polygon points="50,150 150,150 100,50" fill="#ff9a9e" stroke="#333" stroke-width="2"/>
+  <text x="100" y="180" font-size="16" text-anchor="middle">边长：1份</text>
+  <text x="100" y="120" font-size="16" text-anchor="middle" font-weight="bold">面积=1</text>
+  
+  <!-- 箭头 -->
+  <path d="M 170 100 L 220 100" stroke="#ccc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow_sim)"/>
+  <defs>
+    <marker id="arrow_sim" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ccc" />
+    </marker>
+  </defs>
+  
+  <!-- 大三角形 (边长为原来的2倍) -->
+  <!-- 切分为4个小三角形展示 -->
+  <g transform="translate(180,0)">
+    <polygon points="100,200 300,200 200,0" fill="#a1c4fd" stroke="#333" stroke-width="2"/>
+    <!-- 内部网格线 -->
+    <line x1="150" y1="100" x2="250" y2="100" stroke="#fff" stroke-width="2"/>
+    <line x1="150" y1="100" x2="200" y2="200" stroke="#fff" stroke-width="2"/>
+    <line x1="250" y1="100" x2="200" y2="200" stroke="#fff" stroke-width="2"/>
+    
+    <text x="200" y="230" font-size="16" text-anchor="middle">边长：2份</text>
+    <text x="200" y="160" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">面积=4</text>
+  </g>
+</svg>

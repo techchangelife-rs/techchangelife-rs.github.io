@@ -1,0 +1,16 @@
+<svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 正方形 -->
+  <rect x="25" y="25" width="200" height="200" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- 左下角为圆心的1/4圆 -->
+  <path d="M 25 25 A 200 200 0 0 1 225 225 L 25 225 Z" fill="none" stroke="#1c7ed6" stroke-width="2"/>
+  
+  <!-- 右上角为圆心的1/4圆 -->
+  <path d="M 225 225 A 200 200 0 0 1 25 25 L 225 25 Z" fill="none" stroke="#d6336c" stroke-width="2"/>
+  
+  <!-- 叶形阴影 (重叠部分) -->
+  <!-- 路径: 从(25,25)沿弧1到(225,225), 再沿弧2回到(25,25) -->
+  <path d="M 25 25 A 200 200 0 0 1 225 225 A 200 200 0 0 1 25 25 Z" fill="#b2f2bb" opacity="0.8"/>
+  
+  <text x="125" y="130" font-weight="bold" fill="#2b8a3e" text-anchor="middle">叶形阴影</text>
+</svg>

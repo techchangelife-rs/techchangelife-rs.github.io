@@ -1,0 +1,26 @@
+<svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="350" height="200" fill="#f8f9fa"/>
+  <text x="175" y="20" font-size="15" font-weight="bold" fill="#212529" text-anchor="middle">【例1图】等积变形——顶点在对面滑动</text>
+  
+  <!-- 长方形 -->
+  <rect x="50" y="50" width="250" height="100" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  
+  <!-- 三个顶点位置示意 -->
+  <!-- 左 -->
+  <polygon points="50,150 300,150 50,50" fill="#ffcdd2" opacity="0.7"/>
+  <!-- 中 -->
+  <polygon points="50,150 300,150 175,50" fill="#c5e1a5" opacity="0.7"/>
+  <!-- 右 -->
+  <polygon points="50,150 300,150 250,50" fill="#b3e5fc" opacity="0.7"/>
+  
+  <!-- 滑动轨迹虚线 -->
+  <line x1="50" y1="50" x2="300" y2="50" stroke="#d6336c" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="175" y="42" font-size="12" fill="#d6336c" text-anchor="middle">← 顶点在此线上滑动 →</text>
+  
+  <!-- 标注 -->
+  <text x="80" y="130" font-size="14" font-weight="bold" fill="#d6336c">S₁</text>
+  <text x="165" y="115" font-size="14" font-weight="bold" fill="#2e7d32">S₂</text>
+  <text x="245" y="130" font-size="14" font-weight="bold" fill="#1565c0">S₃</text>
+  
+  <text x="175" y="185" font-size="13" fill="#333" text-anchor="middle">三个三角形面积相等 = 长方形面积的一半</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例4图：分割成两个一半 -->
+  <text x="10" y="18" font-size="13" fill="#666">【例4图：长方形被一条对角线分成两个一半】</text>
+
+  <!-- 长方形 ABCD -->
+  <rect x="70" y="40" width="280" height="140" fill="none" stroke="#495057" stroke-width="2.5"/>
+
+  <!-- 对角线 AC -->
+  <line x1="70" y1="40" x2="350" y2="180" stroke="#e64980" stroke-width="2.5"/>
+  <line x1="350" y1="40" x2="70" y2="180" stroke="#e64980" stroke-width="2.5"/>
+
+  <!-- 顶点标签 -->
+  <text x="60" y="55" font-size="14" fill="#495057">A</text>
+  <text x="355" y="55" font-size="14" fill="#495057">B</text>
+  <text x="355" y="195" font-size="14" fill="#495057">C</text>
+  <text x="60" y="195" font-size="14" fill="#495057">D</text>
+
+  <!-- 标注四个三角形 -->
+  <text x="140" y="85" font-size="13" fill="#e64980">S₁</text>
+  <text x="275" y="85" font-size="13" fill="#e64980">S₂</text>
+  <text x="275" y="160" font-size="13" fill="#e64980">S₃</text>
+  <text x="140" y="160" font-size="13" fill="#e64980">S₄</text>
+
+  <!-- 对角线交点O -->
+  <text x="205" y="118" font-size="12" fill="#495057">O</text>
+  <circle cx="210" cy="110" r="3" fill="#495057"/>
+
+  <!-- 公式 -->
+  <rect x="70" y="195" width="280" height="24" rx="5" fill="#fff0f6" stroke="#e64980" stroke-width="1.5"/>
+  <text x="210" y="212" font-size="12" fill="#c92a6b" text-anchor="middle" font-weight="bold">S₁+S₂ = S₃+S₄ = S<sub>长方形</sub>÷2</text>
+</svg>

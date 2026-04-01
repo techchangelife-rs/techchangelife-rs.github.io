@@ -1,0 +1,17 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 圆心 (150, 150), 半径 100 -->
+  <!-- 画出扇形 (从 -45度 到 -135度，即上方) -->
+  <!-- 路径：起点(150,150) -> A(79.3, 79.3) -> 弧线到 B(220.7, 79.3) -> 回到(150,150) -->
+  <path d="M 150 150 L 79.3 79.3 A 100 100 0 0 1 220.7 79.3 Z" fill="#fddb92" stroke="#f6a03c" stroke-width="2"/>
+  
+  <!-- 三角形部分 (白色/或者虚线覆盖) -->
+  <polygon points="150,150 79.3,79.3 220.7,79.3" fill="#fff" stroke="#333" stroke-width="2" stroke-dasharray="4,4"/>
+  
+  <!-- 弓形阴影部分 (红色突出) -->
+  <path d="M 79.3 79.3 A 100 100 0 0 1 220.7 79.3 L 79.3 79.3 Z" fill="#ff9a9e" stroke="#d6336c" stroke-width="2"/>
+  
+  <!-- 标注 -->
+  <text x="150" y="170" font-weight="bold">O</text>
+  <text x="150" y="60" font-weight="bold" fill="#d6336c">弓形阴影</text>
+  <text x="150" y="120" font-weight="bold" fill="#666">内部三角形</text>
+</svg>

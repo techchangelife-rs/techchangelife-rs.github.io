@@ -1,0 +1,71 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="500" rx="15" fill="#f0fdf4" stroke="#a7f3d0" stroke-width="2"/>
+  
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#065f46" text-anchor="middle">儿童羽毛球鞋选购：三大救命要素</text>
+
+  <!-- Shoe Outline Simulation -->
+  <g transform="translate(400, 160)" stroke="#10b981" stroke-width="3" fill="none" opacity="0.2">
+    <path d="M-150,-40 C-100,-60 -50,-50 0,-40 C50,-30 100,-20 150,0 C170,10 180,30 150,50 C100,80 -100,80 -150,50 C-180,30 -170,-20 -150,-40 Z" />
+    <!-- Sole tread -->
+    <path d="M-130,55 C-50,85 50,85 130,45" stroke-dasharray="10 5" />
+  </g>
+
+  <!-- Element 1: Anti-rollover -->
+  <g transform="translate(80, 100)">
+    <circle cx="20" cy="20" r="20" fill="#ef4444" />
+    <text x="20" y="26" font-family="Arial" font-size="18" fill="white" text-anchor="middle">1</text>
+    <rect x="50" y="0" width="220" height="80" rx="8" fill="white" filter="url(#shadow)" stroke="#ef4444" />
+    <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#b91c1c">防侧翻设计 (防崴脚)</text>
+    <text x="60" y="50" font-family="Arial" font-size="12" fill="#4b5563">鞋底外侧必须有向外的延伸突出，</text>
+    <text x="60" y="68" font-family="Arial" font-size="12" fill="#4b5563">这是普通跑鞋绝对没有的设计。</text>
+  </g>
+  <path d="M300,140 L350,160" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow-red)"/>
+
+  <!-- Element 2: Cushioning -->
+  <g transform="translate(480, 100)">
+    <circle cx="20" cy="20" r="20" fill="#f59e0b" />
+    <text x="20" y="26" font-family="Arial" font-size="18" fill="white" text-anchor="middle">2</text>
+    <rect x="50" y="0" width="220" height="80" rx="8" fill="white" filter="url(#shadow)" stroke="#f59e0b" />
+    <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#b45309">后跟缓震 (护膝盖)</text>
+    <text x="60" y="50" font-family="Arial" font-size="12" fill="#4b5563">孩子起跳落地时冲击力极大，</text>
+    <text x="60" y="68" font-family="Arial" font-size="12" fill="#4b5563">后跟必须有减震胶或气垫支撑。</text>
+  </g>
+  <path d="M480,140 L430,160" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+
+  <!-- Element 3: Wrapping -->
+  <g transform="translate(80, 240)">
+    <circle cx="20" cy="20" r="20" fill="#3b82f6" />
+    <text x="20" y="26" font-family="Arial" font-size="18" fill="white" text-anchor="middle">3</text>
+    <rect x="50" y="0" width="220" height="80" rx="8" fill="white" filter="url(#shadow)" stroke="#3b82f6" />
+    <text x="60" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#1d4ed8">鞋面包裹 (防起泡)</text>
+    <text x="60" y="50" font-family="Arial" font-size="12" fill="#4b5563">急停急转多，鞋面需采用耐磨PU，</text>
+    <text x="60" y="68" font-family="Arial" font-size="12" fill="#4b5563">买鞋切忌“买大一码”，必须合脚！</text>
+  </g>
+  <path d="M300,280 L350,220" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Recommended Models Card -->
+  <rect x="80" y="350" width="640" height="120" rx="10" fill="#1e293b" />
+  <text x="400" y="380" font-family="Arial" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">🏆 闭眼入的高性价比儿童球鞋推荐</text>
+  <g font-family="Arial" font-size="14" fill="#cbd5e1">
+    <text x="120" y="415">● 尤尼克斯 (YONEX) 65Z3 儿童款：经典神鞋缩小型，全方位保护，约 350 元。</text>
+    <text x="120" y="445">● 李宁 变色龙/贴地飞行 儿童版：仿生大底，抓地力极强，颜值高，约 280 元。</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+    </marker>
+    <marker id="arrow-yellow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+    </marker>
+  </defs>
+</svg>

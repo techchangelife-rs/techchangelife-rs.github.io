@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdfa" />
+      <stop offset="100%" stop-color="#ccfbf1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="16" />
+  <text x="400" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#0f766e" text-anchor="middle">加法原理 vs 乘法原理</text>
+  
+  <!-- 加法原理 -->
+  <g transform="translate(50, 100)">
+    <rect width="320" height="250" fill="#ffffff" rx="12" filter="url(#shadow)" />
+    <text x="160" y="40" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f766e" text-anchor="middle">加法原理：分类（或者）</text>
+    <text x="160" y="65" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">去北京：坐飞机(3班) "或" 坐高铁(4班)</text>
+    
+    <g transform="translate(60, 110)">
+      <circle cx="20" cy="50" r="15" fill="#14b8a6" />
+      <text x="20" y="55" font-family="sans-serif" font-size="16" fill="white" text-anchor="middle">A</text>
+      
+      <circle cx="180" cy="50" r="15" fill="#f59e0b" />
+      <text x="180" y="55" font-family="sans-serif" font-size="16" fill="white" text-anchor="middle">B</text>
+
+      <!-- 飞机路径 -->
+      <path d="M 35,40 Q 100,-10 165,40" fill="none" stroke="#3b82f6" stroke-width="3" />
+      <path d="M 35,50 Q 100,20 165,50" fill="none" stroke="#3b82f6" stroke-width="3" />
+      <path d="M 35,60 Q 100,50 165,60" fill="none" stroke="#3b82f6" stroke-width="3" />
+      <text x="100" y="10" font-family="sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">3班飞机</text>
+
+      <!-- 高铁路径 -->
+      <path d="M 35,50 Q 100,80 165,50" fill="none" stroke="#ef4444" stroke-width="3" />
+      <path d="M 35,60 Q 100,110 165,60" fill="none" stroke="#ef4444" stroke-width="3" />
+      <path d="M 35,70 Q 100,140 165,70" fill="none" stroke="#ef4444" stroke-width="3" />
+      <path d="M 35,80 Q 100,170 165,80" fill="none" stroke="#ef4444" stroke-width="3" />
+      <text x="100" y="125" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">4班高铁</text>
+    </g>
+    
+    <text x="160" y="230" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0f766e" text-anchor="middle">3 + 4 = 7 种</text>
+  </g>
+
+  <!-- 乘法原理 -->
+  <g transform="translate(430, 100)">
+    <rect width="320" height="250" fill="#ffffff" rx="12" filter="url(#shadow)" />
+    <text x="160" y="40" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f766e" text-anchor="middle">乘法原理：分步（并且）</text>
+    <text x="160" y="65" font-family="sans-serif" font-size="14" fill="#64748b" text-anchor="middle">点餐：选主食(3种) "并且" 选饮料(2种)</text>
+    
+    <g transform="translate(40, 100)">
+      <!-- 树状图 -->
+      <circle cx="20" cy="60" r="10" fill="#64748b" />
+      
+      <!-- 第1步 -->
+      <circle cx="100" cy="20" r="10" fill="#f59e0b" />
+      <circle cx="100" cy="60" r="10" fill="#f59e0b" />
+      <circle cx="100" cy="100" r="10" fill="#f59e0b" />
+      
+      <line x1="30" y1="60" x2="90" y2="20" stroke="#94a3b8" stroke-width="2" />
+      <line x1="30" y1="60" x2="90" y2="60" stroke="#94a3b8" stroke-width="2" />
+      <line x1="30" y1="60" x2="90" y2="100" stroke="#94a3b8" stroke-width="2" />
+      
+      <text x="60" y="15" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">主食</text>
+
+      <!-- 第2步 -->
+      <circle cx="180" cy="0" r="10" fill="#3b82f6" />
+      <circle cx="180" cy="30" r="10" fill="#3b82f6" />
+      <line x1="110" y1="20" x2="170" y2="0" stroke="#94a3b8" stroke-width="2" />
+      <line x1="110" y1="20" x2="170" y2="30" stroke="#94a3b8" stroke-width="2" />
+
+      <circle cx="180" cy="50" r="10" fill="#3b82f6" />
+      <circle cx="180" cy="80" r="10" fill="#3b82f6" />
+      <line x1="110" y1="60" x2="170" y2="50" stroke="#94a3b8" stroke-width="2" />
+      <line x1="110" y1="60" x2="170" y2="80" stroke="#94a3b8" stroke-width="2" />
+
+      <circle cx="180" cy="100" r="10" fill="#3b82f6" />
+      <circle cx="180" cy="130" r="10" fill="#3b82f6" />
+      <line x1="110" y1="100" x2="170" y2="100" stroke="#94a3b8" stroke-width="2" />
+      <line x1="110" y1="100" x2="170" y2="130" stroke="#94a3b8" stroke-width="2" />
+      
+      <text x="145" y="-5" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">饮料</text>
+    </g>
+    
+    <text x="160" y="230" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0f766e" text-anchor="middle">3 × 2 = 6 种</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f4037"/>
+      <stop offset="100%" stop-color="#99f2c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="24"/>
+
+  <text x="400" y="70" fill="#ffffff" font-size="34" font-weight="bold" font-family="sans-serif" text-anchor="middle">发球站位金句：右偶 左奇</text>
+  <text x="400" y="105" fill="#e6fff5" font-size="18" font-family="sans-serif" text-anchor="middle">分数为偶数站右区；分数为奇数站左区</text>
+
+  <g transform="translate(120,130)">
+    <rect x="0" y="0" width="560" height="240" fill="#2ea67b" stroke="#ffffff" stroke-width="5" rx="12"/>
+    <line x1="280" y1="0" x2="280" y2="240" stroke="#ffffff" stroke-width="8"/>
+
+    <rect x="0" y="0" width="280" height="240" fill="#000000" fill-opacity="0.15"/>
+    <rect x="280" y="0" width="280" height="240" fill="#ffffff" fill-opacity="0.08"/>
+
+    <text x="140" y="120" fill="#ffdd00" font-size="46" font-weight="bold" font-family="sans-serif" text-anchor="middle">左 = 奇</text>
+    <text x="420" y="120" fill="#00eaff" font-size="46" font-weight="bold" font-family="sans-serif" text-anchor="middle">右 = 偶</text>
+  </g>
+
+  <g transform="translate(120,390)">
+    <rect x="0" y="0" width="560" height="40" rx="10" fill="#000000" fill-opacity="0.3"/>
+    <text x="280" y="26" fill="#ffffff" font-size="18" font-family="sans-serif" text-anchor="middle">错站位直接丢分；用数学守规矩，比做100道口算更有效</text>
+  </g>
+</svg>

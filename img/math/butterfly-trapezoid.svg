@@ -1,0 +1,42 @@
+<svg width="700" height="280" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowL2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d6336c"/>
+    </marker>
+  </defs>
+  <rect width="700" height="280" fill="#f8f9fa"/>
+  <!-- 标题 -->
+  <text x="350" y="25" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">图2：蝴蝶模型的梯形特训（双胞胎蝴蝶）</text>
+
+  <!-- 梯形 -->
+  <!-- 上底短，下底长 -->
+  <polygon points="180,50 350,50 420,180 110,180" fill="#e8f5e9" stroke="#2e7d32" stroke-width="3"/>
+
+  <!-- 对角线 -->
+  <line x1="180" y1="50" x2="420" y2="180" stroke="#d6336c" stroke-width="3"/>
+  <line x1="350" y1="50" x2="110" y2="180" stroke="#d6336c" stroke-width="3"/>
+
+  <!-- 中心 O -->
+  <circle cx="265" cy="115" r="5" fill="#333"/>
+
+  <!-- 四个小三角形 -->
+  <polygon points="180,50 265,115 350,50" fill="#ffcdd2"/>
+  <text x="250" y="75" font-size="14" font-weight="bold" fill="#d6336c">S₁</text>
+
+  <polygon points="350,50 265,115 420,180" fill="#c5e1a5"/>
+  <text x="335" y="110" font-size="14" font-weight="bold" fill="#2e7d32">S₂</text>
+
+  <polygon points="110,180 265,115 180,50" fill="#b3e5fc"/>
+  <text x="175" y="115" font-size="14" font-weight="bold" fill="#1565c0">S₃</text>
+
+  <polygon points="420,180 265,115 110,180" fill="#fff9c4"/>
+  <text x="260" y="160" font-size="14" font-weight="bold" fill="#f57f17">S₄</text>
+
+  <!-- 结论框 -->
+  <rect x="480" y="50" width="200" height="180" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="580" y="90" font-size="15" font-weight="bold" fill="#212529" text-anchor="middle">🎯 梯形蝴蝶定理</text>
+  <text x="580" y="120" font-size="13" fill="#333" text-anchor="middle">由于上底 ∥ 下底，</text>
+  <text x="580" y="145" font-size="13" fill="#333" text-anchor="middle">梯形蝴蝶的两片翅膀</text>
+  <text x="580" y="170" font-size="15" font-weight="bold" fill="#d6336c" text-anchor="middle">S₁ = S₂</text>
+  <text x="580" y="200" font-size="13" fill="#333" text-anchor="middle">（双胞胎蝴蝶！）</text>
+</svg>

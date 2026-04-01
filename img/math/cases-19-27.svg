@@ -1,0 +1,103 @@
+<svg width="900" height="900" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; }
+      .shadow { fill: #ff9a9e; opacity: 0.8; }
+      .shadow2 { fill: #a1c4fd; opacity: 0.8; }
+      .line { stroke: #343a40; stroke-width: 2; fill: none; }
+      .text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #495057; }
+      .title { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #212529; }
+      .dash { stroke: #343a40; stroke-width: 2; stroke-dasharray: 5,5; fill: none; }
+    </style>
+  </defs>
+  <rect width="900" height="900" fill="#ffffff"/>
+
+  <!-- Case 19: 圆在直线上滚动扫过的面积 -->
+  <g transform="translate(50, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 19</text>
+    <line x1="20" y1="160" x2="180" y2="160" class="line"/>
+    <circle cx="50" cy="130" r="30" class="dash"/>
+    <circle cx="150" cy="130" r="30" class="dash"/>
+    <rect x="50" y="100" width="100" height="60" class="shadow"/>
+    <path d="M 50 160 A 30 30 0 0 1 50 100 L 50 160 Z" class="shadow"/>
+    <path d="M 150 100 A 30 30 0 0 1 150 160 L 150 100 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 20: 不规则四边形补成矩形 -->
+  <g transform="translate(350, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 20</text>
+    <rect x="40" y="40" width="120" height="120" class="dash"/>
+    <polygon points="40,100 100,40 160,160 80,160" class="shadow"/>
+    <polygon points="40,100 100,40 160,160 80,160" class="line"/>
+  </g>
+
+  <!-- Case 21: 缺角扇形补成完整圆 -->
+  <g transform="translate(650, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 21</text>
+    <circle cx="100" cy="100" r="60" class="dash"/>
+    <path d="M 100 100 L 160 100 A 60 60 0 1 1 100 40 Z" class="shadow"/>
+    <path d="M 100 100 L 160 100 A 60 60 0 1 1 100 40 Z" class="line"/>
+  </g>
+
+  <!-- Case 22: 梯形外接半圆补成全圆 -->
+  <g transform="translate(50, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 22</text>
+    <path d="M 40 120 A 60 60 0 0 1 160 120 Z" class="line"/>
+    <polygon points="40,120 70,70 130,70 160,120" class="shadow"/>
+    <line x1="40" y1="120" x2="160" y2="120" class="line"/>
+  </g>
+
+  <!-- Case 23: 任意多边形外接扇形补成大扇形 -->
+  <g transform="translate(350, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 23</text>
+    <polygon points="100,160 60,80 140,80" class="line"/>
+    <path d="M 60 80 A 30 30 0 0 1 140 80 Z" class="shadow"/>
+    <path d="M 60 80 A 30 30 0 0 0 100 160 Z" class="shadow"/>
+    <path d="M 140 80 A 30 30 0 0 1 100 160 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 24: 阴影在正方形对角线上，移到边缘 -->
+  <g transform="translate(650, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 24</text>
+    <rect x="40" y="40" width="120" height="120" class="line"/>
+    <line x1="40" y1="40" x2="160" y2="160" class="line"/>
+    <polygon points="40,40 100,40 100,100" class="shadow"/>
+    <polygon points="100,100 160,100 160,160" class="shadow"/>
+  </g>
+
+  <!-- Case 25: 阴影在两圆交界处，整体平移 -->
+  <g transform="translate(50, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 25</text>
+    <rect x="40" y="70" width="120" height="60" class="line"/>
+    <circle cx="70" cy="100" r="30" class="line"/>
+    <circle cx="130" cy="100" r="30" class="line"/>
+    <path d="M 100 70 A 30 30 0 0 0 100 130 A 30 30 0 0 1 100 70 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 26: 阴影在圆与直线的交点 -->
+  <g transform="translate(350, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 26</text>
+    <circle cx="100" cy="100" r="60" class="line"/>
+    <line x1="40" y1="100" x2="160" y2="100" class="line"/>
+    <line x1="100" y1="40" x2="100" y2="160" class="line"/>
+    <path d="M 100 100 L 160 100 A 60 60 0 0 1 100 160 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 27: 动点产生的阴影取极值点 -->
+  <g transform="translate(650, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 27</text>
+    <rect x="40" y="60" width="120" height="80" class="line"/>
+    <polygon points="40,140 160,140 100,60" class="shadow"/>
+    <circle cx="100" cy="60" r="4" fill="#dc3545"/>
+    <text x="100" y="50" font-size="12" text-anchor="middle" fill="#dc3545">动点P</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg width="900" height="900" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; }
+      .shadow { fill: #ff9a9e; opacity: 0.8; }
+      .line { stroke: #343a40; stroke-width: 2; fill: none; }
+      .text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #495057; }
+      .title { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #212529; }
+    </style>
+  </defs>
+
+  <!-- 网格背景 -->
+  <rect width="900" height="900" fill="#ffffff"/>
+  
+  <!-- Case 1: 直角三角形减扇形 -->
+  <g transform="translate(50, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 1</text>
+    <polygon points="40,160 160,160 40,40" class="line"/>
+    <path d="M 40 160 L 100 160 A 60 60 0 0 0 40 100 Z" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <path d="M 100 160 L 160 160 L 40 40 L 40 100 A 60 60 0 0 1 100 160 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 2: 等腰三角形减半圆 -->
+  <g transform="translate(350, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 2</text>
+    <polygon points="100,40 40,160 160,160" class="line"/>
+    <path d="M 70 160 A 30 30 0 0 1 130 160 Z" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <path d="M 40 160 L 70 160 A 30 30 0 0 1 130 160 L 160 160 L 100 40 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 3: 平行四边形减半圆 -->
+  <g transform="translate(650, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 3</text>
+    <polygon points="60,60 180,60 140,160 20,160" class="line"/>
+    <path d="M 20 160 A 60 60 0 0 1 140 160 Z" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <path d="M 20 160 A 60 60 0 0 1 140 160 L 180 60 L 60 60 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 4: 正方形减扇形 -->
+  <g transform="translate(50, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 4</text>
+    <rect x="40" y="40" width="120" height="120" class="line"/>
+    <path d="M 40 160 L 160 160 A 120 120 0 0 0 40 40 Z" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <path d="M 40 40 L 160 40 L 160 160 A 120 120 0 0 0 40 40 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 5: 矩形减三角形 -->
+  <g transform="translate(350, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 5</text>
+    <rect x="30" y="60" width="140" height="80" class="line"/>
+    <polygon points="30,140 170,140 170,60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <polygon points="30,60 170,60 30,140" class="shadow"/>
+  </g>
+
+  <!-- Case 6: 弓形 (扇形减三角形) -->
+  <g transform="translate(650, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 6</text>
+    <path d="M 100 160 L 40 60 A 70 70 0 0 1 160 60 Z" class="line"/>
+    <polygon points="100,160 40,60 160,60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+    <path d="M 40 60 A 70 70 0 0 1 160 60 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 7: 圆环面积 -->
+  <g transform="translate(50, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 7</text>
+    <circle cx="100" cy="100" r="60" class="shadow" stroke="#343a40" stroke-width="2"/>
+    <circle cx="100" cy="100" r="30" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+  </g>
+
+  <!-- Case 8: 正方形减内切圆 -->
+  <g transform="translate(350, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 8</text>
+    <rect x="40" y="40" width="120" height="120" class="shadow" stroke="#343a40" stroke-width="2"/>
+    <circle cx="100" cy="100" r="60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+  </g>
+
+  <!-- Case 9: 多个圆相切求阴影 -->
+  <g transform="translate(650, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 9</text>
+    <circle cx="70" cy="130" r="40" class="line"/>
+    <circle cx="150" cy="130" r="40" class="line"/>
+    <circle cx="110" cy="60" r="40" class="line"/>
+    <polygon points="70,130 150,130 110,60" class="line"/>
+    <!-- 简化阴影展示 -->
+    <path d="M 70 130 L 110 130 A 40 40 0 0 0 90 95 Z" class="shadow"/>
+    <path d="M 150 130 L 110 130 A 40 40 0 0 1 130 95 Z" class="shadow"/>
+    <path d="M 110 60 L 90 95 A 40 40 0 0 0 130 95 Z" class="shadow"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="500" height="280" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- 例15图：复杂组合——共角+一半模型 -->
+  <text x="10" y="20" font-size="13" fill="#666">【例15图：组合应用——共角定理与一半模型的联合】</text>
+
+  <!-- 大三角形 ABC -->
+  <polygon points="250,30 60,230 440,230" fill="#e3f2fd" stroke="#1565c0" stroke-width="2.5"/>
+  <text x="245" y="18" font-size="14" fill="#1565c0" font-weight="bold">A</text>
+  <text x="40" y="248" font-size="14" fill="#1565c0">B</text>
+  <text x="448" y="248" font-size="14" fill="#1565c0">C</text>
+
+  <!-- AB边上的点D（AB的中点） -->
+  <circle cx="155" cy="130" r="4" fill="#e64980"/>
+  <text x="145" y="125" font-size="11" fill="#e64980">D(中点)</text>
+
+  <!-- AC边上的点E（AC的三等分点） -->
+  <circle cx="316" cy="130" r="4" fill="#e64980"/>
+  <text x="325" y="125" font-size="11" fill="#e64980">E(三分点)</text>
+
+  <!-- 小三角形 ADE -->
+  <polygon points="250,30 155,130 316,130" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+
+  <!-- 连接DE -->
+  <line x1="155" y1="130" x2="316" y2="130" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="235" y="148" font-size="11" fill="#7b1fa2">DE</text>
+
+  <!-- 过E点做BC的平行线（构成梯形的一一半模型） -->
+  <line x1="155" y1="130" x2="420" y2="230" stroke="#fab005" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="380" y="185" font-size="11" fill="#fab005">EF∥BC</text>
+
+  <!-- F点在AC上 -->
+  <circle cx="420" cy="230" r="4" fill="#fab005"/>
+
+  <!-- 平行线标注 -->
+  <path d="M 350 180 L 440 230" stroke="#fab005" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="395" y="200" font-size="10" fill="#fab005">EF∥BC</text>
+
+  <!-- 两部分阴影标注 -->
+  <text x="200" y="95" font-size="12" fill="#7b1fa2">小△ADE</text>
+  <text x="300" y="175" font-size="12" fill="#fab005">梯形BCEF的一半</text>
+
+  <!-- 结论 -->
+  <rect x="80" y="255" width="340" height="26" rx="6" fill="#fff3bf" stroke="#fab005" stroke-width="1.5"/>
+  <text x="250" y="273" font-size="11" fill="#e67700" text-anchor="middle">先共角定理求S<sub>ADE</sub>，再一半模型求梯形阴影</text>
+</svg>

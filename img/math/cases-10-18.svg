@@ -1,0 +1,111 @@
+<svg width="900" height="900" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; }
+      .shadow { fill: #ff9a9e; opacity: 0.8; }
+      .shadow2 { fill: #a1c4fd; opacity: 0.8; }
+      .line { stroke: #343a40; stroke-width: 2; fill: none; }
+      .text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #495057; }
+      .title { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #212529; }
+      .dash { stroke: #343a40; stroke-width: 2; stroke-dasharray: 5,5; fill: none; }
+    </style>
+  </defs>
+  <rect width="900" height="900" fill="#ffffff"/>
+
+  <!-- Case 10: 扇形割补成三角形 -->
+  <g transform="translate(50, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 10</text>
+    <path d="M 40 160 L 160 160 A 120 120 0 0 0 40 40 Z" class="line"/>
+    <polygon points="40,160 160,160 40,40" class="dash"/>
+    <path d="M 160 160 A 120 120 0 0 0 40 40 L 100 100 Z" class="shadow"/>
+    <polygon points="40,160 160,160 100,100" class="shadow2"/>
+    <!-- 箭头示意 -->
+    <path d="M 120 70 Q 140 110 110 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- Case 11: 树叶形割补成三角形 -->
+  <g transform="translate(350, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 11</text>
+    <rect x="40" y="40" width="120" height="120" class="line"/>
+    <line x1="40" y1="40" x2="160" y2="160" class="line"/>
+    <path d="M 40 40 A 120 120 0 0 0 160 160" class="line"/>
+    <path d="M 40 40 A 120 120 0 0 0 160 160 L 40 40" class="shadow"/>
+    <path d="M 160 160 A 120 120 0 0 0 40 40 L 160 160" class="shadow2"/>
+  </g>
+
+  <!-- Case 12: 半圆割补成矩形 -->
+  <g transform="translate(650, 50)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 12</text>
+    <rect x="40" y="100" width="120" height="60" class="line"/>
+    <path d="M 40 100 A 60 60 0 0 1 160 100 Z" class="line"/>
+    <path d="M 40 100 A 60 60 0 0 1 100 40 L 100 100 Z" class="shadow"/>
+    <path d="M 100 100 L 160 100 L 160 160 L 100 160 Z" class="shadow2"/>
+  </g>
+
+  <!-- Case 13: 蝴蝶形平移拼成半圆 -->
+  <g transform="translate(50, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 13</text>
+    <rect x="40" y="40" width="120" height="120" class="line"/>
+    <line x1="40" y1="40" x2="160" y2="160" class="line"/>
+    <line x1="160" y1="40" x2="40" y2="160" class="line"/>
+    <path d="M 40 40 A 60 60 0 0 0 40 160 L 100 100 Z" class="shadow"/>
+    <path d="M 160 40 A 60 60 0 0 1 160 160 L 100 100 Z" class="shadow2"/>
+  </g>
+
+  <!-- Case 14: 环形切补成矩形 -->
+  <g transform="translate(350, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 14</text>
+    <circle cx="100" cy="100" r="60" class="line"/>
+    <circle cx="100" cy="100" r="30" class="line"/>
+    <path d="M 100 100 L 100 40 A 60 60 0 0 1 160 100 L 130 100 A 30 30 0 0 0 100 70 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 15: 半圆绕点旋转生成的阴影 -->
+  <g transform="translate(650, 350)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 15</text>
+    <path d="M 40 160 A 40 40 0 0 1 120 160 Z" class="line"/>
+    <path d="M 40 160 L 100 80 A 40 40 0 0 1 160 120 Z" class="line"/>
+    <path d="M 40 160 A 100 100 0 0 0 160 120 L 100 80 A 40 40 0 0 0 40 160 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 16: 三角形外接圆的边角平移 -->
+  <g transform="translate(50, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 16</text>
+    <circle cx="100" cy="100" r="60" class="line"/>
+    <polygon points="100,40 40,140 160,140" class="line"/>
+    <path d="M 40 140 A 60 60 0 0 0 160 140 Z" class="shadow"/>
+  </g>
+
+  <!-- Case 17: 多个圆相切平移 -->
+  <g transform="translate(350, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 17</text>
+    <circle cx="70" cy="100" r="30" class="line"/>
+    <circle cx="130" cy="100" r="30" class="line"/>
+    <rect x="70" y="70" width="60" height="60" class="line"/>
+    <path d="M 70 70 L 130 70 A 30 30 0 0 0 70 70 Z" class="shadow"/>
+    <path d="M 70 130 L 130 130 A 30 30 0 0 1 70 130 Z" class="shadow2"/>
+  </g>
+
+  <!-- Case 18: 扇形内部翻折 -->
+  <g transform="translate(650, 650)">
+    <rect width="200" height="200" class="bg" rx="10"/>
+    <text x="10" y="25" class="title">题型 18</text>
+    <path d="M 40 160 L 160 160 A 120 120 0 0 0 40 40 Z" class="line"/>
+    <path d="M 40 160 L 160 160 A 120 120 0 0 1 40 40 Z" class="dash"/>
+    <path d="M 40 40 A 120 120 0 0 0 160 160 A 120 120 0 0 1 40 40 Z" class="shadow"/>
+  </g>
+  
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

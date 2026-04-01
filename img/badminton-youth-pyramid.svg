@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  
+  <text x="400" y="50" font-family="sans-serif" font-weight="bold" font-size="28" fill="#343a40" text-anchor="middle">体育精神七级金字塔模型</text>
+  <text x="400" y="80" font-family="sans-serif" font-size="16" fill="#6c757d" text-anchor="middle">量化孩子的非技术收获：不唯成绩论，塑造成长底色</text>
+
+  <g transform="translate(400, 120)">
+    <!-- Level 7: 反哺社会 -->
+    <path d="M 0,0 L 40,60 L -40,60 Z" fill="#d90429" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="45" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">反哺社会</text>
+
+    <!-- Level 6: 终身运动 -->
+    <path d="M -40,60 L 40,60 L 80,110 L -80,110 Z" fill="#ef233c" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="95" font-family="sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">终身运动</text>
+
+    <!-- Level 5: 国家荣誉 -->
+    <path d="M -80,110 L 80,110 L 120,160 L -120,160 Z" fill="#f07167" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="145" font-family="sans-serif" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">国家荣誉 (集体使命感)</text>
+
+    <!-- Level 4: 团队协作 -->
+    <path d="M -120,160 L 120,160 L 160,210 L -160,210 Z" fill="#ffb703" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="195" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">团队协作 (双打/团体赛精神)</text>
+
+    <!-- Level 3: 尊重自己 -->
+    <path d="M -160,210 L 160,210 L 200,260 L -200,260 Z" fill="#219ebc" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="245" font-family="sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">尊重自己 (自律与拼搏)</text>
+
+    <!-- Level 2: 尊重对手 -->
+    <path d="M -200,260 L 200,260 L 240,310 L -240,310 Z" fill="#023047" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="295" font-family="sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">尊重对手 (胜不骄，败不馁)</text>
+
+    <!-- Level 1: 尊重规则 -->
+    <path d="M -240,310 L 240,310 L 280,360 L -280,360 Z" fill="#8ecae6" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="345" font-family="sans-serif" font-size="26" font-weight="bold" fill="#023047" text-anchor="middle">尊重规则 (赛场底线与契约精神)</text>
+  </g>
+</svg>

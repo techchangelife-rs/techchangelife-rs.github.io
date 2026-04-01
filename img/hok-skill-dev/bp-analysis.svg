@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400">
+  <rect width="800" height="400" fill="#FF9F43"/>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">
+    BP阵容分析逻辑图
+  </text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="racketBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="#fafafa"/>
+  
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">寻找球拍的"灵魂C位" —— 甜区 (Sweet Spot)</text>
+
+  <!-- Racket Head -->
+  <g transform="translate(200, 220)">
+    <!-- Racket Frame -->
+    <ellipse cx="0" cy="0" rx="90" ry="120" fill="none" stroke="#444" stroke-width="8"/>
+    <!-- Strings -->
+    <g stroke="#ddd" stroke-width="1">
+      <line x1="-80" y1="-30" x2="80" y2="-30"/>
+      <line x1="-88" y1="0" x2="88" y2="0"/>
+      <line x1="-80" y1="30" x2="80" y2="30"/>
+      <line x1="-60" y1="60" x2="60" y2="60"/>
+      <line x1="-60" y1="-60" x2="60" y2="-60"/>
+      
+      <line x1="-40" y1="-105" x2="-40" y2="105"/>
+      <line x1="-20" y1="-115" x2="-20" y2="115"/>
+      <line x1="0" y1="-120" x2="0" y2="120"/>
+      <line x1="20" y1="-115" x2="20" y2="115"/>
+      <line x1="40" y1="-105" x2="40" y2="105"/>
+    </g>
+    
+    <!-- The Sweet Spot -->
+    <ellipse cx="0" cy="-10" rx="35" ry="45" fill="rgba(255, 87, 34, 0.2)" stroke="#ff5722" stroke-width="2" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="-10" r="5" fill="#ff5722"/>
+  </g>
+
+  <!-- Explanations -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <!-- Point 1 -->
+    <path d="M 200,165 L 350,120 L 370,120" fill="none" stroke="#666" stroke-width="2"/>
+    <circle cx="200" cy="165" r="4" fill="#666"/>
+    <text x="380" y="115" font-weight="bold" fill="#ff5722">1. 撞击中心</text>
+    <text x="380" y="135" font-size="12" fill="#666">手感最好，不震手！</text>
+    
+    <!-- Point 2 -->
+    <path d="M 200,210 L 350,210 L 370,210" fill="none" stroke="#666" stroke-width="2"/>
+    <circle cx="200" cy="210" r="4" fill="#666"/>
+    <text x="380" y="205" font-weight="bold" fill="#ff5722">2. 振动波节</text>
+    <text x="380" y="225" font-size="12" fill="#666">拍面最稳，不乱晃！</text>
+
+    <!-- Point 3 -->
+    <path d="M 200,255 L 350,300 L 370,300" fill="none" stroke="#666" stroke-width="2"/>
+    <circle cx="200" cy="255" r="4" fill="#666"/>
+    <text x="380" y="295" font-weight="bold" fill="#ff5722">3. 最大弹性点</text>
+    <text x="380" y="315" font-size="12" fill="#666">像蹦床中心，弹力最猛！</text>
+  </g>
+
+  <!-- Callout Box -->
+  <rect x="50" y="320" width="200" height="60" rx="10" fill="#fff3e0" stroke="#ff9800"/>
+  <text x="150" y="345" font-family="Arial" font-size="14" font-weight="bold" fill="#e65100" text-anchor="middle">三点合一 = 甜区</text>
+  <text x="150" y="365" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">打中这里，你就是球场最靓的仔</text>
+</svg>

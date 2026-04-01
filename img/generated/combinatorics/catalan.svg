@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2f8" />
+      <stop offset="100%" stop-color="#fce7f3" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" rx="16" />
+  <text x="400" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#831843" text-anchor="middle">卡特兰数：不越过对角线的路径</text>
+  
+  <rect x="50" y="80" width="700" height="280" fill="#ffffff" rx="16" filter="url(#shadow)" />
+
+  <!-- 网格 -->
+  <g transform="translate(300, 120)">
+    <!-- 4x4 Grid -->
+    <path d="M 0,0 L 200,0 L 200,200 L 0,200 Z" fill="none" stroke="#cbd5e1" stroke-width="2" />
+    <path d="M 50,0 L 50,200 M 100,0 L 100,200 M 150,0 L 150,200" fill="none" stroke="#e2e8f0" stroke-width="2" />
+    <path d="M 0,50 L 200,50 M 0,100 L 200,100 M 0,150 L 200,150" fill="none" stroke="#e2e8f0" stroke-width="2" />
+    
+    <!-- 对角线 -->
+    <path d="M 0,200 L 200,0" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="8,4" />
+    <text x="120" y="80" font-family="sans-serif" font-size="14" fill="#ef4444" transform="rotate(-45 100 100)">y = x 死亡线</text>
+
+    <!-- 合法路径 -->
+    <path d="M 0,200 L 50,200 L 50,150 L 100,150 L 150,150 L 150,100 L 150,50 L 200,50 L 200,0" fill="none" stroke="#10b981" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- 坐标点 -->
+    <circle cx="0" cy="200" r="6" fill="#3b82f6" />
+    <text x="-20" y="215" font-family="sans-serif" font-size="14" fill="#64748b">(0,0)</text>
+    
+    <circle cx="200" cy="0" r="6" fill="#3b82f6" />
+    <text x="210" y="-10" font-family="sans-serif" font-size="14" fill="#64748b">(n,n)</text>
+  </g>
+
+  <g transform="translate(100, 180)">
+    <text x="0" y="0" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">规则：</text>
+    <text x="0" y="30" font-family="sans-serif" font-size="16" fill="#475569">1. 只能向右或向上走</text>
+    <text x="0" y="60" font-family="sans-serif" font-size="16" fill="#475569">2. 向上走的步数</text>
+    <text x="20" y="85" font-family="sans-serif" font-size="16" fill="#475569">不能超过向右走的步数</text>
+    <text x="0" y="115" font-family="sans-serif" font-size="16" fill="#475569">（即不能越过对角线）</text>
+  </g>
+</svg>
